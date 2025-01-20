@@ -19,14 +19,14 @@
 
         function getCurrencySymbol(currency) {
             switch (currency) {
-                case 1: return "€"; // EUR
-                case 2: return "$"; // USD
-                case 3: return "₾"; // GEL
+                case 1: return "€"; 
+                case 2: return "$";
+                case 3: return "₾";
                 default: return "";
             }
         }
 
-        updateWalletBalance(); // Fetch balance on page load
-        setInterval(updateWalletBalance, 30000); // Fetch every 30 seconds
+        updateWalletBalance();
+        setInterval(updateWalletBalance, 30000);
     }
 });

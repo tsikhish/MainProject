@@ -2551,6 +2551,51 @@
       ]
     },
     {
+      "Route": "js/walletBalance.5mhtowlvtr.js",
+      "AssetFile": "js/walletBalance.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1204"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 22:12:34 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5mhtowlvtr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI="
+        },
+        {
+          "Name": "label",
+          "Value": "js/walletBalance.js"
+        }
+      ]
+    },
+    {
       "Route": "js/walletBalance.js",
       "AssetFile": "js/walletBalance.js",
       "Selectors": [],
@@ -2565,7 +2610,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1281"
+          "Value": "1204"
         },
         {
           "Name": "Content-Type",
@@ -2573,62 +2618,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ=\""
+          "Value": "\"k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 11 Jan 2025 09:20:23 GMT"
+          "Value": "Tue, 14 Jan 2025 22:12:34 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/walletBalance.u5b6e35fw8.js",
-      "AssetFile": "js/walletBalance.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1281"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 11 Jan 2025 09:20:23 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u5b6e35fw8"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ="
-        },
-        {
-          "Name": "label",
-          "Value": "js/walletBalance.js"
+          "Value": "sha256-k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI="
         }
       ]
     },

@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>u5b6e35fw8</Fingerprint>
-      <Integrity>AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ=</Integrity>
+      <Fingerprint>5mhtowlvtr</Fingerprint>
+      <Integrity>k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\walletBalance.js'))</OriginalItemSpec>

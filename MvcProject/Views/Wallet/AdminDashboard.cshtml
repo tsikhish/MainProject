@@ -1,0 +1,44 @@
+﻿@using MvcProject.Models.Model
+@model IEnumerable<DepositWithdrawRequest>
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+<h2>Admin Dashboard</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>UserId</th>
+            <th>TransactionType</th>
+            <th>Status</th>
+            <th>Amount</th>
+            <th>Created At</th>
+            <th>Accept</th>
+            <th>Reject</th>
+        </tr>
+    </thead>
+ @foreach(var transaction in Model){
+        <tbody>
+            <tr>
+                <td>@transaction.Id</td>
+                <td>@transaction.UserId</td>
+                <td>@transaction.Amount</td>
+                <td>@transaction.TransactionType</td>
+                <td>@transaction.Status</td>
+                <td>@transaction.CreateAt</td>
+                <td>
+                    <form method="post" action="/Wallet/Accept">
+                        <input type="hidden" name="transactionId" value="@transaction.Id" />
+                        <button type="submit" class="btn btn-success">Accept</button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/Wallet/Reject">
+                        <input type="hidden" name="transactionId" value="@transaction.Id" />
+                        <button type="submit" class="btn btn-success">Reject</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+}
+</table>

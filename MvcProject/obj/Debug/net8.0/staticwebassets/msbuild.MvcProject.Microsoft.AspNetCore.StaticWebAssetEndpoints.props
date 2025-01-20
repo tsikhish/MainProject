@@ -36,17 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xtxxf3hu2r"},{"Name":"integrity","Value":"sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="},{"Name":"label","Value":"_content/MvcProject/js/site.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"231"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 09:53:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MvcProject/js/walletBalance.5mhtowlvtr.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\walletBalance.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5mhtowlvtr"},{"Name":"integrity","Value":"sha256-k1ngR5v1tny\u002BiAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI="},{"Name":"label","Value":"_content/MvcProject/js/walletBalance.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1204"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022k1ngR5v1tny\u002BiAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Jan 2025 22:12:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MvcProject/js/walletBalance.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\walletBalance.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-AkjMdsMMTeh7RcUs1zurUJD\u002B5FSZGvdsfJ9dPYIY/nQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1281"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022AkjMdsMMTeh7RcUs1zurUJD\u002B5FSZGvdsfJ9dPYIY/nQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Jan 2025 09:20:23 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MvcProject/js/walletBalance.u5b6e35fw8.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\walletBalance.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u5b6e35fw8"},{"Name":"integrity","Value":"sha256-AkjMdsMMTeh7RcUs1zurUJD\u002B5FSZGvdsfJ9dPYIY/nQ="},{"Name":"label","Value":"_content/MvcProject/js/walletBalance.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1281"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022AkjMdsMMTeh7RcUs1zurUJD\u002B5FSZGvdsfJ9dPYIY/nQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 11 Jan 2025 09:20:23 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-k1ngR5v1tny\u002BiAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1204"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022k1ngR5v1tny\u002BiAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Jan 2025 22:12:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MvcProject/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

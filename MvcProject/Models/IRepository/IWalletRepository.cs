@@ -2,8 +2,10 @@
 {
     public interface IWalletRepository
     {
-        public Task<decimal> GetWalletBalanceByUserIdAsync(string userId);
-        public Task<int> GetWalletCurrencyByUserIdAsync(string userId);
-        public Task CreateWalletByUserIdAsync(string userId);
+        Task<decimal> GetWalletBalanceByUserIdAsync(string userId);
+        Task<int> GetWalletCurrencyByUserIdAsync(string userId);
+        Task CreateWalletByUserIdAsync(string userId);
+        //Task WalletDeposit(string userId,decimal amount);
+        //Task WalletWithdraw(string userId,decimal amount);
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0rDdo3t/etPzu6AZa0yBpsjYKArMTgVsqG9y1/yvsxs=",
+  "Hash": "PyjIfylCX+P5GOmB3yeqcj+E7pU8Q+xTKG1ccexOMt0=",
   "Source": "MvcProject",
   "BasePath": "_content/MvcProject",
   "Mode": "Default",
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u5b6e35fw8",
-      "Integrity": "AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ=",
+      "Fingerprint": "5mhtowlvtr",
+      "Integrity": "k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\walletBalance.js"
@@ -5068,6 +5068,51 @@
       ]
     },
     {
+      "Route": "js/walletBalance.5mhtowlvtr.js",
+      "AssetFile": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\js\\walletBalance.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1204"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 22:12:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5mhtowlvtr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/walletBalance.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI="
+        }
+      ]
+    },
+    {
       "Route": "js/walletBalance.js",
       "AssetFile": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\js\\walletBalance.js",
       "Selectors": [],
@@ -5078,7 +5123,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1281"
+          "Value": "1204"
         },
         {
           "Name": "Content-Type",
@@ -5086,11 +5131,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ=\""
+          "Value": "\"k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 11 Jan 2025 09:20:23 GMT"
+          "Value": "Tue, 14 Jan 2025 22:12:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5100,52 +5145,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/walletBalance.u5b6e35fw8.js",
-      "AssetFile": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\js\\walletBalance.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1281"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 11 Jan 2025 09:20:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u5b6e35fw8"
-        },
-        {
-          "Name": "label",
-          "Value": "js/walletBalance.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ="
+          "Value": "sha256-k1ngR5v1tny+iAQ9fAcwaOvJnRc0C/o9HaaUxnF5ktI="
         }
       ]
     },
