@@ -1,6 +1,38 @@
 [
   {
     "ContainingType": "BankingApi.Controllers.TransactionsController",
+    "Method": "ConfirmDeposit",
+    "RelativePath": "Transactions/ConfirmDeposit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deposit",
+        "Type": "BankingApi.Models.Deposit",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApi.Controllers.TransactionsController",
+    "Method": "ConfirmWithdraw",
+    "RelativePath": "Transactions/ConfirmWithdraw",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "withdraw",
+        "Type": "BankingApi.Models.Withdraw",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApi.Controllers.TransactionsController",
     "Method": "Deposit",
     "RelativePath": "Transactions/Deposit",
     "HttpMethod": "POST",

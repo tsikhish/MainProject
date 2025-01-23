@@ -30,54 +30,6 @@ namespace MvcProject.Controllers
             var currency = await _walletRepository.GetWalletCurrencyByUserIdAsync(userId);
             return Ok(new { balance, currency });
         }
-       
-        
-        [HttpGet("AdminDashboard")]
-        [Authorize("Admin")]
-        public async Task<IActionResult> AdminDashboard()
-        {
-            var transactions = await _transactionRepository.GetWithdrawTransactionsForAdmins();
-            return View(transactions);
-        }
-        //[HttpGet("Accept")]
-        //[Authorize("Admin")]
-        //public async Task<IActionResult> Accept(DepositWithdrawRequest transaction)
-        //{
-        //    try
-        //    {
-        //        if (transaction.TransactionType != TransactionType.Withdraw && transaction.Status != Status.Pending)
-        //        {
-        //            throw new Exception("You cant send request");
-        //        }
-        //       // await _walletRepository.WalletWithdraw(transaction.UserId, transaction.Amount);
-        //        await _transactionRepository.SendToBankingApi(transaction);
-        //        return RedirectToAction("TransactionHistory");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BadRequest(ex.Message);
-        //    }
-        //}
-        [HttpGet("Reject")]
-        [Authorize("Admin")]
-        public async Task<IActionResult> Reject(DepositWithdrawRequest transaction)
-        {
-            if (transaction.TransactionType == TransactionType.Withdraw && transaction.Status == Status.Pending)
-            {
-                transaction.Status = Status.Rejected;
-                await _transactionRepository.UpdateTransactionAsync(transaction);
-            }
-            return RedirectToAction("TransactionHistory");
-        }
-        //private string ComputeSHA256Hash(decimal amount, string merchantId, int transactionId, string secretKey)
-        //{
-        //    string concatenatedData = $"{amount}+{merchantId}+{transactionId}+{secretKey}";
-        //    using (var sha256 = SHA256.Create())
-        //    {
-        //        var hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(concatenatedData));
-        //        return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
-        //    }
-        //}
         public IActionResult Index()
         {
             return View();

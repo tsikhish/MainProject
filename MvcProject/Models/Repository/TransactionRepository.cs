@@ -4,8 +4,10 @@ using MvcProject.Models.IRepository;
 using MvcProject.Models.IRepository.Enum;
 using MvcProject.Models.Model;
 using Newtonsoft.Json;
+using System;
 using System.Data;
 using System.Text;
+using System.Transactions;
 
 namespace MvcProject.Models.Repository
 {
@@ -16,20 +18,16 @@ namespace MvcProject.Models.Repository
         {
             _connection = connection;
         }
-
         public async Task<int> RegisterTransactionInDepositTableAsync
                 (string userId, Status status, TransactionType transactionType, decimal amount)
         {
-            var currentAmountQuery = "SELECT CurrentBalance FROM Wallet WHERE UserId = @UserId";
-            var currentAmount = await _connection.QuerySingleOrDefaultAsync<decimal>(currentAmountQuery, new
+            if(transactionType== TransactionType.Withdraw)
             {
-                UserId = userId
-            });
-            if (currentAmount < amount)
-            {
-                throw new Exception("Amount must be less than or equal to the current wallet balance.");
+                var currentAmount = "select CurrentBalance from Wallet where UserId=@UserId";
+                var balance = await _connection.ExecuteScalarAsync<decimal>(currentAmount, new { UserId = userId });
+                if (balance < amount) throw new Exception($"{amount} should be less than currentbalance");
             }
-            var query = "EXEC AddDepositWithdraw @UserId,@Amount, @TransactionType,  @Status";
+            var query = "EXEC AddDepositWithdraw @UserId,@TransactionType, @Amount,  @Status";
             var depositWithdrawRequest = new
             {
                 UserId = userId,
@@ -41,40 +39,24 @@ namespace MvcProject.Models.Repository
             return id;
         }
 
-        public async Task RegisterTransactionInTransactionsAsync(Deposit deposit)
+        public async Task RegisterSuccessTransactionInTransactionsAsync(Deposit deposit)
         {
             var query = "Exec RegisterTransaction @UserId,@Amount,@Status";
-            var transaction = new Transactions
-            {
-                UserId = deposit.MerchantID,
-                Status = Status.Success,
-                Amount = deposit.Amount,
-            };
-        }
-         public async Task UpdateTransactionAsync(DepositWithdrawRequest transaction)
-        {
-            var query = "Update DepositWithdrawRequest set status=@Status where Id = @Id";
             await _connection.ExecuteAsync(query, new
             {
-                Status = Status.Rejected,
-                Id=transaction.Id
+                UserId = deposit.MerchantID,
+                Amount = deposit.Amount,
+                Status = Status.Success,
             });
         }
-        public async Task UpdateDepositTable(Deposit deposit)
+         
+        public async Task UpdateSuccessDepositTable(Deposit deposit)
         {
             var depositQuery = "Update DepositWithdrawRequest set status = @status where Id = @Id";
             await _connection.ExecuteAsync(depositQuery, new
             {
                 Status = Status.Success,
-                Id = deposit.DepositWithdrawId
-            });
-        }
-        public async Task GetTransactionByDepositWithdrawId(Deposit deposit)
-        {
-            var query = "Select * from DepositWithdraw where Id=@Id";
-            await _connection.ExecuteAsync(query, new
-            {
-                Id = deposit.DepositWithdrawId
+                Id = deposit.TransactionID
             });
         }
         public async Task UpdateWalletAmount(Deposit deposit)
@@ -84,7 +66,7 @@ namespace MvcProject.Models.Repository
             {
                 UserId = deposit.MerchantID
             });
-            var newBalance = oldBalance - deposit.Amount;
+            var newBalance = oldBalance + deposit.Amount;
             var query = "Update Wallet set CurrentBalance = @currentbalance where UserId=@UserId";
             await _connection.ExecuteAsync(query, new
             {
@@ -92,58 +74,99 @@ namespace MvcProject.Models.Repository
                 UserId = deposit.MerchantID
             });
         }
-        public async Task UpdateSuccessTransactionAsync(Response response)
+        public async Task UpdateSuccessWithdrawTable(Response response)
         {
-            var query = "Update Transactions set status=@Status where Id=@Id";
+            var status = "Update DepositWithdrawRequest set Status =@Status where Id=@id";
+            await _connection.ExecuteAsync(status, new {Status = Status.Success,Id=response.DepositWithdrawRequestId});
+        }
+        public async Task UpdateWalletAmount(string userID,Response response)
+        {
+
+            var oldBalanceQuery = "Select CurrentBalance from Wallet where UserId=@UserId";
+            var oldBalance = await _connection.QuerySingleOrDefaultAsync<decimal>(oldBalanceQuery, new
+            {
+                UserId = userID
+            });
+            var newBalance = oldBalance - response.Amount;
+            var query = "Update Wallet set CurrentBalance = @currentbalance where UserId=@UserId";
             await _connection.ExecuteAsync(query, new
             {
-                Id = response.DepositWithdrawRequestId,
-                Status = Status.Success,
+                CurrentBalance = newBalance,
+                UserId = userID
             });
         }
-        public async Task<Deposit>  SendToBankingApi(Deposit deposit)
+        public async Task<Response> SendWithdrawToBankingApi(Withdraw withdraw)
         {
-            if (_connection.State == ConnectionState.Closed)
+            try
             {
-                 _connection.Open();
+                using var client = new HttpClient();
+                var content = new StringContent(JsonConvert.SerializeObject(withdraw), Encoding.UTF8, "application/json");
+                var response = await client.PostAsync($"https://localhost:7133/Transactions/ConfirmWithdraw", content);
+                if (!response.IsSuccessStatusCode)
+                {
+                    var body = await response.Content.ReadAsStringAsync();
+                    throw new Exception($"Banking API returned error:{body}, {response.StatusCode} - {response.ReasonPhrase}");
+                }
+                var responseBody = await response.Content.ReadAsStringAsync();
+                var result = JsonConvert.DeserializeObject<Response>(responseBody);
+                if (result == null)
+                {
+                    throw new Exception("Failed to deserialize Banking API response.");
+                }
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Transaction failed: " + ex.Message);
             }
 
-            using (var transactionScope = _connection.BeginTransaction())
+        }
+        public async Task<Response> SendToBankingApi(Deposit deposit, string action)
+         {
+            try
             {
-                try
+                using var client = new HttpClient();
+                var content = new StringContent(JsonConvert.SerializeObject(deposit), Encoding.UTF8, "application/json");
+                var response = await client.PostAsync($"https://localhost:7133/Transactions/{action}", content);
+                if (!response.IsSuccessStatusCode)
                 {
-                    using var client = new HttpClient();
-                    var content = new StringContent(JsonConvert.SerializeObject(deposit), Encoding.UTF8, "application/json");
-                    var response = await client.PostAsync("https://localhost:7133/Transactions/Deposit", content);
-                    if (!response.IsSuccessStatusCode)
-                    {
-                        var body = await response.Content.ReadAsStringAsync();
-                        throw new Exception($"Banking API returned error:{body}, {response.StatusCode} - {response.ReasonPhrase}");
-                    }
-                    var responseBody = await response.Content.ReadAsStringAsync();
-                    var result = JsonConvert.DeserializeObject<Deposit>(responseBody);
-                    if (result == null)
-                    {
-                        throw new Exception("Failed to deserialize Banking API response.");
-                    }
-                    transactionScope.Commit();
-                    return result;
+                    var body = await response.Content.ReadAsStringAsync();
+                    throw new Exception($"Banking API returned error:{body}, {response.StatusCode} - {response.ReasonPhrase}");
                 }
-                catch (Exception ex)
+                var responseBody = await response.Content.ReadAsStringAsync();
+                var result = JsonConvert.DeserializeObject<Response>(responseBody);
+                if (result == null)
                 {
-                    transactionScope.Rollback();
-                    throw new Exception("Transaction failed: " + ex.Message);
+                    throw new Exception("Failed to deserialize Banking API response.");
                 }
-                finally
-                {
-                    if (_connection.State == ConnectionState.Open)
-                    {
-                        _connection.Close();
-                    }
-                }
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Transaction failed: " + ex.Message);
             }
         }
+        public async Task UpdateWithdrawStatus(int id, Status status)
+        {
+            var query = "update from DepositWithdrawRequest set Status=@status where id=@id";
+            await _connection.ExecuteAsync(query, new {status = status, id = id});
+        }
+        public async Task<string> GetUserIdByResponse(Response response)
+        {
+            var query = "Select Id from DepositWithdrawRequest where Id=@id";
+            var withdrawId = await _connection.QueryFirstOrDefaultAsync<int>
+                (query, new { Id = response.DepositWithdrawRequestId });
+            var userId = "select userId from DepositWithdrawRequest where Id=@id";
+            return await _connection.QueryFirstOrDefaultAsync<string>(userId, new
+            {
+                Id = withdrawId });
+        }      
         
+        public async Task<string> GetFullUsername(string userId)
+        {
+            var query = "SELECT UserName FROM dbo.AspNetUsers WHERE Id = @id";
+            return await _connection.QuerySingleOrDefaultAsync<string>(query, new { Id = userId });
+        }
         public async Task<IEnumerable<DepositWithdrawRequest>> GetTransactionByUserId(string userId)
         {
             var query = "select * from DepositWithdrawRequest where UserId=@userId";
@@ -151,26 +174,44 @@ namespace MvcProject.Models.Repository
         }
         public async Task<IEnumerable<DepositWithdrawRequest>> GetWithdrawTransactionsForAdmins()
         {
-            var query = "select d.* from DepositWithdrawRequest d" +
-                 " join TransactionHistory t on t.TransactionId = d.Id" +
-                 " where d.TransactionType = @transactiontype" +
-                 " and d.Status = @status" +
-                 " and t.SentToBankingApi = 0";
+            var query = "select * from DepositWithdrawRequest " +
+                 " where TransactionType = @transactiontype" +
+                 " and Status = @status";
             return await _connection.QueryAsync<DepositWithdrawRequest>(query,
-                new { TransactionType = TransactionType.Withdraw, Status = Status.Pending });
+                new { TransactionType = TransactionType.Withdraw, Status = Status.Pending});
 
         }
-        private async Task BoolForBankingApi(int transactionId)
+        public async Task<DepositWithdrawRequest> GetDepositWithdrawById(int id)
         {
-            var query = "INSERT INTO Transactions (Id, TransactionI, SentToBankingApi" +
-            "VALUES (@id, @transactionId, @sentToBankingApi";
-            var sent = new TransactionsHistory()
-            {
-                TransactionId = transactionId,
-                SentToBankingApi = true
-            };
-            await _connection.ExecuteAsync(query, sent);
+            var query = "Select * from DepositWithdrawRequest where id=@id";
+            return await _connection.QuerySingleOrDefaultAsync<DepositWithdrawRequest>(query, new { Id = id });
         }
 
+        public async Task<DepositWithdrawRequest> FindWithdraw(int id)
+        {
+            var query = "Select * from DepositWithdrawRequest where id=@id";
+            return await _connection.QueryFirstOrDefaultAsync<DepositWithdrawRequest>(query, new { Id = id });
+        }
+
+        public async Task UpdateRejectWithdraw(int id)
+        {
+            var depositQuery = "Update DepositWithdrawRequest set status = @status where Id = @Id";
+            await _connection.ExecuteAsync(depositQuery, new
+            {
+                Id = id,
+                Status = Status.Rejected,
+            });
+        }
+
+        public async Task RegisterRejectedTransactionInTransactionsAsync(string userId,Response response)
+        {
+            var query = "Exec RegisterTransaction @UserId,@Amount,@Status";
+            await _connection.ExecuteAsync(query, new
+            {
+                UserId = userId,
+                Amount = response.Amount,
+                Status = Status.Success,
+            });
+        }
     }
 }

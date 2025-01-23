@@ -1,8 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using MvcProject.Models;
+using MvcProject.Models.Hash;
 using MvcProject.Models.IRepository;
 using MvcProject.Models.IRepository.Enum;
 using MvcProject.Models.Model;
 using Newtonsoft.Json;
+using System.Globalization;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -11,10 +15,15 @@ namespace MvcProject.Controllers
 {
     public class TransactionsController : Controller
     {
+        private readonly string _secretKey;
         private readonly ITransactionRepository _transactionRepository;
-        public TransactionsController(ITransactionRepository transactionRepository)
+        private readonly IHash256 _hash;
+        public TransactionsController(IOptions<AppSettings> appSettings,
+            ITransactionRepository transactionRepository,IHash256 hash)
         {
+            _secretKey = appSettings.Value.SecretKey;
             _transactionRepository = transactionRepository;
+            _hash = hash;
         }
         public async Task<IActionResult> TransactionHistory()
         {
@@ -34,55 +43,31 @@ namespace MvcProject.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpGet("Withdraw")]
-        public IActionResult Withdraw() => View();
-
-        [HttpPost("Withdraw")]
-        public async Task<IActionResult> Withdraw(decimal amount)
-        {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var id = await _transactionRepository
-                .RegisterTransactionInDepositTableAsync(userId, Status.Pending, TransactionType.Withdraw, amount);
-            return RedirectToAction("TransactionHistory");
-        }
+        
         public IActionResult Deposit() => View();
-        public async Task<IActionResult> MvcDeposit(decimal amount)
+        public async Task<IActionResult> DepositResult(decimal amount)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (amount <= 0) return BadRequest("Amount must be greater than 0.");
             var depositWithdrawId = await _transactionRepository
                 .RegisterTransactionInDepositTableAsync(userId, Status.Pending, TransactionType.Deposit, amount);
-            const string secretKey = "SecretKeyForTsikhisha";
-            var hash = ComputeSHA256Hash((int)(amount * 100), userId, depositWithdrawId, secretKey);
+            var hash = _hash.ComputeSHA256Hash((int)(amount * 100), userId, depositWithdrawId, _secretKey);
             var transaction = new Deposit
             {
-                DepositWithdrawId = depositWithdrawId,
-                TransactionID = Guid.NewGuid(),
+                TransactionID = depositWithdrawId,
                 MerchantID = userId,
                 Amount = (int)(amount * 100),
                 Hash = hash,
-                Status=Status.Pending
             };
-            TempData["Transaction"] = JsonConvert.SerializeObject(transaction);
-
-            var response = await _transactionRepository.SendToBankingApi(transaction);
-            if (response.Status == Status.Success)
-            {
-                return RedirectToAction("Payment", "Callback");
-            }
-            else
-            {
-                return BadRequest("Status is rejected. Amount is odd.");
-            }
+            var response = await _transactionRepository.SendToBankingApi(transaction, "Deposit");
+            return View("DepositResult", response.PaymentUrl);
         }
-        private string ComputeSHA256Hash(int amount, string merchantId, int transactionId, string secretKey)
+        public IActionResult Withdraw() => View();
+        public async Task<IActionResult> WithdrawRequest(decimal amount)
         {
-            string concatenatedData = $"{amount}+{merchantId}+{transactionId}+{secretKey}";
-            using (var sha256 = SHA256.Create())
-            {
-                var hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(concatenatedData));
-                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
-            }
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var depositWithdrawId = await _transactionRepository
+                .RegisterTransactionInDepositTableAsync(userId, Status.Pending, TransactionType.Withdraw, amount);
+            return View();
         }
         public IActionResult Index()
         {

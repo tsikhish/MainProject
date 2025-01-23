@@ -36,6 +36,68 @@
         }
       }
     },
+    "/Transactions/ConfirmDeposit": {
+      "post": {
+        "tags": [
+          "Transactions"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Deposit"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Deposit"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Deposit"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Transactions/ConfirmWithdraw": {
+      "post": {
+        "tags": [
+          "Transactions"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Withdraw"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Withdraw"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Withdraw"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -81,13 +143,9 @@
       "Deposit": {
         "type": "object",
         "properties": {
-          "depositWithdrawId": {
+          "transactionID": {
             "type": "integer",
             "format": "int32"
-          },
-          "transactionID": {
-            "type": "string",
-            "format": "uuid"
           },
           "amount": {
             "type": "number",
@@ -135,6 +193,39 @@
           "summary": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Withdraw": {
+        "type": "object",
+        "properties": {
+          "transactionID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "merchantID": {
+            "type": "string",
+            "nullable": true
+          },
+          "usersAccountNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usersFullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "hash": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/Status"
           }
         },
         "additionalProperties": false

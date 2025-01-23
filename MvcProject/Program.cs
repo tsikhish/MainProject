@@ -6,6 +6,8 @@ using System.Data;
 using MvcProject.Seed;
 using MvcProject.Models.Repository;
 using MvcProject.Models.DbContext;
+using MvcProject.Models;
+using MvcProject.Models.Hash;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
@@ -18,10 +20,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<CasinoDbContext>();
 builder.Services.AddScoped<IDbConnection>(sp => new SqlConnection(connectionString));
-
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IWalletRepository, WalletRepository>(); 
+builder.Services.AddScoped<IWalletRepository, WalletRepository>();
+builder.Services.AddScoped<IHash256, Hash256>();
 builder.Services.AddScoped<ITransactionRepository,TransactionRepository>();
 builder.Services.AddHttpClient();
 var app = builder.Build();
@@ -41,12 +44,14 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 app.MapRazorPages();
 
 app.Run();
