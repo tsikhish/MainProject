@@ -20,6 +20,9 @@
                 <input type="hidden" name="UserId" value="@Model.UserId" />
                 <button type="submit" class="btn btn-primary w-100">Complete Payment</button>
             </form>
+            <form asp-action="Deposit" asp-controller="Transactions" method="get">
+                <button type="submit" class="btn btn-secondary w-100">Exit</button>
+            </form>
         </div>
     </div>
 </div>

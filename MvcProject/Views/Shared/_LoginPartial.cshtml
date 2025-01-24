@@ -6,19 +6,38 @@
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item">
+        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Transactions" asp-action="Withdraw">Withdraw</a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link text-dark" asp-controller="Transactions" asp-action="Deposit">Deposit</a>
     </li>
     <li class="nav-item">
-        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+        <a class="nav-link text-dark" asp-controller="Transactions" asp-action="TransactionHistoryPage">Transaction History</a>
     </li>
-        <li class="nav-item">
-            <span id="wallet-balance" class="nav-link">Balance: Loading...</span>
-        </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Wallet
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+                <a class="dropdown-item">Balance: <span id="wallet-balance">Loading...</span></a>
+            </li>
+        </ul>
+    </li>
     <li class="nav-item">
         <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
             <button id="logout" type="submit" class="nav-link btn btn-link text-dark border-0">Logout</button>
         </form>
     </li>
+    @if (User.IsInRole("Admin"))
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-controller="Admin" asp-action="AdminDashboard">Admin Dashboard</a>
+        </li>
+    }
 }
 else
 {

@@ -21,7 +21,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MvcProject.Models;
-using MvcProject.Models.IRepository;
+using MvcProject.Models.Repository.IRepository;
 
 namespace MvcProject.Areas.Identity.Pages.Account
 {

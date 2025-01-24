@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MvcProject.Models;
 using MvcProject.Models.Hash;
-using MvcProject.Models.IRepository;
-using MvcProject.Models.IRepository.Enum;
 using MvcProject.Models.Model;
+using MvcProject.Models.Model.DTO;
+using MvcProject.Models.Repository.IRepository;
+using MvcProject.Models.Repository.IRepository.Enum;
 using Newtonsoft.Json;
 using System.Globalization;
 using System.Security.Claims;
@@ -15,59 +17,71 @@ namespace MvcProject.Controllers
 {
     public class TransactionsController : Controller
     {
-        private readonly string _secretKey;
         private readonly ITransactionRepository _transactionRepository;
-        private readonly IHash256 _hash;
+        private readonly IDepositRepository _depositRepository;
         public TransactionsController(IOptions<AppSettings> appSettings,
-            ITransactionRepository transactionRepository,IHash256 hash)
+            ITransactionRepository transactionRepository, IDepositRepository depositRepository)
         {
-            _secretKey = appSettings.Value.SecretKey;
             _transactionRepository = transactionRepository;
-            _hash = hash;
+            _depositRepository = depositRepository;
         }
+        [Authorize]
+        public IActionResult TransactionHistoryPage()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> TransactionHistory()
         {
             try
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 if (userId == null) return Unauthorized();
-                var transaction = await _transactionRepository.GetTransactionByUserId(userId);
-                if (transaction == null || !transaction.Any())
-                {
-                    ViewBag.Message = "No transactions found.";
-                }
-                return View(transaction);
+
+                var transactions = await _transactionRepository.GetTransactionByUserId(userId);
+               
+                return Json(new { data=transactions });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
-        
+
         public IActionResult Deposit() => View();
-        public async Task<IActionResult> DepositResult(decimal amount)
+        [HttpPost]
+        [Route("Transactions/DepositResult")]
+        public async Task<IActionResult> DepositResult([FromBody] DepositRequestDTO request)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var depositWithdrawId = await _transactionRepository
-                .RegisterTransactionInDepositTableAsync(userId, Status.Pending, TransactionType.Deposit, amount);
-            var hash = _hash.ComputeSHA256Hash((int)(amount * 100), userId, depositWithdrawId, _secretKey);
-            var transaction = new Deposit
+            try
             {
-                TransactionID = depositWithdrawId,
-                MerchantID = userId,
-                Amount = (int)(amount * 100),
-                Hash = hash,
-            };
-            var response = await _transactionRepository.SendToBankingApi(transaction, "Deposit");
-            return View("DepositResult", response.PaymentUrl);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var transaction = await _depositRepository.ValidateDeposit(userId,request);
+                var response = await _depositRepository.SendToBankingApi(transaction, "Deposit");
+                if (response == null)
+                    return BadRequest(new { success = false, message = "Failed to process the transaction with the banking API." });
+                return Ok(new { success = true, paymentUrl = response.PaymentUrl });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = ex.Message });
+            }
         }
         public IActionResult Withdraw() => View();
+
         public async Task<IActionResult> WithdrawRequest(decimal amount)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var depositWithdrawId = await _transactionRepository
-                .RegisterTransactionInDepositTableAsync(userId, Status.Pending, TransactionType.Withdraw, amount);
-            return View();
+            try
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var depositWithdrawId = await _transactionRepository
+                    .RegisterDepositWithdraw(userId, Status.Pending, TransactionType.Withdraw, amount);
+                return View();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         public IActionResult Index()
         {

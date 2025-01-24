@@ -1,4 +1,4 @@
-﻿namespace MvcProject.Models.IRepository.Enum
+﻿namespace MvcProject.Models.Repository.IRepository.Enum
 {
     public enum Currency
     {

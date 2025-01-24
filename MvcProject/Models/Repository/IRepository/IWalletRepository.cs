@@ -1,11 +1,13 @@
-﻿namespace MvcProject.Models.IRepository
+﻿using MvcProject.Models.Model;
+
+namespace MvcProject.Models.Repository.IRepository
 {
     public interface IWalletRepository
     {
         Task<decimal> GetWalletBalanceByUserIdAsync(string userId);
         Task<int> GetWalletCurrencyByUserIdAsync(string userId);
         Task CreateWalletByUserIdAsync(string userId);
-        //Task WalletDeposit(string userId,decimal amount);
-        //Task WalletWithdraw(string userId,decimal amount);
+        Task UpdateWalletAmount(Deposit deposit);
+        Task UpdateWalletAmount(string userID, Response response);
     }
 }

@@ -4,6 +4,12 @@
     ViewData["Title"] = "Admin Dashboard";
 }
 <h2>Admin Dashboard</h2>
+@if (TempData["RejectMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["RejectMessage"]
+    </div>
+}
 <table>
     <thead>
         <tr>

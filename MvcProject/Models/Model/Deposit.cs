@@ -1,5 +1,4 @@
-﻿using MvcProject.Models.IRepository.Enum;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace MvcProject.Models.Model
 {

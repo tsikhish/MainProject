@@ -1,8 +1,10 @@
 ﻿using Dapper;
 using Microsoft.EntityFrameworkCore;
-using MvcProject.Models.IRepository;
-using MvcProject.Models.IRepository.Enum;
+using MvcProject.Models.Model;
+using MvcProject.Models.Repository.IRepository;
+using Newtonsoft.Json;
 using System.Data;
+using System.Text;
 namespace MvcProject.Models.Repository
 {
     public class WalletRepository : IWalletRepository
@@ -29,40 +31,38 @@ namespace MvcProject.Models.Repository
 
         public async Task<int> GetWalletCurrencyByUserIdAsync(string userId)
         {
-            var query = "Select CurrenctBalance from Wallet";
+            var query = "Select Currency from Wallet";
             return await _dbConnection.QueryFirstOrDefaultAsync<int>(query, new { UserId = userId });
         }
 
-        //public async Task WalletWithdraw(string userId, decimal amount)
-        //{
-        //    var currentBalance = await GetWalletBalanceByUserIdAsync(userId);
-        //    var newBalance = currentBalance + amount;
-        //    var query = $"update wallet set CurrentBalance = @newBalance where UserId=@userId "; 
-        //    await _dbConnection.ExecuteAsync(query, new 
-        //    {
-        //        UserId=userId,
-        //        newBalance = newBalance,
-        //    });
-        //}
-
-        //public async Task WalletDeposit(string userId, decimal amount)
-        //{
-        //    var currentBalance = await GetWalletBalanceByUserIdAsync(userId);
-        //    if (currentBalance > amount)
-        //    {
-        //        var newBalance = currentBalance - amount;
-        //        var query = $"update wallet set CurrentBalance = @newBalance where UserId=@userId ";
-        //        await _dbConnection.ExecuteAsync(query, new
-        //        {
-        //            userId = userId,
-        //            newBalance = newBalance,
-        //        });
-        //    }
-        //}
         public async Task<decimal> GetWalletBalanceByUserIdAsync(string userId)
         {
             var query = "Select CurrentBalance from Wallet where UserId=@userId";
             return await _dbConnection.QueryFirstOrDefaultAsync<decimal>(query, new { UserId = userId });
         }
+        public async Task UpdateWalletAmount(Deposit deposit)
+        {
+            var oldBalance = await GetWalletBalanceByUserIdAsync(deposit.MerchantID);
+            var newBalance = oldBalance + deposit.Amount;
+            var query = "Update Wallet set CurrentBalance = @currentbalance where UserId=@UserId";
+            await _dbConnection.ExecuteAsync(query, new
+            {
+                CurrentBalance = newBalance,
+                UserId = deposit.MerchantID
+            });
+        }
+        public async Task UpdateWalletAmount(string userID, Response response)
+        {
+            var oldBalance = await GetWalletBalanceByUserIdAsync(userID);
+            var newBalance = oldBalance - response.Amount;
+            var query = "Update Wallet set CurrentBalance = @currentbalance where UserId=@UserId";
+            await _dbConnection.ExecuteAsync(query, new
+            {
+                CurrentBalance = newBalance,
+                UserId = userID
+            });
+        }
+
     }
+
 }

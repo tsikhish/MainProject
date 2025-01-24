@@ -1,4 +1,4 @@
-﻿using MvcProject.Models.IRepository.Enum;
+﻿using MvcProject.Models.Repository.IRepository.Enum;
 using System.ComponentModel.DataAnnotations;
 
 namespace MvcProject.Models.Model

@@ -1,9 +1,9 @@
 ﻿using Azure;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MvcProject.Models.IRepository;
-using MvcProject.Models.IRepository.Enum;
 using MvcProject.Models.Model;
+using MvcProject.Models.Repository.IRepository;
+using MvcProject.Models.Repository.IRepository.Enum;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -19,20 +19,44 @@ namespace MvcProject.Controllers
             _walletRepository = walletRepository;
             _transactionRepository = transactionRepository;
         }
-        [HttpGet("balance")]
-
-        public async Task<IActionResult> GetWalletBalance()
-        {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
-                return Unauthorized();
-            var balance = await _walletRepository.GetWalletBalanceByUserIdAsync(userId);
-            var currency = await _walletRepository.GetWalletCurrencyByUserIdAsync(userId);
-            return Ok(new { balance, currency });
-        }
         public IActionResult Index()
         {
             return View();
         }
+        [HttpGet]
+        [Route("Wallet/GetWalletBalance")]
+        public async Task<IActionResult> GetWalletBalance()
+        {
+            try
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (string.IsNullOrEmpty(userId))
+                    return Unauthorized(new { success = false, message = "User not authenticated." });
+                var balance = await _walletRepository.GetWalletBalanceByUserIdAsync(userId);
+                var currency = await _walletRepository.GetWalletCurrencyByUserIdAsync(userId);
+
+                if (balance == null || currency == null)
+                    return NotFound(new { success = false, message = "Wallet balance or currency not found." });
+                var currencySymbol = GetCurrencySymbol(currency);
+
+                return Ok(new { success = true, balance, currency = currencySymbol });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = ex.Message });
+            }
+        }
+        private string GetCurrencySymbol(int currencyId)
+        {
+            return currencyId switch
+            {
+                (int)Currency.EUR => "€",
+                (int)Currency.USD => "$",
+                (int)Currency.GEL => "₾",
+                _ => string.Empty 
+            };
+        }
+
+
     }
 }

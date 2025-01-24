@@ -21,72 +21,99 @@ namespace BankingApi.Controllers
         [HttpPost("Deposit")]
         public async Task<IActionResult> Deposit([FromBody] Deposit deposit)
         {
-            var hash = ComputeSHA256Hash((int)(deposit.Amount), deposit.MerchantID, deposit.TransactionID, _secretKey);
-            if (hash != deposit.Hash)
+            try
             {
-                return BadRequest("Incorrect hash");
+                var hash = ComputeSHA256Hash((int)(deposit.Amount), deposit.MerchantID, deposit.TransactionID, _secretKey);
+                if (hash != deposit.Hash)
+                {
+                    return BadRequest("Incorrect hash");
+                }
+                string paymentUrl = $"https://localhost:7116/Callback/{deposit.TransactionID}/{(int)(deposit.Amount)}";
+                return Ok(new { Status = 1, PaymentUrl = paymentUrl });
             }
-            string paymentUrl = $"https://localhost:7116/Callback/{deposit.TransactionID}/{(int)(deposit.Amount)}";
-            return Ok(new {Status=1,PaymentUrl=paymentUrl});
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         [HttpPost("ConfirmDeposit")]
         public async Task<IActionResult> ConfirmDeposit([FromBody] Deposit deposit)
         {
-            var hash = ComputeSHA256Hash((int)(deposit.Amount), deposit.MerchantID, deposit.TransactionID, _secretKey);
-            if (hash != deposit.Hash)
-                return BadRequest("Incorrect hash");
-            bool isAmountEven = (int)(deposit.Amount) % 2 == 0;
-            var status = isAmountEven ? "Success" : "Rejected";
-            if (status == "Success")
-                return Ok(new
-                {
-                    Status = Status.Success,
-                    Amount = deposit.Amount,
-                    TransactionID = deposit.TransactionID,
-                });
-            else
-                return Ok(
-                    new
+            try
+            {
+                var hash = ComputeSHA256Hash((int)(deposit.Amount), deposit.MerchantID, deposit.TransactionID, _secretKey);
+                if (hash != deposit.Hash)
+                    return BadRequest("Incorrect hash");
+                bool isAmountEven = (deposit.Amount / 100) % 2 == 0;
+                var status = isAmountEven ? "Success" : "Rejected";
+                if (status == "Success")
+                    return Ok(new Response
                     {
-                        Status = Status.Rejected,
+                        Status = Status.Success,
                         Amount = deposit.Amount,
-                        TransactionID = deposit.TransactionID
+                        DepositWithdrawRequestId = deposit.TransactionID,
                     });
+                else
+                    return Ok(
+                        new Response
+                        {
+                            Status = Status.Rejected,
+                            Amount = deposit.Amount,
+                            DepositWithdrawRequestId = deposit.TransactionID
+                        });
+            }catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         [HttpPost("ConfirmWithdraw")]
         public async Task<IActionResult> ConfirmWithdraw([FromBody] Withdraw withdraw)
         {
-            var hash = ComputeSHA256Hash((int)(withdraw.Amount), withdraw.MerchantID, withdraw.TransactionID,withdraw.UsersFullName, _secretKey);
-            if (hash != withdraw.Hash)
-                return BadRequest("Incorrect hash");
-            bool isAmountEven = (int)(withdraw.Amount) % 2 == 0;
-            var status = isAmountEven ? "Success" : "Rejected";
-            var result = isAmountEven ? Status.Success : Status.Rejected;
-            if (status == "Success")
-                await SendResultToMvcProject(withdraw,Status.Success);
-            else
-                await SendResultToMvcProject(withdraw, Status.Rejected);
-            return Ok(new Response
+            try
             {
-                Status = result,
-                Amount = withdraw.Amount,
-                DepositWithdrawRequestId = withdraw.TransactionID,
-            });
+                var hash = ComputeSHA256Hash((int)(withdraw.Amount), withdraw.MerchantID, withdraw.TransactionID, withdraw.UsersFullName, _secretKey);
+                if (hash != withdraw.Hash)
+                    return BadRequest("Incorrect hash");
+                bool isAmountEven = withdraw.Amount / 100 % 2 == 0;
+                var status = isAmountEven ? "Success" : "Rejected";
+                var result = isAmountEven ? Status.Success : Status.Rejected;
+                if (status == "Success")
+                    await SendResultToMvcProject(withdraw, Status.Success);
+                else
+                    await SendResultToMvcProject(withdraw, Status.Rejected);
+                return Ok(new Response
+                {
+                    Status = result,
+                    Amount = withdraw.Amount,
+                    DepositWithdrawRequestId = withdraw.TransactionID,
+                });
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         private async Task SendResultToMvcProject(Withdraw withdraw, Status status)
         {
-            using var client = new HttpClient();
-            var request = new Response
+            try
             {
-                DepositWithdrawRequestId = withdraw.TransactionID,
-                Amount = withdraw.Amount,
-                Status = status
-            };
-            var content = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
-            var response = await client.PostAsync("https://localhost:7116/Callback/SuccessWithdraw", content);
-            if (!response.IsSuccessStatusCode)
+                using var client = new HttpClient();
+                var request = new Response
+                {
+                    DepositWithdrawRequestId = withdraw.TransactionID,
+                    Amount = withdraw.Amount,
+                    Status = status
+                };
+                var content = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
+                var response = await client.PostAsync("https://localhost:7116/Callback/SuccessWithdraw", content);
+                if (!response.IsSuccessStatusCode)
+                {
+                    throw new Exception("Failed to notify MVC project about the transaction result.");
+                }
+            }
+            catch(Exception ex)
             {
-                throw new Exception("Failed to notify MVC project about the transaction result.");
+                throw new Exception(ex.Message);
             }
         }
 
