@@ -47,6 +47,28 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/walletBalance.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        $(document).ready(function () {
+            function updateWalletBalance() {
+                $.ajax({
+                    url: '/Wallet/GetWalletBalance',
+                    type: 'GET',
+                    success: function (data) {
+                        if (data.success) {
+                            $('#wallet-balance').text(`${data.balance} ${data.currency}`);
+                        } else {
+                            $('#wallet-balance').text('Error fetching balance');
+                        }
+                    },
+                    error: function () {
+                        $('#wallet-balance').text('Error fetching balance');
+                    }
+                });
+            }
+            updateWalletBalance();
+            setInterval(updateWalletBalance, 30000);
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

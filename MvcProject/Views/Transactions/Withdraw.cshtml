@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Withdraw";
+}
+<h2>Withdraw</h2>
+<form method="post" action="WithdrawRequest">
+    <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="number" step="0.01" class="form-control" id="amount" name="amount" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Withdraw</button>
+</form>

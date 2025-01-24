@@ -17,10 +17,6 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\js\\walletBalance.js",
-      "PackagePath": "staticwebassets\\js\\walletBalance.js"
-    },
-    {
       "Id": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Deposit";
+}
+
+<h2>Make a Deposit</h2>
+<form id="deposit-form">
+    <label for="amount">Enter Amount:</label>
+    <input type="number" id="amount" class="form-control" placeholder="Enter amount" required />
+    <button type="submit" class="btn btn-primary mt-2">Submit Deposit</button>
+</form>
+<div id="result" class="mt-3 text-danger"></div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+               $(document).ready(function () {
+            $('#deposit-form').on("submit", function (e) {
+                e.preventDefault();
+                var amount = $('#amount').val();
+                if (!amount || parseFloat(amount) <= 0) {
+                    $('#result').text('Please enter a valid amount.');
+                    return;
+                }
+                $.ajax({
+                    url: '@Url.Action("DepositResult", "Transactions")',
+                    type: 'POST',
+                    contentType: 'application/json', 
+                    data: JSON.stringify({ amount: parseFloat(amount) }),
+                    success: function (response) {
+                        if (response.success && response.paymentUrl) {
+                            window.location.href = response.paymentUrl;
+                        } else {
+                            $('#result').text(response.message || 'An unexpected error occurred.');
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error:", error, "XHR:", xhr, "Status:", status);
+                        $('#result').text(
+                            xhr.responseJSON?.message ||
+                            "Server cannot respond right now. Please try again later."
+                        );
+                    }
+                });
+            });
+        });
+
+    </script>
+}

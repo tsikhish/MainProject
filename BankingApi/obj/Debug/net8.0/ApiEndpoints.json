@@ -1,0 +1,71 @@
+[
+  {
+    "ContainingType": "BankingApi.Controllers.TransactionsController",
+    "Method": "ConfirmDeposit",
+    "RelativePath": "Transactions/ConfirmDeposit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deposit",
+        "Type": "BankingApi.Models.Deposit",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApi.Controllers.TransactionsController",
+    "Method": "ConfirmWithdraw",
+    "RelativePath": "Transactions/ConfirmWithdraw",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "withdraw",
+        "Type": "BankingApi.Models.Withdraw",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApi.Controllers.TransactionsController",
+    "Method": "Deposit",
+    "RelativePath": "Transactions/Deposit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deposit",
+        "Type": "BankingApi.Models.Deposit",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApi.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BankingApi.WeatherForecast, BankingApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

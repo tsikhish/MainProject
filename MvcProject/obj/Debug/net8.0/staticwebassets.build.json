@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0rDdo3t/etPzu6AZa0yBpsjYKArMTgVsqG9y1/yvsxs=",
+  "Hash": "vTXcIY1q+wyy5w+RFowrNlk8fBzGafDMiBYv2HAY9Ik=",
   "Source": "MvcProject",
   "BasePath": "_content/MvcProject",
   "Mode": "Default",
@@ -1380,27 +1380,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
-    },
-    {
-      "Identity": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\js\\walletBalance.js",
-      "SourceId": "MvcProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\",
-      "BasePath": "_content/MvcProject",
-      "RelativePath": "js/walletBalance#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "u5b6e35fw8",
-      "Integrity": "AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\walletBalance.js"
     },
     {
       "Identity": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -5064,88 +5043,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "js/walletBalance.js",
-      "AssetFile": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\js\\walletBalance.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1281"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 11 Jan 2025 09:20:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/walletBalance.u5b6e35fw8.js",
-      "AssetFile": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\wwwroot\\js\\walletBalance.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1281"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 11 Jan 2025 09:20:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u5b6e35fw8"
-        },
-        {
-          "Name": "label",
-          "Value": "js/walletBalance.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-AkjMdsMMTeh7RcUs1zurUJD+5FSZGvdsfJ9dPYIY/nQ="
         }
       ]
     },

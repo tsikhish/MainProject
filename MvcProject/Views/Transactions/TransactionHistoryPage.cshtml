@@ -1,0 +1,67 @@
+﻿@using MvcProject.Models.Model
+@model IEnumerable<Transactions>
+@{
+    ViewData["Title"] = "Transaction History";
+}
+<h2>Transaction History</h2>
+<div class="mb-3">
+    <label for="minDate">From:</label>
+    <input type="datetime-local" id="minDate" class="form-control" style="display: inline-block; width: auto;" />
+    <label for="maxDate" class="ml-2">To:</label>
+    <input type="datetime-local" id="maxDate" class="form-control" style="display: inline-block; width: auto;" />
+</div>
+<table id="transactionsTable" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>User ID</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"></script>
+
+    <script>
+        $(document).ready(function () {
+            var table = $("#transactionsTable").DataTable({
+                "ajax": {
+                    "url": "/transactions/transactionHistory",
+                    "type": "GET",
+                    "datatype": "json",
+                    "dataSrc": "data"
+                },
+                "columns": [
+                    { "data": "id" },
+                    { "data": "userId" },
+                    { "data": "amount" },
+                    { "data": "status" },
+                    { "data": "createdAt" }
+                ]
+            });
+
+            $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+                var min = new Date($("#minDate").val());
+                var max = new Date($("#maxDate").val());
+                var createdAt = new Date(data[4]); 
+                if (
+                    (isNaN(min.getTime()) || createdAt >= min) &&
+                    (isNaN(max.getTime()) || createdAt <= max)
+                ) {
+                    return true;
+                }
+                return false;
+            });
+            $("#minDate, #maxDate").on("change", function () {
+                table.draw();
+            });
+        });
+    </script>
+}
+
