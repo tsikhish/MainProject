@@ -1,11 +1,43 @@
 ﻿@{
     ViewData["Title"] = "Withdraw";
 }
-<h2>Withdraw</h2>
-<form method="post" action="WithdrawRequest">
-    <div class="form-group">
-        <label for="amount">Amount</label>
-        <input type="number" step="0.01" class="form-control" id="amount" name="amount" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Withdraw</button>
+
+<h2>Make a Withdraw</h2>
+<form id="withdraw-form">
+    <label for="amount">Enter Amount:</label>
+    <input type="number" id="amount" class="form-control" placeholder="Enter amount" step="any" min="0" required />
+    <button type="submit" class="btn btn-primary mt-2">Submit Withdraw</button>
 </form>
+<div id="result" class="mt-3 text-danger"></div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#withdraw-form').on("submit", function (e) {
+                e.preventDefault();
+                var amount = $('#amount').val();
+                if (!amount || parseFloat(amount) <= 0) {
+                    $('#result').text('Please enter a valid amount.');
+                    return;
+                }
+                $.ajax({
+                    url: '@Url.Action("WithdrawRequest", "Transactions")',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ amount: parseFloat(amount) }),
+                    success: function () {
+                        $('body').html('<div class="text-center mt-5"><h2 class="text-success">Your request was sent to Admin. Please wait for the answer.</h2></div>');
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error:", error, "XHR:", xhr, "Status:", status);
+                        $('#result').text(
+                            xhr.responseJSON?.message ||
+                            "Server cannot respond right now. Please try again later."
+                        );
+                    }
+                });
+            });
+        });
+    </script>
+}

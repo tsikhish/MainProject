@@ -69,18 +69,18 @@ namespace MvcProject.Controllers
         }
         public IActionResult Withdraw() => View();
 
-        public async Task<IActionResult> WithdrawRequest(decimal amount)
+        public async Task<IActionResult> WithdrawRequest([FromBody] DepositRequestDTO request)
         {
             try
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 var depositWithdrawId = await _transactionRepository
-                    .RegisterDepositWithdraw(userId, Status.Pending, TransactionType.Withdraw, amount);
-                return View();
+                    .RegisterDepositWithdraw(userId, Status.Pending, TransactionType.Withdraw, request.Amount);
+                return Ok(new { Message = "Request sent successfully" });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { Message = ex.Message });
             }
         }
         public IActionResult Index()

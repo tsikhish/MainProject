@@ -59,8 +59,8 @@ namespace MvcProject.Controllers
                 var hash = _hash.ComputeSHA256Hash((int)(deposit.Amount), deposit.MerchantID, deposit.TransactionID, _secretKey);
                 deposit.Hash = hash;
                 var response =await _depositRepository.SendToBankingApi(deposit, "ConfirmDeposit"); 
-                deposit.Amount = (decimal)(deposit.Amount / 100);
-                response.Amount = (decimal)(response.Amount / 100);
+                deposit.Amount = (decimal)(deposit.Amount / 100m);
+                response.Amount = (decimal)(response.Amount / 100m);
                 await _transactionRepository.RegisterTransactionInTransactionsAsync(deposit.MerchantID,response);
                 await _transactionRepository.UpdateStatus(deposit.TransactionID, response.Status);
                 if (response.Status == Status.Success)
