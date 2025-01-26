@@ -74,10 +74,9 @@ namespace BankingApi.Controllers
                 var hash = ComputeSHA256Hash((int)(withdraw.Amount), withdraw.MerchantID, withdraw.TransactionID, withdraw.UsersFullName, _secretKey);
                 if (hash != withdraw.Hash)
                     return BadRequest("Incorrect hash");
-                bool isAmountEven = withdraw.Amount / 100 % 2 == 0;
-                var status = isAmountEven ? "Success" : "Rejected";
+                bool isAmountEven = (withdraw.Amount / 100) % 2 == 0;
                 var result = isAmountEven ? Status.Success : Status.Rejected;
-                if (status == "Success")
+                if (result == Status.Success)
                     await SendResultToMvcProject(withdraw, Status.Success);
                 else
                     await SendResultToMvcProject(withdraw, Status.Rejected);

@@ -71,7 +71,7 @@ namespace MvcProject.Controllers
                     UsersFullName = usersFullName
                 };
                 var response = await _transactionRepository.SendWithdrawToBankingApi(transaction);
-                return Ok($"{response.Status} was successfully saved");
+                return View(response);
             }
             catch (Exception ex)
             {

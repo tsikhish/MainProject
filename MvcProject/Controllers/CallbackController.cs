@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace MvcProject.Controllers
 {
@@ -74,23 +75,39 @@ namespace MvcProject.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> SuccessWithdraw([FromBody]Response response) {
-        try
+        public async Task<IActionResult> SuccessWithdraw([FromBody] Response response)
         {
-            var userId = await _depositRepository.GetUserIdByResponse(response);
-            response.Amount = (decimal)(response.Amount / 100);
-            await _transactionRepository.RegisterTransactionInTransactionsAsync(userId, response);
-            await _transactionRepository.UpdateStatus(response.DepositWithdrawRequestId,response.Status);
-            if (response.Status == Status.Success)
+            try
             {
-                await _walletRepository.UpdateWalletAmount(userId, response);
+                if (response == null || !ModelState.IsValid)
+                {
+                    return BadRequest("Invalid transaction data.");
+                }
+
+                if (!Enum.IsDefined(typeof(Status), response.Status))
+                {
+                    return BadRequest("Invalid transaction status.");
+                }
+                var userId = await _depositRepository.GetUserIdByResponse(response);
+                response.Amount = (decimal)(response.Amount / 100m);
+                using (var transaction = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
+                {
+                    await _transactionRepository.RegisterTransactionInTransactionsAsync(userId, response);
+                    await _transactionRepository.UpdateStatus(response.DepositWithdrawRequestId, response.Status);
+
+                    if (response.Status == Status.Success)
+                    {
+                        await _walletRepository.UpdateWalletAmount(userId, response);
+                    }
+
+                    transaction.Complete();
+                }
+                return View(response);
             }
-            return View(response.Status);
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
-        catch (Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
-    }
     }
 }

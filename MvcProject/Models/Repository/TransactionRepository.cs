@@ -30,10 +30,11 @@ namespace MvcProject.Models.Repository
                     if (balance < amount)
                         throw new Exception($"{amount} should be less than the current balance.");
                 }
-                var statusUserIdQuery = "SELECT Status FROM DepositWithdrawRequest WHERE UserId = @UserId";
-                var currentStatus = await _connection.QueryFirstOrDefaultAsync<int>(statusUserIdQuery, new { UserId = userId });
-                if (currentStatus == 1)
-                    throw new Exception("This userId has already sent a request. Please wait for results.");
+                var pendingRequestsQuery = "SELECT COUNT(*) FROM DepositWithdrawRequest WHERE UserId = @UserId AND Status = @PendingStatus";
+                var pendingRequestsCount = await _connection.ExecuteScalarAsync<int>(pendingRequestsQuery, new { UserId = userId, PendingStatus = Status.Pending });
+
+                if (pendingRequestsCount > 0)
+                    throw new Exception("This user has already sent a pending request. Please wait for results.");
                 var query = "EXEC AddDepositWithdraw @UserId, @TransactionType, @Amount, @Status";
                 var depositWithdrawRequest = new
                 {

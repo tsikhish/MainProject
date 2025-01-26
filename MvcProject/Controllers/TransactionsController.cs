@@ -80,7 +80,7 @@ namespace MvcProject.Controllers
             }
             catch(Exception ex)
             {
-                throw new Exception(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
         public IActionResult Index()
