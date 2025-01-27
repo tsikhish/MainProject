@@ -20,15 +20,18 @@ namespace MvcProject.Models.Repository
         private readonly ITransactionRepository _transactionRepository;
         private readonly IHash256 _hash;
         private readonly string _secretKey;
-
+        private readonly string _merchantId;
+        private readonly string _ApiUrl;
         public DepositRepository(IOptions<AppSettings> appSettings, IHash256 hash, ITransactionRepository transactionRepository,IDbConnection connection)
         {
+            _merchantId = appSettings.Value.MerchantID;
+            _ApiUrl = appSettings.Value.ApiUrl;
             _secretKey = appSettings.Value.SecretKey;
             _hash = hash;
             _transactionRepository = transactionRepository;
             _connection = connection;
         }
-        public async Task<Deposit> ValidateDeposit(string userId,DepositRequestDTO request)
+        public async Task<DepositWithdrawRequest> ValidateDeposit(string userId,DepositRequestDTO request)
         {
             if (request.Amount <= 0)
                 throw new Exception("Amount must be greater than 0.");
@@ -41,14 +44,10 @@ namespace MvcProject.Models.Repository
 
             if (depositWithdrawId == null)
                 throw new Exception("Failed to register the deposit transaction.");
-
-            var hash = _hash.ComputeSHA256Hash((int)(request.Amount * 100), userId, depositWithdrawId, _secretKey);
-            return new Deposit
+            return new DepositWithdrawRequest
             {
-                TransactionID = depositWithdrawId,
-                MerchantID = userId,
-                Amount = (int)(request.Amount * 100), // Amount in cents
-                Hash = hash,
+                Id = depositWithdrawId,
+                Amount = request.Amount,
             };
         }
         public async Task<string> GetUserIdByResponse(Response response)
@@ -62,13 +61,22 @@ namespace MvcProject.Models.Repository
                 Id = withdrawId
             });
         }
-        public async Task<Response> SendToBankingApi(Deposit deposit, string action)
+        public async Task<Response> SendToBankingApi(DepositWithdrawRequest deposit, string action)
         {
             try
             {
+                var hash = _hash.ComputeSHA256Hash((int)(deposit.Amount * 100),
+                    _merchantId, deposit.Id, _secretKey);
+                var request = new
+                {
+                    TransactionID = deposit.Id,
+                    MerchantID = _merchantId,
+                    Amount = deposit.Amount * 100,
+                    Hash = hash,
+                };
                 using var client = new HttpClient();
-                var content = new StringContent(JsonConvert.SerializeObject(deposit), Encoding.UTF8, "application/json");
-                var response = await client.PostAsync($"https://localhost:7133/Transactions/{action}", content);
+                var content = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
+                var response = await client.PostAsync($"{_ApiUrl}/{action}", content);
                 if (!response.IsSuccessStatusCode)
                 {
                     var body = await response.Content.ReadAsStringAsync();

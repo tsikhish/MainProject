@@ -6,7 +6,7 @@ namespace MvcProject.Models.Repository.IRepository
     public interface IDepositRepository
     {
         Task<string> GetUserIdByResponse(Response response);
-        Task<Response> SendToBankingApi(Deposit deposit, string action);
-        Task<Deposit> ValidateDeposit(string userId, DepositRequestDTO request);
+        Task<Response> SendToBankingApi(DepositWithdrawRequest deposit, string action);
+        Task<DepositWithdrawRequest> ValidateDeposit(string userId, DepositRequestDTO request);
     }
 }

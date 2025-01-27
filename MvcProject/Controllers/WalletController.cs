@@ -1,13 +1,7 @@
-﻿using Azure;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using MvcProject.Models.Model;
+﻿using Microsoft.AspNetCore.Mvc;
 using MvcProject.Models.Repository.IRepository;
 using MvcProject.Models.Repository.IRepository.Enum;
 using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
-
 namespace MvcProject.Controllers
 {
     public class WalletController : Controller

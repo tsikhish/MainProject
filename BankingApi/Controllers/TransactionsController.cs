@@ -14,26 +14,30 @@ namespace BankingApi.Controllers
     public class TransactionsController : Controller
     {
         private readonly string _secretKey;
+        private readonly string _merchantId;
+        private readonly string _apiUrl;
         public TransactionsController(IOptions<AppSettings> appSettings)
         {
             _secretKey = appSettings.Value.SecretKey;
+            _merchantId = appSettings.Value.MerchantID;
+            _apiUrl = appSettings.Value.ApiUrl;
         }
         [HttpPost("Deposit")]
         public async Task<IActionResult> Deposit([FromBody] Deposit deposit)
         {
             try
             {
-                var hash = ComputeSHA256Hash((int)(deposit.Amount), deposit.MerchantID, deposit.TransactionID, _secretKey);
+                var hash = ComputeSHA256Hash((int)(deposit.Amount), _merchantId, deposit.TransactionID, _secretKey);
                 if (hash != deposit.Hash)
                 {
                     return BadRequest("Incorrect hash");
                 }
-                string paymentUrl = $"https://localhost:7116/Callback/{deposit.TransactionID}/{(int)(deposit.Amount)}";
+                string paymentUrl = $"{_apiUrl}/{deposit.TransactionID}/{(int)(deposit.Amount)}";
                 return Ok(new { Status = 1, PaymentUrl = paymentUrl });
             }
             catch(Exception ex)
             {
-                throw new Exception(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
         [HttpPost("ConfirmDeposit")]
@@ -41,7 +45,7 @@ namespace BankingApi.Controllers
         {
             try
             {
-                var hash = ComputeSHA256Hash((int)(deposit.Amount), deposit.MerchantID, deposit.TransactionID, _secretKey);
+                var hash = ComputeSHA256Hash((int)(deposit.Amount), _merchantId, deposit.TransactionID, _secretKey);
                 if (hash != deposit.Hash)
                     return BadRequest("Incorrect hash");
                 bool isAmountEven = (deposit.Amount / 100) % 2 == 0;
@@ -63,7 +67,7 @@ namespace BankingApi.Controllers
                         });
             }catch(Exception ex)
             {
-                throw new Exception(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
         [HttpPost("ConfirmWithdraw")]
@@ -71,7 +75,7 @@ namespace BankingApi.Controllers
         {
             try
             {
-                var hash = ComputeSHA256Hash((int)(withdraw.Amount), withdraw.MerchantID, withdraw.TransactionID, withdraw.UsersFullName, _secretKey);
+                var hash = ComputeSHA256Hash((int)(withdraw.Amount), _merchantId, withdraw.TransactionID, withdraw.UsersFullName, _secretKey);
                 if (hash != withdraw.Hash)
                     return BadRequest("Incorrect hash");
                 bool isAmountEven = (withdraw.Amount / 100) % 2 == 0;
@@ -89,7 +93,7 @@ namespace BankingApi.Controllers
             }
             catch(Exception ex)
             {
-                throw new Exception(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
         private async Task SendResultToMvcProject(Withdraw withdraw, Status status)
@@ -104,7 +108,7 @@ namespace BankingApi.Controllers
                     Status = status
                 };
                 var content = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
-                var response = await client.PostAsync("https://localhost:7116/Callback/SuccessWithdraw", content);
+                var response = await client.PostAsync($"{_apiUrl}/SuccessWithdraw", content);
                 if (!response.IsSuccessStatusCode)
                 {
                     throw new Exception("Failed to notify MVC project about the transaction result.");

@@ -7,7 +7,7 @@ namespace MvcProject.Models.Repository.IRepository
         Task<decimal> GetWalletBalanceByUserIdAsync(string userId);
         Task<int> GetWalletCurrencyByUserIdAsync(string userId);
         Task CreateWalletByUserIdAsync(string userId);
-        Task UpdateWalletAmount(Deposit deposit);
+        Task UpdateWalletAmount(DepositWithdrawRequest deposit);
         Task UpdateWalletAmount(string userID, Response response);
     }
 }

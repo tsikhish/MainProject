@@ -68,33 +68,6 @@ namespace MvcProject.Models.Repository
             }
         }
 
-        public async Task<Response> SendWithdrawToBankingApi(Withdraw withdraw)
-        {
-            try
-            {
-                using var client = new HttpClient();
-                var content = new StringContent(JsonConvert.SerializeObject(withdraw), Encoding.UTF8, "application/json");
-                var response = await client.PostAsync($"https://localhost:7133/Transactions/ConfirmWithdraw", content);
-                if (!response.IsSuccessStatusCode)
-                {
-                    var body = await response.Content.ReadAsStringAsync();
-                    throw new Exception($"Banking API returned error:{body}, {response.StatusCode} - {response.ReasonPhrase}");
-                }
-                var responseBody = await response.Content.ReadAsStringAsync();
-                var result = JsonConvert.DeserializeObject<Response>(responseBody);
-                if (result == null)
-                {
-                    throw new Exception("Failed to deserialize Banking API response.");
-                }
-                return result;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Transaction failed: " + ex.Message);
-            }
-
-        }
-        
         public async Task<string> GetFullUsername(string userId)
         {
             try

@@ -8,6 +8,7 @@ using MvcProject.Models.Model;
 using MvcProject.Models.Repository.IRepository;
 using MvcProject.Models.Repository.IRepository.Enum;
 using Newtonsoft.Json;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,16 +19,14 @@ namespace MvcProject.Controllers
     public class CallbackController : Controller
     {
         private readonly ITransactionRepository _transactionRepository;
-        private readonly string _secretKey;
-        private readonly IHash256 _hash;
+        private readonly IWithdrawRepository _withdrawRepository;
         private readonly IWalletRepository _walletRepository;
         private readonly IDepositRepository _depositRepository;
-        public CallbackController(IOptions<AppSettings> appSettings, IHash256 hash,
+        public CallbackController(IWithdrawRepository withdrawRepository,
             ITransactionRepository transactionRepository, 
             IWalletRepository walletRepository, IDepositRepository depositRepository)
         {
-            _secretKey = appSettings.Value.SecretKey;
-            _hash = hash;
+            _withdrawRepository = withdrawRepository;
             _transactionRepository = transactionRepository;
             _walletRepository = walletRepository;
             _depositRepository = depositRepository;
@@ -50,28 +49,20 @@ namespace MvcProject.Controllers
         {
             try
             {
-                var deposit = new Deposit
-                {
-                    Amount = (int)(depositWithdrawRequest.Amount * 100),
-                    MerchantID = depositWithdrawRequest.UserId,
-                    TransactionID = depositWithdrawRequest.Id,
-                };
-                var hash = _hash.ComputeSHA256Hash((int)(deposit.Amount), deposit.MerchantID, deposit.TransactionID, _secretKey);
-                deposit.Hash = hash;
-                var response =await _depositRepository.SendToBankingApi(deposit, "ConfirmDeposit"); 
-                deposit.Amount = (decimal)(deposit.Amount / 100m);
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var response =await _depositRepository.SendToBankingApi(depositWithdrawRequest, "ConfirmDeposit"); 
                 response.Amount = (decimal)(response.Amount / 100m);
-                await _transactionRepository.RegisterTransactionInTransactionsAsync(deposit.MerchantID,response);
-                await _transactionRepository.UpdateStatus(deposit.TransactionID, response.Status);
+                await _transactionRepository.RegisterTransactionInTransactionsAsync(userId,response);
+                await _transactionRepository.UpdateStatus(response.DepositWithdrawRequestId, response.Status);
                 if (response.Status == Status.Success)
                 {
-                    await _walletRepository.UpdateWalletAmount(deposit);
+                    await _walletRepository.UpdateWalletAmount(depositWithdrawRequest);
                 }
                 return View(response);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
         [HttpPost]
@@ -79,29 +70,7 @@ namespace MvcProject.Controllers
         {
             try
             {
-                if (response == null || !ModelState.IsValid)
-                {
-                    return BadRequest("Invalid transaction data.");
-                }
-
-                if (!Enum.IsDefined(typeof(Status), response.Status))
-                {
-                    return BadRequest("Invalid transaction status.");
-                }
-                var userId = await _depositRepository.GetUserIdByResponse(response);
-                response.Amount = (decimal)(response.Amount / 100m);
-                using (var transaction = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
-                {
-                    await _transactionRepository.RegisterTransactionInTransactionsAsync(userId, response);
-                    await _transactionRepository.UpdateStatus(response.DepositWithdrawRequestId, response.Status);
-
-                    if (response.Status == Status.Success)
-                    {
-                        await _walletRepository.UpdateWalletAmount(userId, response);
-                    }
-
-                    transaction.Complete();
-                }
+                response = await _withdrawRepository.GetResponse(response);   
                 return View(response);
             }
             catch (Exception ex)

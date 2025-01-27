@@ -19,8 +19,8 @@ namespace MvcProject.Controllers
     {
         private readonly ITransactionRepository _transactionRepository;
         private readonly IDepositRepository _depositRepository;
-        public TransactionsController(IOptions<AppSettings> appSettings,
-            ITransactionRepository transactionRepository, IDepositRepository depositRepository)
+        public TransactionsController(ITransactionRepository transactionRepository, 
+            IDepositRepository depositRepository)
         {
             _transactionRepository = transactionRepository;
             _depositRepository = depositRepository;
@@ -56,8 +56,8 @@ namespace MvcProject.Controllers
             try
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var transaction = await _depositRepository.ValidateDeposit(userId,request);
-                var response = await _depositRepository.SendToBankingApi(transaction, "Deposit");
+                var deposit = await _depositRepository.ValidateDeposit(userId,request);
+                var response = await _depositRepository.SendToBankingApi(deposit, "Deposit");
                 if (response == null)
                     return BadRequest(new { success = false, message = "Failed to process the transaction with the banking API." });
                 return Ok(new { success = true, paymentUrl = response.PaymentUrl });

@@ -11,7 +11,6 @@ namespace MvcProject.Models.Repository.IRepository
         Task RegisterTransactionInTransactionsAsync(string userId, Response response);
         Task UpdateStatus(int id, Status status);
         Task<DepositWithdrawRequest> GetDepositWithdrawById(int id);
-        Task<Response> SendWithdrawToBankingApi(Withdraw withdraw);
         Task<string> GetFullUsername(string userId);
         Task<IEnumerable<Transactions>> GetTransactionByUserId(string userId);
         Task<IEnumerable<DepositWithdrawRequest>> GetWithdrawTransactionsForAdmins();

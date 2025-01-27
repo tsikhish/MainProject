@@ -27,6 +27,7 @@ builder.Services.AddScoped<IDepositRepository,DepositRepository>();
 builder.Services.AddScoped<IWalletRepository, WalletRepository>();
 builder.Services.AddScoped<IHash256, Hash256>();
 builder.Services.AddScoped<ITransactionRepository,TransactionRepository>();
+builder.Services.AddScoped<IWithdrawRepository,WithdrawRepository>();
 builder.Services.AddHttpClient();
 var app = builder.Build();
 await Seed.InitializeAsync(app.Services);

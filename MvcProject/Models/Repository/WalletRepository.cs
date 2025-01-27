@@ -40,15 +40,15 @@ namespace MvcProject.Models.Repository
             var query = "Select CurrentBalance from Wallet where UserId=@userId";
             return await _dbConnection.QueryFirstOrDefaultAsync<decimal>(query, new { UserId = userId });
         }
-        public async Task UpdateWalletAmount(Deposit deposit)
+        public async Task UpdateWalletAmount(DepositWithdrawRequest deposit)
         {
-            var oldBalance = await GetWalletBalanceByUserIdAsync(deposit.MerchantID);
+            var oldBalance = await GetWalletBalanceByUserIdAsync(deposit.UserId);
             var newBalance = oldBalance + deposit.Amount;
             var query = "Update Wallet set CurrentBalance = @currentbalance where UserId=@UserId";
             await _dbConnection.ExecuteAsync(query, new
             {
                 CurrentBalance = newBalance,
-                UserId = deposit.MerchantID
+                UserId = deposit.UserId,
             });
         }
         public async Task UpdateWalletAmount(string userID, Response response)

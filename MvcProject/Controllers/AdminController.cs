@@ -14,13 +14,14 @@ namespace MvcProject.Controllers
 {
     public class AdminController : Controller
     {
+        public readonly IWithdrawRepository _withdrawRepository;
+        public readonly IDepositRepository _depositRepository;
         private readonly ITransactionRepository _transactionRepository;
-        private readonly string _secretKey;
-        private readonly IHash256 _hash;
-        public AdminController(IHash256 hash, ITransactionRepository transactionRepository, IOptions<AppSettings> appSettings)
+        public AdminController(IWithdrawRepository withdrawRepository,
+            IDepositRepository depositRepository, ITransactionRepository transactionRepository)
         {
-            _secretKey = appSettings.Value.SecretKey;
-            _hash = hash;
+            _withdrawRepository = withdrawRepository;
+            _depositRepository= depositRepository;
             _transactionRepository = transactionRepository;
         }
 
@@ -50,7 +51,7 @@ namespace MvcProject.Controllers
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
         [HttpPost]
@@ -58,24 +59,13 @@ namespace MvcProject.Controllers
         {
             try
             {
-                var withdraw = await _transactionRepository.GetDepositWithdrawById(id);
-                if (withdraw == null) throw new Exception("Withdraw Not Found");
-                var usersFullName = await _transactionRepository.GetFullUsername(withdraw.UserId);
-                var hash = _hash.ComputeSHA256Hash((int)(withdraw.Amount * 100), withdraw.UserId, withdraw.Id, usersFullName, _secretKey);
-                var transaction = new Withdraw
-                {
-                    TransactionID = id,
-                    MerchantID = withdraw.UserId,
-                    Amount = (int)(withdraw.Amount * 100),
-                    Hash = hash,
-                    UsersFullName = usersFullName
-                };
-                var response = await _transactionRepository.SendWithdrawToBankingApi(transaction);
+                var transaction = await _withdrawRepository.GetWithdrawTransaction(id);
+                var response = await _withdrawRepository.SendWithdrawToBankingApi(transaction);
                 return View(response);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
     }
