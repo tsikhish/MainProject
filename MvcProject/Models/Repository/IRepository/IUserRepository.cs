@@ -4,6 +4,6 @@ namespace MvcProject.Models.Repository.IRepository
 {
     public interface IUserRepository
     {
-        Task<string> SendPublicToken(string userId);
+        Task<string> GenerateTokens(string userId);
     }
 }

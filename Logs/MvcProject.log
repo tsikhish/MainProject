@@ -1,0 +1,200 @@
+2025-01-30 12:38:31 [5] INFO  Program - Request to / received.
+2025-01-30 12:38:31 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:38:32 [5] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 12:38:33 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:38:34 [19] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 12:38:34 [17] INFO  Program - Request to / received.
+2025-01-30 12:38:34 [7] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:38:35 [21] INFO  Program - Request to /Transactions/TransactionHistoryPage received.
+2025-01-30 12:38:35 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:38:35 [18] INFO  Program - Request to /transactions/transactionHistory received.
+2025-01-30 12:38:35 [5] INFO  MvcProject.Controllers.TransactionsController - Successfully retrieved 49 transactions for user with ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:49:35 [17] INFO  Program - Request to / received.
+2025-01-30 12:49:35 [9] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:49:35 [9] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 12:49:38 [9] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 12:49:38 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:49:38 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 12:49:40 [17] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 12:49:40 [17] INFO  Program - Request to / received.
+2025-01-30 12:49:40 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:49:40 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:49:40 [17] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 963,0000 €
+2025-01-30 12:49:41 [20] INFO  Program - Request to /Transactions/Deposit received.
+2025-01-30 12:49:41 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:49:41 [20] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:49:42 [20] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 963,0000 €
+2025-01-30 12:49:45 [17] INFO  Program - Request to /Transactions/DepositResult received.
+2025-01-30 12:49:45 [17] INFO  MvcProject.Controllers.TransactionsController - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 15
+2025-01-30 12:49:45 [9] INFO  MvcProject.Controllers.TransactionsController - Deposit registered with ID: 217 for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:49:45 [10] INFO  MvcProject.Controllers.TransactionsController - Deposit successfully processed. Redirecting User ID: 2189418a-271a-4496-aa02-d07760408b68 to Payment URL: https://localhost:7116/Callback/217/1500
+2025-01-30 12:49:45 [16] INFO  Program - Request to /Callback/217/1500 received.
+2025-01-30 12:49:45 [16] INFO  MvcProject.Controllers.CallbackController - Received request for transaction details. DepositWithdrawID: 217, Amount: 1500
+2025-01-30 12:49:45 [16] INFO  MvcProject.Controllers.CallbackController - Transaction retrieved successfully. Transaction ID: 217
+2025-01-30 12:49:45 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:49:45 [20] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:49:45 [18] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 963,0000 €
+2025-01-30 12:49:47 [7] INFO  Program - Request to /Callback/SuccessDeposit received.
+2025-01-30 12:49:47 [7] INFO  MvcProject.Controllers.CallbackController - Initiating deposit transaction for UserId: 2189418a-271a-4496-aa02-d07760408b68, Amount: 15.0000
+2025-01-30 12:49:47 [10] INFO  MvcProject.Controllers.CallbackController - Banking API response received. Adjusted Amount: 15.0000, TransactionId: 0
+2025-01-30 12:49:47 [7] INFO  MvcProject.Controllers.CallbackController - Transaction successfully registered for UserId: 2189418a-271a-4496-aa02-d07760408b68, TransactionId: 0
+2025-01-30 12:49:47 [22] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:49:47 [22] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:49:47 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 978,0000 €
+2025-01-30 12:49:54 [9] INFO  Program - Request to /Transactions/Deposit received.
+2025-01-30 12:49:54 [9] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:49:54 [9] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:49:54 [9] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 978,0000 €
+2025-01-30 12:49:57 [10] INFO  Program - Request to /Transactions/DepositResult received.
+2025-01-30 12:49:57 [10] INFO  MvcProject.Controllers.TransactionsController - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10
+2025-01-30 12:49:57 [7] INFO  MvcProject.Controllers.TransactionsController - Deposit registered with ID: 218 for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:49:57 [16] INFO  MvcProject.Controllers.TransactionsController - Deposit successfully processed. Redirecting User ID: 2189418a-271a-4496-aa02-d07760408b68 to Payment URL: https://localhost:7116/Callback/218/1000
+2025-01-30 12:49:57 [7] INFO  Program - Request to /Callback/218/1000 received.
+2025-01-30 12:49:57 [7] INFO  MvcProject.Controllers.CallbackController - Received request for transaction details. DepositWithdrawID: 218, Amount: 1000
+2025-01-30 12:49:57 [10] INFO  MvcProject.Controllers.CallbackController - Transaction retrieved successfully. Transaction ID: 218
+2025-01-30 12:49:57 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:49:57 [18] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:49:57 [9] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 978,0000 €
+2025-01-30 12:50:00 [9] INFO  Program - Request to /Callback/SuccessDeposit received.
+2025-01-30 12:50:00 [9] INFO  MvcProject.Controllers.CallbackController - Initiating deposit transaction for UserId: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10.0000
+2025-01-30 12:50:00 [16] INFO  MvcProject.Controllers.CallbackController - Banking API response received. Adjusted Amount: 10.0000, TransactionId: 0
+2025-01-30 12:50:00 [7] INFO  MvcProject.Controllers.CallbackController - Transaction successfully registered for UserId: 2189418a-271a-4496-aa02-d07760408b68, TransactionId: 0
+2025-01-30 12:50:00 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:50:00 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 12:50:00 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 988,0000 €
+2025-01-30 12:50:03 [9] INFO  Program - Request to /Identity/Account/Logout received.
+2025-01-30 12:50:03 [10] INFO  Program - Request to / received.
+2025-01-30 12:50:03 [7] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:50:03 [7] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 12:50:06 [9] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 12:50:06 [22] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 12:50:06 [22] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 13:06:53 [16] INFO  Program - Request to / received.
+2025-01-30 13:06:54 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:06:54 [5] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 13:07:07 [16] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 13:07:07 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:07:07 [10] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 13:07:08 [16] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 13:07:08 [19] INFO  Program - Request to / received.
+2025-01-30 13:07:08 [14] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:07:08 [14] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:07:09 [16] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 988,0000 €
+2025-01-30 13:07:13 [14] INFO  Program - Request to /Transactions/Withdraw received.
+2025-01-30 13:07:13 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:07:13 [19] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:07:13 [14] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 988,0000 €
+2025-01-30 13:07:19 [16] INFO  Program - Request to /Transactions/WithdrawRequest received.
+2025-01-30 13:07:19 [16] INFO  MvcProject.Controllers.TransactionsController - Withdraw request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10
+2025-01-30 13:07:19 [16] INFO  MvcProject.Models.Repository.WithdrawRepository - Registering withdraw for user 2189418a-271a-4496-aa02-d07760408b68, Amount: 10, Status: Pending, TransactionType: Withdraw
+2025-01-30 13:07:19 [16] INFO  MvcProject.Models.Repository.WithdrawRepository - Successfully registered withdraw for user 2189418a-271a-4496-aa02-d07760408b68.
+2025-01-30 13:07:19 [16] INFO  MvcProject.Controllers.TransactionsController - Withdraw request successfully sent for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:07:23 [5] INFO  Program - Request to /Identity/Account/Logout received.
+2025-01-30 13:07:23 [16] INFO  Program - Request to / received.
+2025-01-30 13:07:23 [9] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:07:23 [9] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 13:07:24 [9] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 13:07:24 [9] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:07:24 [9] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 13:07:27 [19] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 13:07:27 [10] INFO  Program - Request to / received.
+2025-01-30 13:07:27 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:07:27 [19] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-01-30 13:07:27 [20] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-01-30 13:07:29 [19] INFO  Program - Request to /Admin/AdminDashboard received.
+2025-01-30 13:07:29 [19] INFO  MvcProject.Controllers.AdminController - Fetching withdrawal transactions for the admin dashboard.
+2025-01-30 13:07:29 [16] INFO  MvcProject.Controllers.AdminController - Successfully retrieved withdrawal transactions for the admin dashboard.
+2025-01-30 13:07:29 [16] INFO  Program - Request to /Admin/AdminDashboard received.
+2025-01-30 13:07:29 [16] INFO  MvcProject.Controllers.AdminController - Fetching withdrawal transactions for the admin dashboard.
+2025-01-30 13:07:29 [9] INFO  MvcProject.Controllers.AdminController - Successfully retrieved withdrawal transactions for the admin dashboard.
+2025-01-30 13:07:29 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:07:29 [19] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-01-30 13:07:29 [9] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-01-30 13:07:30 [5] INFO  Program - Request to /Admin/RejectWithdraw received.
+2025-01-30 13:07:30 [20] INFO  Program - Request to /Admin/AdminDashboard received.
+2025-01-30 13:07:30 [20] INFO  MvcProject.Controllers.AdminController - Fetching withdrawal transactions for the admin dashboard.
+2025-01-30 13:07:30 [5] WARN  MvcProject.Controllers.AdminController - No withdrawal transactions found for the admin dashboard.
+2025-01-30 13:07:30 [16] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:07:30 [16] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-01-30 13:07:30 [14] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-01-30 13:22:48 [16] INFO  Program - Request to / received.
+2025-01-30 13:22:49 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:22:49 [5] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 13:22:52 [5] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 13:22:52 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:22:52 [19] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 13:22:55 [16] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 13:22:55 [17] INFO  Program - Request to / received.
+2025-01-30 13:22:55 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:22:55 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:22:55 [20] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 988,0000 €
+2025-01-30 13:22:57 [5] INFO  Program - Request to /Transactions/Deposit received.
+2025-01-30 13:22:57 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:22:57 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:22:57 [16] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 988,0000 €
+2025-01-30 13:23:00 [16] INFO  Program - Request to /Transactions/DepositResult received.
+2025-01-30 13:23:00 [16] INFO  MvcProject.Controllers.TransactionsController - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10
+2025-01-30 13:23:00 [16] INFO  MvcProject.Models.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10, Status: Pending, TransactionType: Deposit
+2025-01-30 13:23:00 [16] INFO  MvcProject.Models.Repository.DepositRepository - Successfully registered deposit for user 2189418a-271a-4496-aa02-d07760408b68, DepositWithdrawId: 220
+2025-01-30 13:23:00 [16] INFO  MvcProject.Controllers.TransactionsController - Deposit registered with ID: 220 for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:23:00 [10] INFO  MvcProject.Controllers.TransactionsController - Deposit successfully processed. Redirecting User ID: 2189418a-271a-4496-aa02-d07760408b68 to Payment URL: https://localhost:7116/Callback/220/1000
+2025-01-30 13:23:00 [19] INFO  Program - Request to /Callback/220/1000 received.
+2025-01-30 13:23:00 [19] INFO  MvcProject.Controllers.CallbackController - Received request for transaction details. DepositWithdrawID: 220, Amount: 1000
+2025-01-30 13:23:00 [5] INFO  MvcProject.Controllers.CallbackController - Transaction retrieved successfully. Transaction ID: 220
+2025-01-30 13:23:00 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:23:00 [20] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:23:00 [5] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 988,0000 €
+2025-01-30 13:23:01 [10] INFO  Program - Request to /Callback/SuccessDeposit received.
+2025-01-30 13:23:01 [10] INFO  MvcProject.Controllers.CallbackController - Initiating deposit transaction for UserId: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10.0000
+2025-01-30 13:23:01 [5] INFO  MvcProject.Controllers.CallbackController - Banking API response received. Adjusted Amount: 10.0000, TransactionId: 0
+2025-01-30 13:23:01 [5] INFO  MvcProject.Models.Repository.DepositRepository - Registering transaction for DepositWithdrawId: 220, Amount: 10,0000, Status: Success
+2025-01-30 13:23:01 [10] INFO  MvcProject.Models.Repository.DepositRepository - Successfully registered transaction for DepositWithdrawId: 220.
+2025-01-30 13:23:01 [10] INFO  MvcProject.Controllers.CallbackController - Transaction successfully registered for UserId: 2189418a-271a-4496-aa02-d07760408b68, TransactionId: 0
+2025-01-30 13:23:01 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:23:01 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:23:01 [7] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 998,0000 €
+2025-01-30 13:23:03 [7] INFO  Program - Request to /Transactions/Withdraw received.
+2025-01-30 13:23:03 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:23:03 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:23:03 [5] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 998,0000 €
+2025-01-30 13:23:05 [7] INFO  Program - Request to /Transactions/WithdrawRequest received.
+2025-01-30 13:23:05 [7] INFO  MvcProject.Controllers.TransactionsController - Withdraw request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 5
+2025-01-30 13:23:05 [7] INFO  MvcProject.Models.Repository.WithdrawRepository - Registering withdraw for user 2189418a-271a-4496-aa02-d07760408b68, Amount: 5, Status: Pending, TransactionType: Withdraw
+2025-01-30 13:23:05 [7] INFO  MvcProject.Models.Repository.WithdrawRepository - Successfully registered withdraw for user 2189418a-271a-4496-aa02-d07760408b68.
+2025-01-30 13:23:05 [7] INFO  MvcProject.Controllers.TransactionsController - Withdraw request successfully sent for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-01-30 13:23:07 [5] INFO  Program - Request to /Identity/Account/Logout received.
+2025-01-30 13:23:07 [10] INFO  Program - Request to / received.
+2025-01-30 13:23:07 [16] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:23:07 [16] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 13:23:08 [16] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 13:23:08 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:23:08 [10] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-01-30 13:23:10 [5] INFO  Program - Request to /Identity/Account/Login received.
+2025-01-30 13:23:10 [7] INFO  Program - Request to / received.
+2025-01-30 13:23:10 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:23:10 [20] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-01-30 13:23:10 [7] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-01-30 13:23:12 [7] INFO  Program - Request to /Admin/AdminDashboard received.
+2025-01-30 13:23:12 [7] INFO  MvcProject.Controllers.AdminController - Fetching withdrawal transactions for the admin dashboard.
+2025-01-30 13:23:12 [16] INFO  MvcProject.Controllers.AdminController - Successfully retrieved withdrawal transactions for the admin dashboard.
+2025-01-30 13:23:12 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:23:12 [5] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-01-30 13:23:12 [20] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-01-30 13:23:14 [25] INFO  Program - Request to /Admin/AcceptWithdraw received.
+2025-01-30 13:23:14 [25] INFO  MvcProject.Models.Repository.WithdrawRepository - Fetching withdraw transaction details for transaction ID: 221.
+2025-01-30 13:23:14 [5] INFO  MvcProject.Models.Repository.WithdrawRepository - Successfully fetched withdraw transaction details for transaction ID: 221.
+2025-01-30 13:23:14 [5] INFO  Program - Request to /Callback/SuccessWithdraw received.
+2025-01-30 13:23:14 [5] INFO  MvcProject.Controllers.CallbackController - Processing withdrawal for TransactionId: 221, Amount: 500.0
+2025-01-30 13:23:14 [5] INFO  MvcProject.Models.Repository.WithdrawRepository - Fetching user ID for DepositWithdrawRequestId: 221.
+2025-01-30 13:23:14 [5] INFO  MvcProject.Models.Repository.WithdrawRepository - Successfully fetched user ID for DepositWithdrawRequestId: 221.
+2025-01-30 13:23:14 [5] INFO  MvcProject.Controllers.CallbackController - Adjusted withdrawal amount: 5.0 for TransactionId: 221
+2025-01-30 13:23:14 [5] INFO  MvcProject.Models.Repository.WithdrawRepository - Registering withdraw transaction for user 2189418a-271a-4496-aa02-d07760408b68, Amount: 5.0, Status: Rejected, DepositWithdrawId: 221
+2025-01-30 13:23:14 [7] INFO  MvcProject.Models.Repository.WithdrawRepository - Successfully registered withdraw transaction for user 2189418a-271a-4496-aa02-d07760408b68.
+2025-01-30 13:23:14 [7] INFO  MvcProject.Controllers.CallbackController - Withdrawal transaction successfully registered for UserId: 2189418a-271a-4496-aa02-d07760408b68, TransactionId: 221
+2025-01-30 13:23:14 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:23:14 [19] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-01-30 13:23:14 [25] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-01-30 13:23:16 [5] INFO  Program - Request to /Identity/Account/Logout received.
+2025-01-30 13:23:16 [25] INFO  Program - Request to / received.
+2025-01-30 13:23:16 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-01-30 13:23:16 [20] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.

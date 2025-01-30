@@ -1,5 +1,7 @@
 ﻿using Dapper;
+using log4net;
 using Microsoft.Extensions.Options;
+using MvcProject.Models.Exceptions;
 using MvcProject.Models.Hash;
 using MvcProject.Models.Model;
 using MvcProject.Models.Model.DTO;
@@ -13,17 +15,19 @@ namespace MvcProject.Models.Repository
 {
     public class DepositRepository : IDepositRepository
     {
-        private readonly ILogger<DepositRepository> _logger;
+        private static readonly ILog _logger = LogManager.GetLogger(typeof(DepositRepository));
         private readonly IDbConnection _connection;
-        public DepositRepository(ILogger<DepositRepository> logger,IDbConnection connection)
+        private readonly ICustomExceptions _customException;
+        public DepositRepository(ICustomExceptions customExceptions,IDbConnection connection)
         {
-            _logger = logger;
+            _customException = customExceptions;
             _connection = connection;
         }
-        public async Task<int> RegisterDeposit(
-    string userId, Status status, TransactionType transactionType, decimal amount)
+
+        public async Task<int> RegisterDeposit(string userId, Status status, TransactionType transactionType, decimal amount)
         {
-            _logger.LogInformation("Registering deposit for user: {UserId}, Amount: {Amount}, Status: {Status}, TransactionType: {TransactionType}", userId, amount, status, transactionType);
+            _logger.Info($"Registering deposit for user: {userId}, Amount: {amount}, Status: {status}, TransactionType: {transactionType}");
+
             try
             {
                 var parameters = new DynamicParameters();
@@ -34,50 +38,24 @@ namespace MvcProject.Models.Repository
                 parameters.Add("@ReturnCode", dbType: DbType.Int32, direction: ParameterDirection.Output);
                 parameters.Add("@DepositWithdrawId", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-                await _connection.ExecuteAsync(
-                    "AddDeposit", parameters, commandType: CommandType.StoredProcedure);
+                await _connection.ExecuteAsync("AddDeposit", parameters, commandType: CommandType.StoredProcedure);
 
                 var outputParam2Value = parameters.Get<int>("@ReturnCode");
                 var depositId = parameters.Get<int>("@DepositWithdrawId");
-
-                if (depositId == 0)
-                {
-                    _logger.LogError("Failed to retrieve DepositWithdrawId for user {UserId}.", userId);
-                    throw new Exception("Failed to retrieve DepositWithdrawId.");
-                }
-                if (outputParam2Value == 400)
-                {
-                    _logger.LogWarning("User {UserId} already has a pending request.", userId);
-                    throw new Exception("This user has already sent a pending request. Please wait for results.");
-                }
-                else if (outputParam2Value == 401)
-                {
-                    _logger.LogWarning("User {UserId} has insufficient balance.", userId);
-                    throw new Exception("Insufficient Balance");
-                }
-                else if (outputParam2Value == 402)
-                {
-                    _logger.LogError("Failed to update BlockedAmount for user {UserId}.", userId);
-                    throw new Exception("BlockedAmount update failed");
-                }
-                else if (outputParam2Value == 500)
-                {
-                    _logger.LogError("Transaction failed for user {UserId}.", userId);
-                    throw new Exception("Transaction Failed.");
-                }
-                _logger.LogInformation("Successfully registered deposit for user {UserId}, DepositWithdrawId: {DepositWithdrawId}", userId, depositId);
+                await _customException.DepositException(depositId, userId, outputParam2Value);
+                _logger.Info($"Successfully registered deposit for user {userId}, DepositWithdrawId: {depositId}");
                 return depositId;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error occurred while registering deposit for user {UserId}.", userId);
+                _logger.Error($"Error occurred while registering deposit for user {userId}. Exception: {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }
 
         public async Task RegisterTransaction(DepositWithdrawRequest deposit, Response response)
         {
-            _logger.LogInformation("Registering transaction for DepositWithdrawId: {DepositWithdrawId}, Amount: {Amount}, Status: {Status}", deposit.Id, deposit.Amount, response.Status);
+            _logger.Info($"Registering transaction for DepositWithdrawId: {deposit.Id}, Amount: {deposit.Amount}, Status: {response.Status}");
 
             try
             {
@@ -89,37 +67,33 @@ namespace MvcProject.Models.Repository
                 parameters.Add("@DepositWithdrawId", deposit.Id);
                 parameters.Add("@ReturnCode", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-                var result = await _connection.ExecuteAsync(
-                    "AddDepositTransaction", parameters, commandType: CommandType.StoredProcedure);
+                var result = await _connection.ExecuteAsync("AddDepositTransaction", parameters, commandType: CommandType.StoredProcedure);
 
                 var outputParam2Value = parameters.Get<int>("@ReturnCode");
 
                 if (outputParam2Value == 400)
                 {
-                    _logger.LogWarning("Amount mismatch for DepositWithdrawId: {DepositWithdrawId}.", deposit.Id);
+                    _logger.Warn($"Amount mismatch for DepositWithdrawId: {deposit.Id}.");
                     throw new Exception("Amount is different");
                 }
                 else if (outputParam2Value == 401)
                 {
-                    _logger.LogWarning("Status was already changed for DepositWithdrawId: {DepositWithdrawId}.", deposit.Id);
+                    _logger.Warn($"Status was already changed for DepositWithdrawId: {deposit.Id}.");
                     throw new Exception("Status was already changed");
                 }
                 else if (outputParam2Value == 500)
                 {
-                    _logger.LogError("Internal error occurred while processing transaction for DepositWithdrawId: {DepositWithdrawId}.", deposit.Id);
+                    _logger.Error($"Internal error occurred while processing transaction for DepositWithdrawId: {deposit.Id}.");
                     throw new Exception("Internal Error");
                 }
 
-                _logger.LogInformation("Successfully registered transaction for DepositWithdrawId: {DepositWithdrawId}.", deposit.Id);
+                _logger.Info($"Successfully registered transaction for DepositWithdrawId: {deposit.Id}.");
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error occurred while registering transaction for DepositWithdrawId: {DepositWithdrawId}.", deposit.Id);
+                _logger.Error($"Error occurred while registering transaction for DepositWithdrawId: {deposit.Id}. Exception: {ex.Message}");
                 throw new Exception(ex.Message);
             }
         }
-
-
-
     }
 }

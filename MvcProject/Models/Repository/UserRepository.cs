@@ -1,45 +1,54 @@
 ﻿using Azure.Core;
+using Dapper;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
+using Mono.TextTemplating;
 using MvcProject.Models.Model;
 using MvcProject.Models.Repository.IRepository;
+using MvcProject.Models.Repository.IRepository.Enum;
 using Newtonsoft.Json;
+using System.Data;
 using System.Text;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace MvcProject.Models.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private readonly string _merchantId;
-        private readonly string _casinoUrl;
-        public UserRepository(IOptions<AppSettings> appSettings)
-        {
-            _merchantId = appSettings.Value.MerchantID;
-            _casinoUrl = appSettings.Value.CasinoUrl;
-        }
-        public async Task<string> SendPublicToken(string userId)
-        {
-            var publicToken = new Token { PublicToken = Guid.NewGuid(),PrivateToken=Guid.NewGuid() };
+        private readonly ILogger<UserRepository> _logger;
+        private readonly IDbConnection _connection;
 
-            var parameters = new
+        public UserRepository(ILogger<UserRepository> logger, IDbConnection connection)
+        {
+            _logger = logger;
+            _connection = connection;
+        }
+        public async Task<string> GenerateTokens(string userId)
+        {
+            var publicToken = Guid.NewGuid().ToString();
+            var privateToken = Guid.NewGuid().ToString();
+
+            var parameters = new DynamicParameters();
+            parameters.Add("@UserId", userId);
+            parameters.Add("@publicToken", publicToken);
+            parameters.Add("@publicIsValid", 1);
+            parameters.Add("@privateToken", privateToken);
+            parameters.Add("@privateIsValid", 1);
+            parameters.Add("@OutputPublicToken", dbType: DbType.String, size: 40, direction: ParameterDirection.Output);
+            parameters.Add("@ReturnCode", dbType: DbType.Int32, direction: ParameterDirection.Output);
+            await _connection.ExecuteAsync(
+                "RegisterTokens", parameters, commandType: CommandType.StoredProcedure);
+            var returnCode = parameters.Get<int>("@ReturnCode");
+            var outputPublicToken = parameters.Get<string>("@OutputPublicToken");
+            if (returnCode == 0)
             {
-                PrivateToken = publicToken.PrivateToken,
-                PublicToken = publicToken.PublicToken,
-                UserId = userId,
-                MerchantId = _merchantId,
-                Lang = "ENG",
-            };
-            using var client = new HttpClient();
-            var content = new StringContent(JsonConvert.SerializeObject(parameters), Encoding.UTF8, "application/json");
-            var response = await client.PostAsync($"{_casinoUrl}", content);
-            if (response.IsSuccessStatusCode)
-            {
-                var result = await response.Content.ReadAsStringAsync();
-                return result;
+                return outputPublicToken;  
             }
             else
             {
-                return "Error generating private token";
+                throw new Exception($"Error Code: {returnCode}");
             }
         }
+
     }
 }

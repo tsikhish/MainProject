@@ -29,11 +29,12 @@ namespace MvcProject.Controllers
             return View();
         }
         [Authorize]
-        public IActionResult GenerateToken()
+        public async Task<IActionResult> GenerateToken()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userId == null) { return NotFound($"{userId} Not Found"); }
-            var request = _userRepository.SendPublicToken(userId);
+            var publicToken=await _userRepository.GenerateTokens(userId);
+            ViewData["PublicToken"] = publicToken;
             return View();
         }
 

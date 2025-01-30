@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using log4net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MvcProject.Models;
@@ -15,18 +16,18 @@ namespace MvcProject.Controllers
 {
     public class AdminController : Controller
     {
-        public readonly IWithdrawRepository _withdrawRepository;
-        public readonly IDepositRepository _depositRepository;
+        private readonly IWithdrawRepository _withdrawRepository;
+        private readonly IDepositRepository _depositRepository;
         private readonly ITransactionRepository _transactionRepository;
-        private readonly ILogger<AdminController> _logger;
+        private static readonly ILog _logger = LogManager.GetLogger(typeof(AdminController)); // Change to the current class
         private readonly IBankingRequestService _bankingRequestService;
-        public AdminController(ILogger<AdminController> logger,IBankingRequestService bankingRequestService,IWithdrawRepository withdrawRepository,
+
+        public AdminController(IBankingRequestService bankingRequestService, IWithdrawRepository withdrawRepository,
             IDepositRepository depositRepository, ITransactionRepository transactionRepository)
         {
-            _logger = logger;
             _bankingRequestService = bankingRequestService;
             _withdrawRepository = withdrawRepository;
-            _depositRepository= depositRepository;
+            _depositRepository = depositRepository;
             _transactionRepository = transactionRepository;
         }
 
@@ -35,26 +36,26 @@ namespace MvcProject.Controllers
         {
             try
             {
-                _logger.LogInformation("Fetching withdrawal transactions for the admin dashboard.");
+                _logger.Info("Fetching withdrawal transactions for the admin dashboard.");
 
                 var withdraws = await _transactionRepository.GetWithdrawTransactionsForAdmins();
                 if (withdraws == null || !withdraws.Any())
                 {
-                    _logger.LogWarning("No withdrawal transactions found for the admin dashboard.");
+                    _logger.Warn("No withdrawal transactions found for the admin dashboard.");
                 }
                 else
                 {
-                    _logger.LogInformation("Successfully retrieved {Count} withdrawal transactions for the admin dashboard.", withdraws.Count());
+                    _logger.Info("Successfully retrieved withdrawal transactions for the admin dashboard.");
                 }
-
                 return View(withdraws);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred while fetching withdrawal transactions for the admin dashboard.");
+                _logger.Error("An error occurred while fetching withdrawal transactions for the admin dashboard.", ex);
                 return StatusCode(500, "An error occurred while retrieving data.");
             }
         }
+
         [HttpPost]
         public async Task<IActionResult> RejectWithdraw(int id)
         {
@@ -66,9 +67,11 @@ namespace MvcProject.Controllers
             }
             catch (Exception ex)
             {
+                _logger.Error(string.Format("An error occurred while rejecting the withdrawal with ID {0}.", id), ex);
                 return BadRequest(ex.Message);
             }
         }
+
         [HttpPost]
         public async Task<IActionResult> AcceptWithdraw(int id)
         {
@@ -80,6 +83,7 @@ namespace MvcProject.Controllers
             }
             catch (Exception ex)
             {
+                _logger.Error(string.Format("An error occurred while rejecting the withdrawal with ID {0}.", id), ex);
                 return BadRequest(ex.Message);
             }
         }
