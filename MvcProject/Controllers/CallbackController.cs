@@ -1,35 +1,27 @@
-﻿using Azure.Core;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using MvcProject.Models;
-using MvcProject.Models.Hash;
 using MvcProject.Models.Model;
 using MvcProject.Models.Repository.IRepository;
 using MvcProject.Models.Repository.IRepository.Enum;
-using Newtonsoft.Json;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
+using MvcProject.Models.Service;
+using System.Security.Claims;
+using System.Transactions;
 
 namespace MvcProject.Controllers
 {
     public class CallbackController : Controller
     {
-        private readonly ITransactionRepository _transactionRepository;
-        private readonly string _secretKey;
-        private readonly IHash256 _hash;
-        private readonly IWalletRepository _walletRepository;
         private readonly IDepositRepository _depositRepository;
-        public CallbackController(IOptions<AppSettings> appSettings, IHash256 hash,
-            ITransactionRepository transactionRepository, 
-            IWalletRepository walletRepository, IDepositRepository depositRepository)
+        private readonly ITransactionRepository _transactionRepository;
+        private readonly IWithdrawRepository _withdrawRepository;
+        private readonly IBankingRequestService _bankingRequestService;
+        public CallbackController(IDepositRepository depositRepository,IBankingRequestService bankingRequestService,IWithdrawRepository withdrawRepository,
+            ITransactionRepository transactionRepository)
         {
-            _secretKey = appSettings.Value.SecretKey;
-            _hash = hash;
-            _transactionRepository = transactionRepository;
-            _walletRepository = walletRepository;
             _depositRepository = depositRepository;
+            _bankingRequestService = bankingRequestService;
+            _withdrawRepository = withdrawRepository;
+            _transactionRepository = transactionRepository;
         }
         [Authorize]
         [Route("Callback/{DepositWithdrawId}/{Amount}")]
@@ -49,48 +41,37 @@ namespace MvcProject.Controllers
         {
             try
             {
-                var deposit = new Deposit
-                {
-                    Amount = (int)(depositWithdrawRequest.Amount * 100),
-                    MerchantID = depositWithdrawRequest.UserId,
-                    TransactionID = depositWithdrawRequest.Id,
-                };
-                var hash = _hash.ComputeSHA256Hash((int)(deposit.Amount), deposit.MerchantID, deposit.TransactionID, _secretKey);
-                deposit.Hash = hash;
-                var response =await _depositRepository.SendToBankingApi(deposit, "ConfirmDeposit"); 
-                deposit.Amount = (decimal)(deposit.Amount / 100);
-                response.Amount = (decimal)(response.Amount / 100);
-                await _transactionRepository.RegisterTransactionInTransactionsAsync(deposit.MerchantID,response);
-                await _transactionRepository.UpdateStatus(deposit.TransactionID, response.Status);
-                if (response.Status == Status.Success)
-                {
-                    await _walletRepository.UpdateWalletAmount(deposit);
-                }
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                depositWithdrawRequest.UserId = userId; 
+                depositWithdrawRequest.TransactionType = TransactionType.Deposit;
+                var response =await _bankingRequestService.SendDepositToBankingApi(depositWithdrawRequest, "ConfirmDeposit"); 
+                response.Amount = (decimal)(response.Amount / 100m);
+                await _depositRepository.RegisterTransaction(depositWithdrawRequest,response);
                 return View(response);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
         [HttpPost]
-        public async Task<IActionResult> SuccessWithdraw([FromBody]Response response) {
-        try
+        public async Task<IActionResult> SuccessWithdraw([FromBody] Response response)
         {
-            var userId = await _depositRepository.GetUserIdByResponse(response);
-            response.Amount = (decimal)(response.Amount / 100);
-            await _transactionRepository.RegisterTransactionInTransactionsAsync(userId, response);
-            await _transactionRepository.UpdateStatus(response.DepositWithdrawRequestId,response.Status);
-            if (response.Status == Status.Success)
+            try
             {
-                await _walletRepository.UpdateWalletAmount(userId, response);
+                if (response == null)
+                {
+                    throw new ArgumentNullException(nameof(response), "Response cannot be null.");
+                }
+                var userId = await _withdrawRepository.GetUserIdByResponce(response);
+                response.Amount = (decimal)(response.Amount / 100m);
+                await _withdrawRepository.AddWithdrawTransactionAsync(response, userId);
+                return View(response);
             }
-            return View(response.Status);
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
-        catch (Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
-    }
     }
 }

@@ -56,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Admin/AcceptWithdraw.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWNjZXB0V2l0aGRyYXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Admin/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -74,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Callback/SuccessWithdraw.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGJhY2tcU3VjY2Vzc1dpdGhkcmF3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Home/GenerateToken.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZW5lcmF0ZVRva2VuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Home/Index.cshtml]
@@ -110,10 +118,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Transactions/Withdraw.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zXFdpdGhkcmF3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Transactions/WithdrawRequest.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zXFdpdGhkcmF3UmVxdWVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Withdraw/PendingWithdraw.cshtml]

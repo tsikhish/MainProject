@@ -1,12 +1,13 @@
 ﻿using MvcProject.Models.Model;
 using MvcProject.Models.Model.DTO;
+using MvcProject.Models.Repository.IRepository.Enum;
 
 namespace MvcProject.Models.Repository.IRepository
 {
     public interface IDepositRepository
     {
-        Task<string> GetUserIdByResponse(Response response);
-        Task<Response> SendToBankingApi(Deposit deposit, string action);
-        Task<Deposit> ValidateDeposit(string userId, DepositRequestDTO request);
+        Task RegisterTransaction(DepositWithdrawRequest deposit,Response response);
+        Task<int> RegisterDeposit
+            (string userId, Status status, TransactionType transactionType, decimal amount);
     }
 }

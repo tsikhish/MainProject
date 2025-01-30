@@ -9,5 +9,6 @@ namespace MvcProject.Models.Model
         public decimal Amount { get; set; }
         public Status Status { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public TransactionType TransactionType { get; set; }
     }
 }

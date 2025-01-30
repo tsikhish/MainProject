@@ -1,15 +1,20 @@
 ﻿@using MvcProject.Models.Model
 @model IEnumerable<Transactions>
+
 @{
     ViewData["Title"] = "Transaction History";
 }
+
 <h2>Transaction History</h2>
+
 <div class="mb-3">
     <label for="minDate">From:</label>
     <input type="datetime-local" id="minDate" class="form-control" style="display: inline-block; width: auto;" />
+
     <label for="maxDate" class="ml-2">To:</label>
     <input type="datetime-local" id="maxDate" class="form-control" style="display: inline-block; width: auto;" />
 </div>
+
 <table id="transactionsTable" class="table table-striped table-bordered" style="width:100%">
     <thead>
         <tr>
@@ -18,15 +23,16 @@
             <th>Amount</th>
             <th>Status</th>
             <th>Created At</th>
+            <th>Transaction Type</th>
         </tr>
     </thead>
-    <tbody>
-    </tbody>
+    <tbody></tbody>
 </table>
+
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"></script>
 
     <script>
         $(document).ready(function () {
@@ -42,10 +48,32 @@
                     { "data": "userId" },
                     { "data": "amount" },
                     { "data": "status" },
-                    { "data": "createdAt" }
-                ]
+                    { "data": "createdAt" },
+                    { "data": "transactionType", "defaultContent": "Unknown" } 
+                ],
+                "rowCallback": function (row, data, index) {
+                    var statusCell = $('td:eq(3)', row);
+                    var transactionTypeCell = $('td:eq(5)', row);
+                    let statusValue = data.status ? data.status.toString().trim() : "";
+                    let transactionTypeValue = data.transactionType ? data.transactionType.toString().trim() : "";
+                    if (statusValue === '3') {
+                        statusCell.text('Success');
+                    } else if (statusValue === '2') {
+                        statusCell.text('Rejected');
+                    } else if (statusValue === '1') {
+                        statusCell.text('Pending');
+                    } else {
+                        statusCell.text('Unknown');
+                    }
+                    if (transactionTypeValue === '1') {
+                        transactionTypeCell.text('Deposit');
+                    } else if (transactionTypeValue === '2') {
+                        transactionTypeCell.text('Withdraw');
+                    } else {
+                        transactionTypeCell.text('Unknown');
+                    }
+                }
             });
-
             $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
                 var min = new Date($("#minDate").val());
                 var max = new Date($("#maxDate").val());
@@ -58,8 +86,13 @@
                 }
                 return false;
             });
+
             $("#minDate, #maxDate").on("change", function () {
                 table.draw();
+            });
+
+            $('#transactionsTable_filter input').on('keyup', function () {
+                table.column(1).search(this.value).draw();
             });
         });
     </script>

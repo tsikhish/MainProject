@@ -1,15 +1,21 @@
 using System.Diagnostics;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MvcProject.Models;
+using MvcProject.Models.Model;
+using MvcProject.Models.Repository.IRepository;
 
 namespace MvcProject.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IUserRepository _userRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IUserRepository userRepository,ILogger<HomeController> logger)
         {
+            _userRepository = userRepository;
             _logger = logger;
         }
 
@@ -20,6 +26,14 @@ namespace MvcProject.Controllers
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+        [Authorize]
+        public IActionResult GenerateToken()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null) { return NotFound($"{userId} Not Found"); }
+            var request = _userRepository.SendPublicToken(userId);
             return View();
         }
 

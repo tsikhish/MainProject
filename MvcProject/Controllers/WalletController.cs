@@ -1,23 +1,15 @@
-﻿using Azure;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using MvcProject.Models.Model;
+﻿using Microsoft.AspNetCore.Mvc;
 using MvcProject.Models.Repository.IRepository;
 using MvcProject.Models.Repository.IRepository.Enum;
 using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
-
 namespace MvcProject.Controllers
 {
     public class WalletController : Controller
     {
         private readonly IWalletRepository _walletRepository;
-        private readonly ITransactionRepository _transactionRepository;
-        public WalletController(IWalletRepository walletRepository, ITransactionRepository transactionRepository)
+        public WalletController(IWalletRepository walletRepository)
         {
             _walletRepository = walletRepository;
-            _transactionRepository = transactionRepository;
         }
         public IActionResult Index()
         {
@@ -38,7 +30,6 @@ namespace MvcProject.Controllers
                 if (balance == null || currency == null)
                     return NotFound(new { success = false, message = "Wallet balance or currency not found." });
                 var currencySymbol = GetCurrencySymbol(currency);
-
                 return Ok(new { success = true, balance, currency = currencySymbol });
             }
             catch (Exception ex)

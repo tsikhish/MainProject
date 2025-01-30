@@ -5,9 +5,10 @@ using System.Data;
 using MvcProject.Seed;
 using MvcProject.Models.Repository;
 using MvcProject.Models.DbContext;
-using MvcProject.Models;
 using MvcProject.Models.Hash;
 using MvcProject.Models.Repository.IRepository;
+using MvcProject.Models.Model;
+using MvcProject.Models.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
@@ -23,10 +24,13 @@ builder.Services.AddScoped<IDbConnection>(sp => new SqlConnection(connectionStri
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IBankingRequestService, BankingRequestService>();
+builder.Services.AddScoped<IUserRepository,UserRepository>();
 builder.Services.AddScoped<IDepositRepository,DepositRepository>();
 builder.Services.AddScoped<IWalletRepository, WalletRepository>();
 builder.Services.AddScoped<IHash256, Hash256>();
 builder.Services.AddScoped<ITransactionRepository,TransactionRepository>();
+builder.Services.AddScoped<IWithdrawRepository,WithdrawRepository>();
 builder.Services.AddHttpClient();
 var app = builder.Build();
 await Seed.InitializeAsync(app.Services);
