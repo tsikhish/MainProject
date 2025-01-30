@@ -223,7 +223,6 @@ C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\staticwebasse
 C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MvcProject.props
 C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MvcProject.props
 C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\MvcProject.csproj.Up2Date
 C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\MvcProject.dll
 C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\refint\MvcProject.dll
@@ -296,3 +295,4 @@ C:\Users\Mari\source\repos\MainProject\MvcProject\bin\Debug\net8.0\runtimes\win-
 C:\Users\Mari\source\repos\MainProject\MvcProject\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\MvcProject.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\MvcProject.sourcelink.json
+C:\Users\Mari\source\repos\MainProject\MvcProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
