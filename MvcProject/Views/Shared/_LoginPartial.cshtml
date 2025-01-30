@@ -17,15 +17,8 @@
     <li class="nav-item">
         <a class="nav-link text-dark" asp-controller="Transactions" asp-action="TransactionHistoryPage">Transaction History</a>
     </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Wallet
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li>
-                <a class="dropdown-item">Balance: <span id="wallet-balance">Loading...</span></a>
-            </li>
-        </ul>
+    <li class="nav-item">
+        <span id="walletBalance" class="nav-link text-dark">Balance: Loading...</span>
     </li>
     @if (User.IsInRole("Admin"))
     {

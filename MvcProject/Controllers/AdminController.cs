@@ -18,10 +18,12 @@ namespace MvcProject.Controllers
         public readonly IWithdrawRepository _withdrawRepository;
         public readonly IDepositRepository _depositRepository;
         private readonly ITransactionRepository _transactionRepository;
+        private readonly ILogger<AdminController> _logger;
         private readonly IBankingRequestService _bankingRequestService;
-        public AdminController(IBankingRequestService bankingRequestService,IWithdrawRepository withdrawRepository,
+        public AdminController(ILogger<AdminController> logger,IBankingRequestService bankingRequestService,IWithdrawRepository withdrawRepository,
             IDepositRepository depositRepository, ITransactionRepository transactionRepository)
         {
+            _logger = logger;
             _bankingRequestService = bankingRequestService;
             _withdrawRepository = withdrawRepository;
             _depositRepository= depositRepository;
@@ -33,12 +35,24 @@ namespace MvcProject.Controllers
         {
             try
             {
+                _logger.LogInformation("Fetching withdrawal transactions for the admin dashboard.");
+
                 var withdraws = await _transactionRepository.GetWithdrawTransactionsForAdmins();
+                if (withdraws == null || !withdraws.Any())
+                {
+                    _logger.LogWarning("No withdrawal transactions found for the admin dashboard.");
+                }
+                else
+                {
+                    _logger.LogInformation("Successfully retrieved {Count} withdrawal transactions for the admin dashboard.", withdraws.Count());
+                }
+
                 return View(withdraws);
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                _logger.LogError(ex, "An error occurred while fetching withdrawal transactions for the admin dashboard.");
+                return StatusCode(500, "An error occurred while retrieving data.");
             }
         }
         [HttpPost]

@@ -9,6 +9,7 @@ using MvcProject.Models.Hash;
 using MvcProject.Models.Repository.IRepository;
 using MvcProject.Models.Model;
 using MvcProject.Models.Service;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
