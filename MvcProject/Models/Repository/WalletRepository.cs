@@ -31,7 +31,7 @@ namespace MvcProject.Models.Repository
 
         public async Task<int> GetWalletCurrencyByUserIdAsync(string userId)
         {
-            var query = "Select Currency from Wallet";
+            var query = "Select Currency from Wallet where UserId=@userId";
             return await _dbConnection.QueryFirstOrDefaultAsync<int>(query, new { UserId = userId });
         }
 

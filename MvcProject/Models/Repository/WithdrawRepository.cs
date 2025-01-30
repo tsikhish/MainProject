@@ -30,7 +30,7 @@ namespace MvcProject.Models.Repository
             _transactionRepository = transactionRepository;
             _connection = connection;
         }
-        public async Task RegisterWithdraw
+        public async Task   RegisterWithdraw
             (string userId, Status status, TransactionType transactionType, decimal amount)
         {
             try

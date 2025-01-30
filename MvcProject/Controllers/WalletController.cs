@@ -22,12 +22,9 @@ namespace MvcProject.Controllers
             try
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                if (string.IsNullOrEmpty(userId))
-                    return Unauthorized(new { success = false, message = "User not authenticated." });
                 var balance = await _walletRepository.GetWalletBalanceByUserIdAsync(userId);
                 var currency = await _walletRepository.GetWalletCurrencyByUserIdAsync(userId);
-
-                if (balance == null || currency == null)
+                if (balance == 0 || currency == 0)
                     return NotFound(new { success = false, message = "Wallet balance or currency not found." });
                 var currencySymbol = GetCurrencySymbol(currency);
                 return Ok(new { success = true, balance, currency = currencySymbol });

@@ -18,6 +18,7 @@ namespace MvcProject.Controllers
 {
     public class TransactionsController : Controller
     {
+        private readonly ILogger<TransactionsController> _logger;
         private readonly ITransactionRepository _transactionRepository;
         private readonly IDepositRepository _depositRepository;
         private readonly IBankingRequestService _bankingRequestService;
