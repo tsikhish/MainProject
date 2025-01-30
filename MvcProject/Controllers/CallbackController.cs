@@ -1,35 +1,27 @@
-﻿using Azure.Core;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using MvcProject.Models;
-using MvcProject.Models.Hash;
 using MvcProject.Models.Model;
 using MvcProject.Models.Repository.IRepository;
 using MvcProject.Models.Repository.IRepository.Enum;
-using Newtonsoft.Json;
+using MvcProject.Models.Service;
 using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using System.Transactions;
 
 namespace MvcProject.Controllers
 {
     public class CallbackController : Controller
     {
+        private readonly IDepositRepository _depositRepository;
         private readonly ITransactionRepository _transactionRepository;
         private readonly IWithdrawRepository _withdrawRepository;
-        private readonly IWalletRepository _walletRepository;
-        private readonly IDepositRepository _depositRepository;
-        public CallbackController(IWithdrawRepository withdrawRepository,
-            ITransactionRepository transactionRepository, 
-            IWalletRepository walletRepository, IDepositRepository depositRepository)
+        private readonly IBankingRequestService _bankingRequestService;
+        public CallbackController(IDepositRepository depositRepository,IBankingRequestService bankingRequestService,IWithdrawRepository withdrawRepository,
+            ITransactionRepository transactionRepository)
         {
+            _depositRepository = depositRepository;
+            _bankingRequestService = bankingRequestService;
             _withdrawRepository = withdrawRepository;
             _transactionRepository = transactionRepository;
-            _walletRepository = walletRepository;
-            _depositRepository = depositRepository;
         }
         [Authorize]
         [Route("Callback/{DepositWithdrawId}/{Amount}")]
@@ -50,14 +42,11 @@ namespace MvcProject.Controllers
             try
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var response =await _depositRepository.SendToBankingApi(depositWithdrawRequest, "ConfirmDeposit"); 
+                depositWithdrawRequest.UserId = userId; 
+                depositWithdrawRequest.TransactionType = TransactionType.Deposit;
+                var response =await _bankingRequestService.SendDepositToBankingApi(depositWithdrawRequest, "ConfirmDeposit"); 
                 response.Amount = (decimal)(response.Amount / 100m);
-                await _transactionRepository.RegisterTransactionInTransactionsAsync(userId,response);
-                await _transactionRepository.UpdateStatus(response.DepositWithdrawRequestId, response.Status);
-                if (response.Status == Status.Success)
-                {
-                    await _walletRepository.UpdateWalletAmount(depositWithdrawRequest);
-                }
+                await _depositRepository.RegisterTransaction(depositWithdrawRequest,response);
                 return View(response);
             }
             catch (Exception ex)
@@ -70,7 +59,13 @@ namespace MvcProject.Controllers
         {
             try
             {
-                response = await _withdrawRepository.GetResponse(response);   
+                if (response == null)
+                {
+                    throw new ArgumentNullException(nameof(response), "Response cannot be null.");
+                }
+                var userId = await _withdrawRepository.GetUserIdByResponce(response);
+                response.Amount = (decimal)(response.Amount / 100m);
+                await _withdrawRepository.AddWithdrawTransactionAsync(response, userId);
                 return View(response);
             }
             catch (Exception ex)

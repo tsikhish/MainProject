@@ -3,12 +3,14 @@
 }
 
 <h2>Make a Withdraw</h2>
+
 <form id="withdraw-form">
     <label for="amount">Enter Amount:</label>
     <input type="number" id="amount" class="form-control" placeholder="Enter amount" step="any" min="0" required />
     <button type="submit" class="btn btn-primary mt-2">Submit Withdraw</button>
 </form>
-<div id="result" class="mt-3 text-danger"></div>
+
+<div id="withdrawMessage" class="alert mt-3" style="display: none;"></div>
 
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -17,27 +19,32 @@
             $('#withdraw-form').on("submit", function (e) {
                 e.preventDefault();
                 var amount = $('#amount').val();
+
                 if (!amount || parseFloat(amount) <= 0) {
-                    $('#result').text('Please enter a valid amount.');
+                    showMessage('Please enter a valid amount.', 'alert-danger');
                     return;
                 }
+
                 $.ajax({
                     url: '@Url.Action("WithdrawRequest", "Transactions")',
                     type: 'POST',
                     contentType: 'application/json',
                     data: JSON.stringify({ amount: parseFloat(amount) }),
-                    success: function () {
-                        $('body').html('<div class="text-center mt-5"><h2 class="text-success">Your request was sent to Admin. Please wait for the answer.</h2></div>');
+                    success: function (response) {
+                        showMessage(response.message, 'alert-success');
                     },
-                    error: function (xhr, status, error) {
-                        console.error("Error:", error, "XHR:", xhr, "Status:", status);
-                        $('#result').text(
-                            xhr.responseJSON?.message ||
-                            "Server cannot respond right now. Please try again later."
-                        );
+                    error: function (xhr) {
+                        let errorMessage = xhr.responseJSON?.message || "Server error. Please try again later.";
+                        showMessage(errorMessage, 'alert-danger');
                     }
                 });
             });
+
+            function showMessage(message, alertClass) {
+                $('#withdrawMessage').removeClass().addClass('alert ' + alertClass).text(message).fadeIn();
+                setTimeout(() => $('#withdrawMessage').fadeOut(), 5000);
+            }
         });
     </script>
 }
+

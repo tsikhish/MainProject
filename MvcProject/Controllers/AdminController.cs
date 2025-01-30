@@ -6,6 +6,7 @@ using MvcProject.Models.Hash;
 using MvcProject.Models.Model;
 using MvcProject.Models.Repository.IRepository;
 using MvcProject.Models.Repository.IRepository.Enum;
+using MvcProject.Models.Service;
 using Newtonsoft.Json;
 using System.Security.Cryptography;
 using System.Text;
@@ -17,9 +18,11 @@ namespace MvcProject.Controllers
         public readonly IWithdrawRepository _withdrawRepository;
         public readonly IDepositRepository _depositRepository;
         private readonly ITransactionRepository _transactionRepository;
-        public AdminController(IWithdrawRepository withdrawRepository,
+        private readonly IBankingRequestService _bankingRequestService;
+        public AdminController(IBankingRequestService bankingRequestService,IWithdrawRepository withdrawRepository,
             IDepositRepository depositRepository, ITransactionRepository transactionRepository)
         {
+            _bankingRequestService = bankingRequestService;
             _withdrawRepository = withdrawRepository;
             _depositRepository= depositRepository;
             _transactionRepository = transactionRepository;
@@ -43,9 +46,7 @@ namespace MvcProject.Controllers
         {
             try
             {
-                var withdraw = await _transactionRepository.GetDepositWithdrawById(id);
-                if (withdraw == null) throw new Exception("Withdraw Not Found");
-                await _transactionRepository.UpdateStatus(id, Status.Rejected);
+                await _transactionRepository.UpdateRejectedStatus(id);
                 TempData["RejectMessage"] = "The withdrawal has been rejected.";
                 return RedirectToAction("AdminDashboard");
             }
@@ -60,7 +61,7 @@ namespace MvcProject.Controllers
             try
             {
                 var transaction = await _withdrawRepository.GetWithdrawTransaction(id);
-                var response = await _withdrawRepository.SendWithdrawToBankingApi(transaction);
+                var response = await _bankingRequestService.SendWithdrawToBankingApi(transaction);
                 return View(response);
             }
             catch (Exception ex)
