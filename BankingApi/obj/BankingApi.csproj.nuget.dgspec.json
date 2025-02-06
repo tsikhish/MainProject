@@ -57,6 +57,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[3.0.3, )"
             }
           },
           "imports": [

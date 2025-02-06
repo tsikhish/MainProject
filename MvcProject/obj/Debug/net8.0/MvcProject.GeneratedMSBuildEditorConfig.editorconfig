@@ -64,14 +64,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Callback/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGJhY2tcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Callback/Payment.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGJhY2tcUGF5bWVudC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Callback/SuccessDeposit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGJhY2tcU3VjY2Vzc0RlcG9zaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +82,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Payment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Payment/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Payment/SendingDeposit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxTZW5kaW5nRGVwb3NpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Mari/source/repos/MainProject/MvcProject/Views/Shared/Error.cshtml]

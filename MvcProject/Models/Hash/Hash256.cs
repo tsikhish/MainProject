@@ -3,9 +3,9 @@ using System.Text;
 
 namespace MvcProject.Models.Hash
 {
-    public class Hash256 : IHash256
+    public static class Hash256
     {
-        public string ComputeSHA256Hash(int amount, string merchantId, int transactionId, string secretKey)
+        public static string ComputeSHA256Hash(int amount, string merchantId, int transactionId, string secretKey)
         {
             string concatenatedData = $"{amount}+{merchantId}+{transactionId}+{secretKey}";
             using (var sha256 = SHA256.Create())
@@ -14,7 +14,7 @@ namespace MvcProject.Models.Hash
                 return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
             }
         }
-        public string ComputeSHA256Hash(int amount, string merchantId, int transactionId, string usersFullName, string secretKey)
+        public static string ComputeSHA256Hash(int amount, string merchantId, int transactionId, string usersFullName, string secretKey)
         {
             string concatenatedData = $"{amount}+{merchantId}+{transactionId}+{usersFullName}+{secretKey}";
             using (var sha256 = SHA256.Create())

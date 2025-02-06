@@ -12,6 +12,31 @@ namespace BankingApi.Service
         {
             _apiUrl = appSettings.Value.ApiUrl;
         }
+
+        public async Task SendDepositResultToMvcProject(Deposit deposit, Status status)
+        {
+            try
+            {
+                using var client = new HttpClient();
+                var request = new
+                {
+                    DepositWithdrawRequestId = deposit.TransactionID,
+                    Amount = deposit.Amount,
+                    Status = status
+                };
+                var content = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
+                var response = await client.PostAsync($"{_apiUrl}/Callback/SuccessDeposit", content);
+                if (!response.IsSuccessStatusCode)
+                {
+                    throw new Exception("Failed to notify MVC project about the transaction result.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task SendWithdrawResultToMvcProject(Withdraw withdraw, Status status)
         {
             try
@@ -24,7 +49,7 @@ namespace BankingApi.Service
                     Status = status
                 };
                 var content = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
-                var response = await client.PostAsync($"{_apiUrl}/SuccessWithdraw", content);
+                var response = await client.PostAsync($"{_apiUrl}/Callback/SuccessWithdraw", content);
                 if (!response.IsSuccessStatusCode)
                 {
                     throw new Exception("Failed to notify MVC project about the transaction result.");

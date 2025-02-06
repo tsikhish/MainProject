@@ -12,7 +12,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 builder.Services.AddScoped<ISendBackResponse, SendBackResponse>();
-builder.Services.AddScoped<IHash, Hash>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

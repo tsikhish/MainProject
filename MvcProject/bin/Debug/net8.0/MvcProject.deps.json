@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.11",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
+          "log4net": "3.0.3"
         },
         "runtime": {
           "MvcProject.dll": {}
@@ -600,6 +601,17 @@
         "resources": {
           "lib/net6.0/zh-Hant/Humanizer.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "log4net/3.0.3": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/log4net.dll": {
+            "assemblyVersion": "3.0.3.0",
+            "fileVersion": "3.0.3.0"
           }
         }
       },
@@ -2545,6 +2557,13 @@
       "sha512": "sha512-VIXB7HCUC34OoaGnO3HJVtSv2/wljPhjV7eKH4+TFPgQdJj2lvHNKY41Dtg0Bphu7X5UaXFR4zrYYyo+GNOjbA==",
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
+    },
+    "log4net/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LAZBO0rHo4DM56GIt124NaXKo6LVZcfiuWVgODdUnhPNMzTOlRJWOEIXo8zVNLm426B+coDc4ocfTsTw7R7Zeg==",
+      "path": "log4net/3.0.3",
+      "hashPath": "log4net.3.0.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.11": {
       "type": "package",

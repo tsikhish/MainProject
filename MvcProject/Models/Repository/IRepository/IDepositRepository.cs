@@ -6,7 +6,8 @@ namespace MvcProject.Models.Repository.IRepository
 {
     public interface IDepositRepository
     {
-        Task RegisterTransaction(DepositWithdrawRequest deposit,Response response);
+        Task<string> GetUserIdByResponce(Model.Response response);
+        Task RegisterTransaction(string userId, Response response);
         Task<int> RegisterDeposit
             (string userId, Status status, TransactionType transactionType, decimal amount);
     }

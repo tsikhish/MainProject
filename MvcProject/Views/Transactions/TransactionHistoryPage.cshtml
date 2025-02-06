@@ -69,7 +69,15 @@
                         transactionTypeCell.text('Deposit');
                     } else if (transactionTypeValue === '2') {
                         transactionTypeCell.text('Withdraw');
-                    } else {
+                    } else if (transactionTypeValue === '3') {
+                        transactionTypeCell.text('Bet');
+                    }else if (transactionTypeValue === '4') {
+                        transactionTypeCell.text('Win');
+                    }else if (transactionTypeValue === '5') {
+                        transactionTypeCell.text('CancelBet');
+                    }else if (transactionTypeValue === '6') {
+                        transactionTypeCell.text('ChangeWin');
+                    }else {
                         transactionTypeCell.text('Unknown');
                     }
                 }

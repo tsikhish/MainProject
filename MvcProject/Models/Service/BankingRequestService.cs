@@ -12,22 +12,20 @@ namespace MvcProject.Models.Service
 {
     public class BankingRequestService :IBankingRequestService
     {
-        private readonly IHash256 _hash;
         private readonly string _secretKey;
         private readonly string _merchantId;
         private readonly string _ApiUrl;
-        public BankingRequestService(IOptions<AppSettings> appSettings, IHash256 hash)
+        public BankingRequestService(IOptions<AppSettings> appSettings)
         {
             _merchantId = appSettings.Value.MerchantID;
             _ApiUrl = appSettings.Value.ApiUrl;
             _secretKey = appSettings.Value.SecretKey;
-            _hash = hash;
         }
         public async Task<Response> SendDepositToBankingApi(DepositWithdrawRequest deposit, string action)
         {
             try
             {
-                var hash = _hash.ComputeSHA256Hash((int)(deposit.Amount * 100),
+                var hash = Hash256.ComputeSHA256Hash((int)(deposit.Amount * 100),
                     _merchantId, deposit.Id, _secretKey);
                 var request = new
                 {
@@ -62,7 +60,7 @@ namespace MvcProject.Models.Service
         {
             try
             {
-                var hash = _hash.ComputeSHA256Hash((int)(amount * 100),
+                var hash = Hash256.ComputeSHA256Hash((int)(amount * 100),
                     _merchantId, depositId, _secretKey);
                 var request = new
                 {
