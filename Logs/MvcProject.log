@@ -5220,3 +5220,389 @@ System.Exception: This user has already sent a pending request. Please wait for 
 2025-02-06 13:27:09 [9] INFO  Program - Request to /Wallet/GetWalletBalance received.
 2025-02-06 13:27:09 [9] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
 2025-02-06 13:27:09 [32] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:18:19 [10] INFO  Program - Request to / received.
+2025-02-06 14:18:20 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:18:20 [11] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-06 14:18:31 [17] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-06 14:18:31 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:18:31 [8] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-06 14:18:32 [8] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-06 14:18:33 [18] INFO  Program - Request to / received.
+2025-02-06 14:18:33 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:18:33 [18] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:18:33 [11] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:19:03 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:19:03 [8] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:19:03 [8] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:19:33 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:19:33 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:19:33 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:20:03 [25] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:20:03 [25] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:20:03 [25] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:20:33 [3] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:20:33 [3] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:20:33 [3] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:21:03 [3] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:21:03 [3] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:21:03 [3] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:21:33 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:21:33 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:21:33 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:22:03 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:22:03 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:22:03 [28] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:22:33 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:22:33 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:22:33 [27] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:23:03 [27] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:23:03 [27] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:23:03 [27] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 30,4700 €
+2025-02-06 14:23:33 [27] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:23:33 [27] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:23:33 [31] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:24:03 [35] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:24:03 [35] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:24:03 [27] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:24:33 [33] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:24:33 [33] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:24:33 [37] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:25:03 [37] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:25:03 [37] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:25:03 [37] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:25:33 [27] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:25:33 [27] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:25:33 [27] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:26:03 [27] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:26:03 [27] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:26:03 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:26:33 [33] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:26:33 [33] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:26:33 [33] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:27:03 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:27:03 [38] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:27:03 [41] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:27:33 [41] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:27:33 [41] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:27:33 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:28:03 [41] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:28:03 [41] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:28:03 [41] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:28:33 [34] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:28:33 [34] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:28:33 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:29:03 [47] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:29:03 [47] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:29:03 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:29:33 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:29:33 [38] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:29:33 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:30:03 [46] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:30:03 [46] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:30:03 [46] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:30:33 [46] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:30:33 [46] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:30:33 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:31:03 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:31:03 [38] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:31:03 [46] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:31:33 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:31:33 [38] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:31:33 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:32:03 [53] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:32:03 [53] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:32:03 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:32:33 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:32:33 [38] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:32:33 [46] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:33:03 [55] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:33:03 [55] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:33:03 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:33:33 [52] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:33:33 [52] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:33:33 [56] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:34:03 [54] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:34:03 [54] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:34:03 [54] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:34:33 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:34:33 [38] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:34:33 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:35:03 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:35:03 [38] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:35:03 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:35:33 [52] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:35:33 [52] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:35:33 [38] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:36:03 [61] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:36:03 [61] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:36:03 [62] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:36:33 [61] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:36:33 [61] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:36:33 [62] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:37:03 [66] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:37:03 [66] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:37:03 [61] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:37:33 [61] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:37:33 [61] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:37:33 [62] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:38:03 [66] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:38:03 [66] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:38:03 [64] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:38:33 [61] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:38:33 [61] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:38:33 [68] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:39:03 [68] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:39:03 [68] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:39:03 [64] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:39:33 [74] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:39:33 [74] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:39:33 [64] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:40:03 [75] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:40:03 [75] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:40:03 [74] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:40:33 [64] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:40:33 [64] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:40:33 [64] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:41:03 [74] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:41:03 [74] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:41:03 [77] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:41:33 [74] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:41:33 [74] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:41:33 [74] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:42:03 [82] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:42:03 [82] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:42:03 [77] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:42:33 [77] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:42:33 [77] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:42:33 [82] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:43:03 [77] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:43:03 [77] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:43:03 [85] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:43:33 [82] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:43:33 [82] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:43:33 [87] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:44:03 [82] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:44:03 [82] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:44:03 [87] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:44:33 [86] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:44:33 [86] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:44:33 [86] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:45:03 [86] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:45:03 [86] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:45:03 [86] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:45:33 [89] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:45:33 [89] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:45:33 [89] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:46:03 [93] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:46:03 [93] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:46:03 [89] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:46:33 [89] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:46:33 [89] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:46:33 [89] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:47:03 [91] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:47:03 [91] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:47:03 [92] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:47:33 [92] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:47:33 [92] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:47:33 [89] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:48:03 [92] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:48:03 [92] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:48:03 [92] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:48:33 [92] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:48:33 [92] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:48:33 [101] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:49:03 [92] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:49:03 [92] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:49:03 [89] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:49:33 [89] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:49:33 [89] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:49:33 [89] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:50:03 [89] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:50:03 [89] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:50:03 [106] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:50:33 [107] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:50:33 [107] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:50:33 [89] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:51:03 [107] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:51:03 [107] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:51:03 [107] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:51:33 [109] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:51:33 [109] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:51:33 [109] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:52:03 [89] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:52:03 [89] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:52:03 [115] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:52:33 [114] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:52:33 [114] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:52:33 [116] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:53:03 [116] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:53:03 [116] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:53:03 [89] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:53:33 [117] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:53:33 [117] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:53:33 [121] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:54:03 [117] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:54:03 [117] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:54:03 [117] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:54:33 [117] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:54:33 [117] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:54:33 [117] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:55:03 [124] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:55:03 [124] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:55:03 [124] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:55:33 [127] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:55:33 [127] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:55:33 [126] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:56:03 [126] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:56:03 [126] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:56:03 [126] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:56:33 [131] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:56:33 [131] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:56:33 [130] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:57:03 [132] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:57:03 [132] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:57:03 [134] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 14:57:33 [134] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:57:33 [134] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:57:33 [136] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 14:58:03 [134] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:58:03 [134] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:58:03 [138] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 14:58:33 [134] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:58:33 [134] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:58:33 [139] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 14:59:03 [137] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:59:03 [137] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:59:03 [141] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 14:59:33 [134] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 14:59:33 [134] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 14:59:33 [142] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:00:03 [142] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:00:03 [142] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:00:03 [142] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:00:33 [142] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:00:33 [142] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:00:33 [146] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:01:03 [147] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:01:03 [147] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:01:03 [147] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:01:33 [146] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:01:33 [146] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:01:33 [149] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:02:03 [143] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:02:03 [143] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:02:03 [146] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:02:33 [152] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:02:33 [152] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:02:33 [151] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:03:03 [152] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:03:03 [152] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:03:03 [152] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:03:33 [143] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:03:33 [143] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:03:33 [156] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:04:03 [143] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:04:03 [143] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:04:03 [143] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:04:33 [160] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:04:33 [160] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:04:33 [161] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:05:03 [160] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:05:03 [160] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:05:03 [163] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:05:33 [160] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:05:33 [160] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:05:33 [163] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:06:03 [160] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:06:03 [160] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:06:03 [163] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:06:33 [166] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:06:33 [166] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:06:33 [160] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:07:03 [166] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:07:03 [166] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:07:03 [168] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:07:33 [166] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:07:33 [166] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:07:33 [166] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:08:03 [171] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:08:03 [171] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:08:03 [174] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,2700 €
+2025-02-06 15:08:33 [172] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:08:33 [172] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:08:33 [172] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:09:03 [166] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:09:03 [166] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:09:03 [173] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:09:33 [171] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:09:33 [171] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:09:33 [175] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:10:03 [173] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:10:03 [173] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:10:03 [173] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:10:33 [172] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:10:33 [172] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:10:33 [171] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:11:03 [171] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:11:03 [171] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:11:03 [171] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:11:33 [168] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:11:33 [168] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:11:33 [168] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:12:03 [164] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:12:03 [164] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:12:03 [162] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:12:33 [162] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:12:33 [162] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:12:33 [168] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:13:03 [160] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:13:03 [160] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:13:03 [158] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:13:33 [159] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:13:33 [159] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:13:33 [159] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:14:03 [155] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:14:03 [155] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:14:03 [154] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:14:33 [153] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:14:33 [153] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:14:33 [155] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:15:03 [155] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:15:03 [155] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:15:03 [150] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:15:33 [155] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:15:33 [155] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:15:33 [149] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 530,4700 €
+2025-02-06 15:16:03 [155] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:16:03 [155] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:16:03 [149] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 510,4700 €
+2025-02-06 15:16:33 [147] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:16:33 [147] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:16:33 [147] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 550,4700 €
+2025-02-06 15:17:03 [145] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:17:03 [145] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:17:03 [155] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 550,4700 €
+2025-02-06 15:17:33 [155] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:17:33 [155] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:17:33 [143] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 550,4700 €
+2025-02-06 15:18:03 [141] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:18:03 [141] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:18:03 [155] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 550,4700 €
+2025-02-06 15:18:33 [141] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:18:33 [141] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:18:33 [155] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 550,4700 €
+2025-02-06 15:19:03 [143] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:19:03 [143] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:19:03 [143] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 550,4700 €
+2025-02-06 15:19:33 [143] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:19:33 [143] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:19:33 [140] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 550,4700 €
+2025-02-06 15:20:03 [143] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:20:03 [143] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:20:03 [143] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 550,4700 €
+2025-02-06 15:20:33 [137] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:20:33 [137] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:20:33 [133] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 550,4700 €
+2025-02-06 15:21:03 [136] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-06 15:21:03 [136] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-06 15:21:03 [136] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 560,4700 €
