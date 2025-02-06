@@ -1,16 +1,6 @@
-﻿using Azure.Core;
-using Dapper;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Options;
-using Mono.TextTemplating;
-using MvcProject.Models.Model;
+﻿using Dapper;
 using MvcProject.Models.Repository.IRepository;
-using MvcProject.Models.Repository.IRepository.Enum;
-using Newtonsoft.Json;
 using System.Data;
-using System.Text;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-
 namespace MvcProject.Models.Repository
 {
     public class UserRepository : IUserRepository

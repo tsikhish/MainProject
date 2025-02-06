@@ -1,0 +1,25 @@
+﻿@using MvcProject.Models.Repository.IRepository.Enum
+@model MvcProject.Models.Model.Response
+<div class="container mt-5 text-center">
+    @if (Model != null)
+    {
+        if (Model.Status == Status.Rejected)
+        {
+            <h2 class="text-warning">Payment is finished!</h2>
+            <p>Your transaction has been unfortunately rejected.</p>
+        }
+        else if (Model.Status == Status.Success)
+        {
+            <h2 class="text-success">Payment is done!</h2>
+            <p>Thank you for your payment.Your transaction has been successfully complited.</p>
+        }
+        else
+        {
+            <p>Somethings wrong with your transaction. Please try again.</p>
+        }
+    }
+    else
+    {
+        <p>Somethings wrong with your transaction. Please try again.</p>
+    }
+</div>

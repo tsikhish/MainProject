@@ -1,20 +1,11 @@
-﻿using Azure;
-using log4net;
+﻿using log4net;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using MvcProject.Models;
-using MvcProject.Models.Hash;
-using MvcProject.Models.Model;
 using MvcProject.Models.Model.DTO;
 using MvcProject.Models.Repository.IRepository;
 using MvcProject.Models.Repository.IRepository.Enum;
 using MvcProject.Models.Service;
-using Newtonsoft.Json;
-using System.Globalization;
 using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
 
 namespace MvcProject.Controllers
 {
@@ -24,11 +15,11 @@ namespace MvcProject.Controllers
         private readonly IDepositRepository _depositRepository;
         private readonly IBankingRequestService _bankingRequestService;
         private readonly IWithdrawRepository _withdrawRepository;
-        private static readonly ILog _logger = LogManager.GetLogger(typeof(TransactionsController));
-
-        public TransactionsController(IWithdrawRepository withdrawRepository, ITransactionRepository transactionRepository,
+        private readonly ILog _logger;
+        public TransactionsController(ILog logger,IWithdrawRepository withdrawRepository, ITransactionRepository transactionRepository,
             IDepositRepository depositRepository, IBankingRequestService bankingRequestService)
         {
+            _logger = logger;
             _withdrawRepository = withdrawRepository;
             _bankingRequestService = bankingRequestService;
             _transactionRepository = transactionRepository;
@@ -84,20 +75,15 @@ namespace MvcProject.Controllers
 
                 if (request.Amount <= 0)
                 {
-                    _logger.Warn($"Deposit failed: Invalid amount ({request.Amount}) for User ID: {userId}");
                     return Json(new { success = false, message = "Amount must be greater than zero." });
                 }
-
                 var depositId = await _depositRepository.RegisterDeposit(userId, Status.Pending, TransactionType.Deposit, request.Amount);
                 _logger.Info($"Deposit registered with ID: {depositId} for User ID: {userId}");
-
                 var response = await _bankingRequestService.SendDepositToBankingApi(depositId, request.Amount, "Deposit");
                 if (response == null)
                 {
-                    _logger.Error($"Failed to process deposit ID: {depositId} for User ID: {userId}. Banking API returned null.");
                     return BadRequest(new { success = false, message = "Failed to process the transaction with the banking API." });
                 }
-
                 _logger.Info($"Deposit successfully processed. Redirecting User ID: {userId} to Payment URL: {response.PaymentUrl}");
                 return Ok(new { success = true, paymentUrl = response.PaymentUrl });
             }
@@ -105,7 +91,7 @@ namespace MvcProject.Controllers
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 _logger.Error($"An error occurred while processing deposit for User ID: {userId}", ex);
-                return StatusCode(500, new { success = false, message = "An unexpected error occurred. Please try again later." });
+                return BadRequest(new { Message = ex.Message });
             }
         }
 

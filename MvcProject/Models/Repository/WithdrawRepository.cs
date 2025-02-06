@@ -1,5 +1,4 @@
-﻿using Azure;
-using Dapper;
+﻿using Dapper;
 using log4net;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
@@ -18,14 +17,12 @@ namespace MvcProject.Models.Repository
         private readonly IDbConnection _connection;
         private readonly string _secretKey;
         private readonly string _merchantId;
-        private readonly IHash256 _hash;
         private static readonly ILog _logger = LogManager.GetLogger(typeof(WithdrawRepository));
         private readonly ICustomExceptions _customExceptions;
-        public WithdrawRepository(ICustomExceptions customExceptions,IHash256 hash, IOptions<AppSettings> appSettings, ITransactionRepository transactionRepository,
+        public WithdrawRepository(ICustomExceptions customExceptions, IOptions<AppSettings> appSettings, ITransactionRepository transactionRepository,
              IDbConnection connection)
         {
             _customExceptions = customExceptions;
-            _hash = hash;
             _merchantId = appSettings.Value.MerchantID;
             _secretKey = appSettings.Value.SecretKey;
             _transactionRepository = transactionRepository;
@@ -78,7 +75,7 @@ namespace MvcProject.Models.Repository
         {
             _logger.InfoFormat("Fetching withdraw transaction details for transaction ID: {0}.", id);
             var usersFullName = await _transactionRepository.GetUsersFullNameAsync(id);
-            var hash = _hash.ComputeSHA256Hash((int)(usersFullName.Amount * 100), _merchantId, id, usersFullName.UserName, _secretKey);
+            var hash = Hash256.ComputeSHA256Hash((int)(usersFullName.Amount * 100), _merchantId, id, usersFullName.UserName, _secretKey);
             var transaction = new Withdraw
             {
                 TransactionID = id,

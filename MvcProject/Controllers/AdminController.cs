@@ -1,33 +1,24 @@
 ﻿using log4net;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using MvcProject.Models;
-using MvcProject.Models.Hash;
-using MvcProject.Models.Model;
 using MvcProject.Models.Repository.IRepository;
-using MvcProject.Models.Repository.IRepository.Enum;
 using MvcProject.Models.Service;
-using Newtonsoft.Json;
-using System.Security.Cryptography;
-using System.Text;
 
 namespace MvcProject.Controllers
 {
     public class AdminController : Controller
     {
         private readonly IWithdrawRepository _withdrawRepository;
-        private readonly IDepositRepository _depositRepository;
         private readonly ITransactionRepository _transactionRepository;
-        private static readonly ILog _logger = LogManager.GetLogger(typeof(AdminController)); // Change to the current class
+        private readonly ILog _logger;
         private readonly IBankingRequestService _bankingRequestService;
 
-        public AdminController(IBankingRequestService bankingRequestService, IWithdrawRepository withdrawRepository,
-            IDepositRepository depositRepository, ITransactionRepository transactionRepository)
+        public AdminController(ILog logger,IBankingRequestService bankingRequestService, IWithdrawRepository withdrawRepository,
+            ITransactionRepository transactionRepository)
         {
+            _logger = logger;
             _bankingRequestService = bankingRequestService;
             _withdrawRepository = withdrawRepository;
-            _depositRepository = depositRepository;
             _transactionRepository = transactionRepository;
         }
 

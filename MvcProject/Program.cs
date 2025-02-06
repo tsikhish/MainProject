@@ -12,6 +12,7 @@ using MvcProject.Models.Service;
 using log4net.Config;
 using log4net;
 using MvcProject.Models.Exceptions;
+using MvcProject.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 XmlConfigurator.Configure(new FileInfo("log4net.config"));
@@ -32,10 +33,18 @@ builder.Services.AddScoped<IBankingRequestService, BankingRequestService>();
 builder.Services.AddScoped<IUserRepository,UserRepository>();
 builder.Services.AddScoped<IDepositRepository,DepositRepository>();
 builder.Services.AddScoped<IWalletRepository, WalletRepository>();
-builder.Services.AddScoped<IHash256, Hash256>();
 builder.Services.AddScoped<ITransactionRepository,TransactionRepository>();
 builder.Services.AddScoped<IWithdrawRepository,WithdrawRepository>();
 builder.Services.AddScoped<ICustomExceptions, CustomExceptions>();
+var logRepository = LogManager.GetRepository(System.Reflection.Assembly.GetEntryAssembly());
+XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(AdminController)));
+builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(CallbackController)));
+builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(HomeController)));
+builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(TransactionsController)));
+builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(WalletController)));
+
+
 builder.Services.AddHttpClient();
 var app = builder.Build();
 await Seed.InitializeAsync(app.Services);

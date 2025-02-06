@@ -1,0 +1,119 @@
+[
+  {
+    "ContainingType": "CasinoApi.Controllers.AuthenticateController",
+    "Method": "GeneratePrivateToken",
+    "RelativePath": "Authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "publicToken",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CasinoApi.Controllers.GamesController",
+    "Method": "CancelBet",
+    "RelativePath": "Games/CancelBet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cancelBet",
+        "Type": "CasinoApi.Models.CancelBet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CasinoApi.Controllers.GamesController",
+    "Method": "ChangeWin",
+    "RelativePath": "Games/ChangeWin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changeWin",
+        "Type": "CasinoApi.Models.ChangeWin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CasinoApi.Controllers.GamesController",
+    "Method": "CreateBet",
+    "RelativePath": "Games/CreateBet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "betrequest",
+        "Type": "CasinoApi.Models.BetRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CasinoApi.Controllers.GamesController",
+    "Method": "CreateWin",
+    "RelativePath": "Games/CreateWin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "winRequest",
+        "Type": "CasinoApi.Models.WinRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CasinoApi.Controllers.GamesController",
+    "Method": "GetBalance",
+    "RelativePath": "Games/GetBalance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getBalance",
+        "Type": "CasinoApi.Models.GetBalance",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CasinoApi.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CasinoApi.WeatherForecast, CasinoApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

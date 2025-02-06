@@ -30,8 +30,8 @@
                         if (response.success && response.paymentUrl) {
                             window.location.href = response.paymentUrl;
                         } else {
-                            $('#result').text(response.message || 'An unexpected error occurred.');
-                        }
+                            let errorMessage = xhr.responseJSON?.message || "Server error. Please try again later.";
+                            showMessage(errorMessage, 'alert-danger');                        }
                     },
                     error: function (xhr, status, error) {
                         console.error("Error:", error, "XHR:", xhr, "Status:", status);

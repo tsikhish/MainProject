@@ -1,5 +1,6 @@
 ﻿using BankingApi.Helper;
 using BankingApi.Models;
+using BankingApi.Models.Hash;
 using BankingApi.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -16,16 +17,13 @@ namespace BankingApi.Controllers
         private readonly string _merchantId;
         private readonly string _apiUrl;
         private readonly ISendBackResponse _sendBackResponse;
-        private readonly IHash _hash;
         private readonly ILogger<TransactionsController> _logger;
 
         public TransactionsController(
-            IHash hash,
             IOptions<AppSettings> appSettings,
             ISendBackResponse sendBackResponse,
             ILogger<TransactionsController> logger)
         {
-            _hash = hash;
             _sendBackResponse = sendBackResponse;
             _secretKey = appSettings.Value.SecretKey;
             _merchantId = appSettings.Value.MerchantID;
@@ -40,14 +38,14 @@ namespace BankingApi.Controllers
             {
                 _logger.LogInformation("Processing Deposit for TransactionID: {TransactionID}, Amount: {Amount}", deposit.TransactionID, deposit.Amount);
 
-                var hash = _hash.ComputeSHA256Hash((int)(deposit.Amount), _merchantId, deposit.TransactionID, _secretKey);
+                var hash = Hash256.ComputeSHA256Hash((int)(deposit.Amount), _merchantId, deposit.TransactionID, _secretKey);
                 if (hash != deposit.Hash)
                 {
                     _logger.LogWarning("Hash mismatch for Deposit TransactionID: {TransactionID}", deposit.TransactionID);
                     return BadRequest("Incorrect hash");
                 }
 
-                string paymentUrl = $"{_apiUrl}/{deposit.TransactionID}/{(int)(deposit.Amount)}";
+                string paymentUrl = $"{_apiUrl}/Payment/{deposit.TransactionID}/{(int)(deposit.Amount)}";
                 _logger.LogInformation("Deposit processed successfully. Payment URL: {PaymentUrl}", paymentUrl);
 
                 return Ok(new { Status = 1, PaymentUrl = paymentUrl });
@@ -66,7 +64,7 @@ namespace BankingApi.Controllers
             {
                 _logger.LogInformation("Confirming Deposit for TransactionID: {TransactionID}, Amount: {Amount}", deposit.TransactionID, deposit.Amount);
 
-                var hash = _hash.ComputeSHA256Hash((int)(deposit.Amount), _merchantId, deposit.TransactionID, _secretKey);
+                var hash = Hash256.ComputeSHA256Hash((int)(deposit.Amount), _merchantId, deposit.TransactionID, _secretKey);
                 if (hash != deposit.Hash)
                 {
                     _logger.LogWarning("Hash mismatch for ConfirmDeposit TransactionID: {TransactionID}", deposit.TransactionID);
@@ -74,12 +72,13 @@ namespace BankingApi.Controllers
                 }
 
                 bool isAmountEven = (deposit.Amount / 100) % 2 == 0;
-                var status = isAmountEven ? "Success" : "Rejected";
+                var status = isAmountEven ? Status.Success : Status.Rejected;
                 _logger.LogInformation("Deposit confirmed with status: {Status} for TransactionID: {TransactionID}", status, deposit.TransactionID);
+                await _sendBackResponse.SendDepositResultToMvcProject(deposit, status);
 
                 return Ok(new
                 {
-                    TransactionId = deposit.TransactionID,
+                    DepositWithdrawRequestId = deposit.TransactionID,
                     Status = status,
                     Amount = deposit.Amount,
                 });
@@ -98,7 +97,7 @@ namespace BankingApi.Controllers
             {
                 _logger.LogInformation("Confirming Withdraw for TransactionID: {TransactionID}, Amount: {Amount}", withdraw.TransactionID, withdraw.Amount);
 
-                var hash = _hash.ComputeSHA256Hash((int)(withdraw.Amount), _merchantId, withdraw.TransactionID, withdraw.UsersFullName, _secretKey);
+                var hash = Hash256.ComputeSHA256Hash((int)(withdraw.Amount), _merchantId, withdraw.TransactionID, withdraw.UsersFullName, _secretKey);
                 if (hash != withdraw.Hash)
                 {
                     _logger.LogWarning("Hash mismatch for ConfirmWithdraw TransactionID: {TransactionID}", withdraw.TransactionID);

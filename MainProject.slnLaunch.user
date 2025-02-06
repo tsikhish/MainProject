@@ -9,6 +9,10 @@
       {
         "Path": "BankingApi\\BankingApi.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "CasinoApi\\CasinoApi.csproj",
+        "Action": "Start"
       }
     ]
   }

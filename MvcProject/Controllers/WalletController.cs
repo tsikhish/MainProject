@@ -8,9 +8,10 @@ namespace MvcProject.Controllers
     public class WalletController : Controller
     {
         private readonly IWalletRepository _walletRepository;
-        private static readonly ILog _logger = LogManager.GetLogger(typeof(WalletController));
-        public WalletController(IWalletRepository walletRepository)
+        private readonly ILog _logger;
+        public WalletController(ILog logger,IWalletRepository walletRepository)
         {
+            _logger=logger;
             _walletRepository = walletRepository;
         }
         public IActionResult Index()
