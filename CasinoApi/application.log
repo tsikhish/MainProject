@@ -32,3 +32,86 @@
 2025-02-06 12:10:24 [34] INFO  Program - Request to /Games/GetBalance received.
 2025-02-06 12:10:24 [34] INFO  CasinoApi.Repositories.CreatingGames - Get Balance for Game ID: 11
 2025-02-06 12:10:24 [34] INFO  CasinoApi.Repositories.CreatingGames - Balance was successfully got for GameId ID: 11
+2025-02-06 12:29:43 [15] INFO  Program - Request to /Authenticate received.
+2025-02-06 12:30:12 [4] INFO  Program - Request to /Authenticate received.
+2025-02-06 12:30:50 [25] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:30:50 [25] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 789
+2025-02-06 12:30:50 [3] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 789
+2025-02-06 12:30:56 [22] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:30:56 [22] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 789
+2025-02-06 12:30:56 [25] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 789
+2025-02-06 12:31:40 [22] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:31:40 [22] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 789
+2025-02-06 12:31:40 [22] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 789
+2025-02-06 12:31:45 [22] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:31:45 [22] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 789
+2025-02-06 12:31:45 [3] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 789
+2025-02-06 12:32:50 [22] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:32:50 [22] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 789
+2025-02-06 12:32:50 [22] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 789
+2025-02-06 12:32:55 [22] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:32:55 [22] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 789
+2025-02-06 12:32:55 [3] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 789
+2025-02-06 12:33:55 [3] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:33:55 [3] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 789
+2025-02-06 12:33:55 [23] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 789
+2025-02-06 12:34:55 [3] INFO  Program - Request to /Games/GetBalance received.
+2025-02-06 12:34:55 [3] INFO  CasinoApi.Repositories.CreatingGames - Get Balance for Game ID: 789
+2025-02-06 12:34:55 [24] INFO  CasinoApi.Repositories.CreatingGames - Balance was successfully got for GameId ID: 789
+2025-02-06 12:36:15 [8] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:36:15 [8] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 789
+2025-02-06 12:36:15 [18] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 789
+2025-02-06 12:38:03 [33] INFO  Program - Request to /Games/CreateWin received.
+2025-02-06 12:38:03 [33] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 966
+2025-02-06 12:38:03 [31] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully got for Transaction ID: 966
+2025-02-06 12:43:50 [55] INFO  Program - Request to /Games/CreateWin received.
+2025-02-06 12:43:50 [55] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 966
+2025-02-06 12:43:50 [54] WARN  CasinoApi.Repositories.CreatingGames - Win was not got for Transaction ID: 966
+2025-02-06 12:51:09 [64] INFO  Program - Request to /Games/CreateWin received.
+2025-02-06 12:51:09 [64] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 966
+2025-02-06 12:51:09 [64] WARN  CasinoApi.Repositories.CreatingGames - Win was not got for Transaction ID: 966
+2025-02-06 12:52:51 [57] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-06 12:52:51 [57] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 589
+2025-02-06 12:52:51 [60] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 589
+2025-02-06 12:52:58 [55] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-06 12:52:58 [55] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 589
+2025-02-06 12:52:58 [60] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully changed for TransactionId ID: 589
+2025-02-06 12:57:53 [38] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:57:53 [38] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1000
+2025-02-06 12:57:53 [38] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1000
+2025-02-06 12:58:17 [32] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:58:17 [32] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1000
+2025-02-06 12:58:18 [34] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 1000
+2025-02-06 12:58:30 [38] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:58:30 [38] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1001
+2025-02-06 12:58:30 [39] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1001
+2025-02-06 12:58:39 [32] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:58:39 [32] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1001
+2025-02-06 12:58:39 [38] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 1001
+2025-02-06 12:58:52 [38] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 12:58:52 [38] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1002
+2025-02-06 12:58:52 [32] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1002
+2025-02-06 12:59:55 [38] INFO  Program - Request to /Games/CreateWin received.
+2025-02-06 12:59:55 [38] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 1003
+2025-02-06 12:59:55 [30] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully got for Transaction ID: 1003
+2025-02-06 13:02:03 [38] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 13:02:03 [38] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1004
+2025-02-06 13:02:03 [31] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1004
+2025-02-06 13:02:32 [38] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-06 13:02:32 [38] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 589
+2025-02-06 13:02:32 [30] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 589
+2025-02-06 13:07:17 [6] INFO  Program - Request to /Games/CancelBet received.
+2025-02-06 13:07:17 [6] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1005
+2025-02-06 13:07:17 [28] INFO  CasinoApi.Repositories.CreatingGames - Bet was successfully got for TransactionId ID: 1005
+2025-02-06 13:08:03 [28] INFO  Program - Request to /Games/CancelBet received.
+2025-02-06 13:08:03 [28] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1005
+2025-02-06 13:08:03 [12] WARN  CasinoApi.Repositories.CreatingGames - Bet was not got for TransactionId ID: 1005
+2025-02-06 13:08:20 [18] INFO  Program - Request to /Games/CancelBet received.
+2025-02-06 13:08:20 [18] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1005
+2025-02-06 13:08:20 [28] WARN  CasinoApi.Repositories.CreatingGames - Bet was not got for TransactionId ID: 1005
+2025-02-06 13:13:25 [18] INFO  Program - Request to /Games/CancelBet received.
+2025-02-06 13:13:25 [18] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1005
+2025-02-06 13:13:25 [18] WARN  CasinoApi.Repositories.CreatingGames - Bet was not got for TransactionId ID: 1005
+2025-02-06 13:14:16 [28] INFO  Program - Request to /Games/CreateBet received.
+2025-02-06 13:14:16 [28] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1006
+2025-02-06 13:14:16 [28] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 1006

@@ -3,16 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Mari\\source\\repos\\MainProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\callbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\callbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\bankingapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|solutionrelative:bankingapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\views\\transactions\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\views\\transactions\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\casinoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\casinoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\application.log||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\application.log||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\repositories\\creatinggames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\repositories\\creatinggames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -47,24 +79,12 @@
       "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\callbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\callbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\repositories\\irepositories\\icreatinggames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,10 +127,6 @@
       "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\models\\winrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\models\\winrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -127,20 +143,12 @@
       "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\models\\repository\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\casinoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\casinoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\models\\repository\\depositrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\models\\repository\\depositrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\models\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -153,10 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\models\\repository\\walletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\models\\repository\\walletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\bankingapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|solutionrelative:bankingapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\models\\repository\\irepository\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -173,10 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\bankingapi\\service\\sendbackresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|solutionrelative:bankingapi\\service\\sendbackresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\views\\transactions\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\views\\transactions\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\views\\transactions\\withdraw.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -490,7 +490,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -546,59 +546,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "application.log",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\application.log",
-              "RelativeDocumentMoniker": "CasinoApi\\application.log",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\application.log",
-              "RelativeToolTip": "CasinoApi\\application.log",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVDhPrZRNTgIxFMerDIaEhHgU97JxwUKGGaNeQJdyCY0XUBDWGhg4AB\u002BuvQk7OQCRFTP1fXWmMxUMCT94ee177eu/LVQdFK31kTSJ0WgEIa0SMJ2A6QTHcF9iicQqlYpa/6zv2\u002B2HD5nuEkWR/l4udRzHZBtjGzFor1YrPR6P9WKx0MNhpN96vTuZThyLJ1AJLK/iJFFxjBanBsXIozqkWq2qev1c1Wq19063e0ZBwBNP4JaQ6WRC/i8ajQb5wWBAvnxyghpOqQPkC8L5IEEQKjgxaqOTFsCd65tb6nmlkur1\u002BxwXCgX58KfT7QptwvCK52wrSLcJvtUKOABkQ6HFXwbGsmMRBkchzpjNphLZDSrEn5G1qnsp\u002BPEtheloXouRnXDTTjhb5tXmeyg0IgzuliHp\u002By0OANbiOCDXp1IYo3mMUxBT8/mMA/8QhGH6ZzC4Zwi5ZqoQB9M3h62I/\u002B/SAQpniBmtPvdQyGeYUdgyX8pl05eIBSxmTzQYEYbc42AuJQWLGJNQEcrJG4A4BTHneSW2sqfKOyybkxXMPbAvrx3IsyLzkPJFmUcWYtDntjG6lIvnp8cvKXNIlPoFvstpJRlQPIAAAAAASUVORK5CYII=",
-              "WhenOpened": "2025-02-06T07:14:12.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "log4Net.config",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\log4Net.config",
-              "RelativeDocumentMoniker": "CasinoApi\\log4Net.config",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\log4Net.config",
-              "RelativeToolTip": "CasinoApi\\log4Net.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-02-05T22:11:22.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Program.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Program.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Program.cs",
-              "RelativeToolTip": "MvcProject\\Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAUwCoAAABTAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "CasinoApi\\Controllers\\GamesController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAswHMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T10:09:38.897Z",
+              "WhenOpened": "2025-02-03T18:35:28.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "TransactionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\TransactionsController.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Controllers\\TransactionsController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\TransactionsController.cs",
-              "RelativeToolTip": "MvcProject\\Controllers\\TransactionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\BankingApi\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "BankingApi\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\BankingApi\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "BankingApi\\Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAlwDcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T19:58:21.022Z",
+              "WhenOpened": "2025-01-16T06:16:26.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "WalletController.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\WalletController.cs",
               "RelativeDocumentMoniker": "MvcProject\\Controllers\\WalletController.cs",
@@ -606,389 +580,75 @@
               "RelativeToolTip": "MvcProject\\Controllers\\WalletController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T08:03:35.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Program.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Program.cs",
-              "RelativeToolTip": "CasinoApi\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABMAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T13:41:19.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GamesController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\GamesController.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Controllers\\GamesController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\GamesController.cs",
-              "RelativeToolTip": "CasinoApi\\Controllers\\GamesController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwA0AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T18:35:28.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T08:03:35.665Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreatingGames.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\CreatingGames.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Repositories\\CreatingGames.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\CreatingGames.cs",
-              "RelativeToolTip": "CasinoApi\\Repositories\\CreatingGames.cs",
-              "ViewState": "AgIAALwAAAAAAAAAAAAAAKQAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:11:20.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "efpt.config.json",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\efpt.config.json",
-              "RelativeDocumentMoniker": "CasinoApi\\efpt.config.json",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\efpt.config.json",
-              "RelativeToolTip": "CasinoApi\\efpt.config.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-05T23:00:24.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "log4net.config",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\log4net.config",
-              "RelativeDocumentMoniker": "MvcProject\\log4net.config",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\log4net.config",
-              "RelativeToolTip": "MvcProject\\log4net.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-01-30T08:30:28.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\appsettings.json",
-              "RelativeDocumentMoniker": "MvcProject\\appsettings.json",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\appsettings.json",
-              "RelativeToolTip": "MvcProject\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-09T13:48:19.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "log4Net.config",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\log4Net.config",
-              "RelativeDocumentMoniker": "CasinoApi\\log4Net.config",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\log4Net.config",
-              "RelativeToolTip": "CasinoApi\\log4Net.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-02-05T22:08:40.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Controllers\\PaymentController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "MvcProject\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T13:55:43.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MvcProject\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T19:43:26.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "MvcProject\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAgwAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:35:53.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "CallbackController.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\CallbackController.cs",
               "RelativeDocumentMoniker": "MvcProject\\Controllers\\CallbackController.cs",
               "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\CallbackController.cs",
               "RelativeToolTip": "MvcProject\\Controllers\\CallbackController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T00:23:32.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Transactions.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Model\\Transactions.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Models\\Model\\Transactions.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Model\\Transactions.cs",
-              "RelativeToolTip": "MvcProject\\Models\\Model\\Transactions.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADgvwsAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "MvcProject\\Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAkwEYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T22:50:28.929Z",
+              "WhenOpened": "2025-01-16T19:58:21.022Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GenerateTokens.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\GenerateTokens.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Repositories\\GenerateTokens.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\GenerateTokens.cs",
-              "RelativeToolTip": "CasinoApi\\Repositories\\GenerateTokens.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwA4AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Deposit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Transactions\\Deposit.cshtml",
+              "RelativeDocumentMoniker": "MvcProject\\Views\\Transactions\\Deposit.cshtml",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Transactions\\Deposit.cshtml",
+              "RelativeToolTip": "MvcProject\\Views\\Transactions\\Deposit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T11:47:20.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "MvcProject\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA1wDoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T13:05:19.086Z",
+              "WhenOpened": "2025-02-02T13:55:43.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "ICreatingGames.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\IRepositories\\ICreatingGames.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Repositories\\IRepositories\\ICreatingGames.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\IRepositories\\ICreatingGames.cs",
-              "RelativeToolTip": "CasinoApi\\Repositories\\IRepositories\\ICreatingGames.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Program.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Program.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Program.cs",
+              "RelativeToolTip": "MvcProject\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwCoAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:11:31.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T10:09:38.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ChangeWin.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\ChangeWin.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Models\\ChangeWin.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\ChangeWin.cs",
-              "RelativeToolTip": "CasinoApi\\Models\\ChangeWin.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:57:53.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "GetBalance.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\GetBalance.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Models\\GetBalance.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\GetBalance.cs",
-              "RelativeToolTip": "CasinoApi\\Models\\GetBalance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:46:35.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TransactionType.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
-              "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:40:08.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "BetRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\BetRequest.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Models\\BetRequest.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\BetRequest.cs",
-              "RelativeToolTip": "CasinoApi\\Models\\BetRequest.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T18:38:45.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CancelBet.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\CancelBet.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Models\\CancelBet.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\CancelBet.cs",
-              "RelativeToolTip": "CasinoApi\\Models\\CancelBet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T19:52:02.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AuthenticateController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\AuthenticateController.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Controllers\\AuthenticateController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\AuthenticateController.cs",
-              "RelativeToolTip": "CasinoApi\\Controllers\\AuthenticateController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAswBUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T19:50:51.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Token.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\Token.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Models\\Token.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\Token.cs",
-              "RelativeToolTip": "CasinoApi\\Models\\Token.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T19:50:33.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "IGenerateTokens.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\IRepositories\\IGenerateTokens.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Repositories\\IRepositories\\IGenerateTokens.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\IRepositories\\IGenerateTokens.cs",
-              "RelativeToolTip": "CasinoApi\\Repositories\\IRepositories\\IGenerateTokens.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T13:08:24.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Response.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\Response.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Models\\Response.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\Response.cs",
-              "RelativeToolTip": "CasinoApi\\Models\\Response.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T13:31:18.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "WinRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\WinRequest.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Models\\WinRequest.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\WinRequest.cs",
-              "RelativeToolTip": "CasinoApi\\Models\\WinRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T17:54:52.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "TransactionHistoryPage.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Transactions\\TransactionHistoryPage.cshtml",
-              "RelativeDocumentMoniker": "MvcProject\\Views\\Transactions\\TransactionHistoryPage.cshtml",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Transactions\\TransactionHistoryPage.cshtml",
-              "RelativeToolTip": "MvcProject\\Views\\Transactions\\TransactionHistoryPage.cshtml",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwFEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-23T21:00:16.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "TransactionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\TransactionRepository.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\TransactionRepository.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\TransactionRepository.cs",
-              "RelativeToolTip": "MvcProject\\Models\\Repository\\TransactionRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAcwBwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T09:02:21.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CasinoApi.csproj",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\CasinoApi.csproj",
-              "RelativeDocumentMoniker": "CasinoApi\\CasinoApi.csproj",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\CasinoApi.csproj",
-              "RelativeToolTip": "CasinoApi\\CasinoApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-27T21:40:41.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "DepositRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\DepositRepository.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\DepositRepository.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\DepositRepository.cs",
-              "RelativeToolTip": "MvcProject\\Models\\Repository\\DepositRepository.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T09:05:16.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\WeatherForecast.cs",
-              "RelativeToolTip": "CasinoApi\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T07:00:31.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 7,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "CasinoApi\\Controllers\\WeatherForecastController.cs",
@@ -1001,7 +661,345 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Token.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\Token.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Models\\Token.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\Token.cs",
+              "RelativeToolTip": "CasinoApi\\Models\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T19:50:33.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CasinoApi.csproj",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\CasinoApi.csproj",
+              "RelativeDocumentMoniker": "CasinoApi\\CasinoApi.csproj",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\CasinoApi.csproj",
+              "RelativeToolTip": "CasinoApi\\CasinoApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-27T21:40:41.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreatingGames.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\CreatingGames.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Repositories\\CreatingGames.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\CreatingGames.cs",
+              "RelativeToolTip": "CasinoApi\\Repositories\\CreatingGames.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAAKQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:11:20.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Program.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Program.cs",
+              "RelativeToolTip": "CasinoApi\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABMAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T13:41:19.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "application.log",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\application.log",
+              "RelativeDocumentMoniker": "CasinoApi\\application.log",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\application.log",
+              "RelativeToolTip": "CasinoApi\\application.log",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVDhPrZRNTgIxFMerDIaEhHgU97JxwUKGGaNeQJdyCY0XUBDWGhg4AB\u002BuvQk7OQCRFTP1fXWmMxUMCT94ee177eu/LVQdFK31kTSJ0WgEIa0SMJ2A6QTHcF9iicQqlYpa/6zv2\u002B2HD5nuEkWR/l4udRzHZBtjGzFor1YrPR6P9WKx0MNhpN96vTuZThyLJ1AJLK/iJFFxjBanBsXIozqkWq2qev1c1Wq19063e0ZBwBNP4JaQ6WRC/i8ajQb5wWBAvnxyghpOqQPkC8L5IEEQKjgxaqOTFsCd65tb6nmlkur1\u002BxwXCgX58KfT7QptwvCK52wrSLcJvtUKOABkQ6HFXwbGsmMRBkchzpjNphLZDSrEn5G1qnsp\u002BPEtheloXouRnXDTTjhb5tXmeyg0IgzuliHp\u002By0OANbiOCDXp1IYo3mMUxBT8/mMA/8QhGH6ZzC4Zwi5ZqoQB9M3h62I/\u002B/SAQpniBmtPvdQyGeYUdgyX8pl05eIBSxmTzQYEYbc42AuJQWLGJNQEcrJG4A4BTHneSW2sqfKOyybkxXMPbAvrx3IsyLzkPJFmUcWYtDntjG6lIvnp8cvKXNIlPoFvstpJRlQPIAAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-02-06T07:14:12.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "log4Net.config",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\log4Net.config",
+              "RelativeDocumentMoniker": "CasinoApi\\log4Net.config",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\log4Net.config",
+              "RelativeToolTip": "CasinoApi\\log4Net.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-05T22:11:22.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "efpt.config.json",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\efpt.config.json",
+              "RelativeDocumentMoniker": "CasinoApi\\efpt.config.json",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\efpt.config.json",
+              "RelativeToolTip": "CasinoApi\\efpt.config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-05T23:00:24.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "log4net.config",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\log4net.config",
+              "RelativeDocumentMoniker": "MvcProject\\log4net.config",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\log4net.config",
+              "RelativeToolTip": "MvcProject\\log4net.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-30T08:30:28.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\appsettings.json",
+              "RelativeDocumentMoniker": "MvcProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\appsettings.json",
+              "RelativeToolTip": "MvcProject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-09T13:48:19.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "log4Net.config",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\log4Net.config",
+              "RelativeDocumentMoniker": "CasinoApi\\log4Net.config",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\log4Net.config",
+              "RelativeToolTip": "CasinoApi\\log4Net.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-05T22:08:40.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MvcProject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T19:43:26.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "MvcProject\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAgwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:35:53.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Transactions.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Model\\Transactions.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Models\\Model\\Transactions.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Model\\Transactions.cs",
+              "RelativeToolTip": "MvcProject\\Models\\Model\\Transactions.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADgvwsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T22:50:28.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GenerateTokens.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\GenerateTokens.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Repositories\\GenerateTokens.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\GenerateTokens.cs",
+              "RelativeToolTip": "CasinoApi\\Repositories\\GenerateTokens.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T13:05:19.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ICreatingGames.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\IRepositories\\ICreatingGames.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Repositories\\IRepositories\\ICreatingGames.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\IRepositories\\ICreatingGames.cs",
+              "RelativeToolTip": "CasinoApi\\Repositories\\IRepositories\\ICreatingGames.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:11:31.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ChangeWin.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\ChangeWin.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Models\\ChangeWin.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\ChangeWin.cs",
+              "RelativeToolTip": "CasinoApi\\Models\\ChangeWin.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T17:57:53.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetBalance.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\GetBalance.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Models\\GetBalance.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\GetBalance.cs",
+              "RelativeToolTip": "CasinoApi\\Models\\GetBalance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:46:35.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
+              "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T12:40:08.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BetRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\BetRequest.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Models\\BetRequest.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\BetRequest.cs",
+              "RelativeToolTip": "CasinoApi\\Models\\BetRequest.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T18:38:45.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CancelBet.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\CancelBet.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Models\\CancelBet.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\CancelBet.cs",
+              "RelativeToolTip": "CasinoApi\\Models\\CancelBet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T19:52:02.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AuthenticateController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\AuthenticateController.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Controllers\\AuthenticateController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\AuthenticateController.cs",
+              "RelativeToolTip": "CasinoApi\\Controllers\\AuthenticateController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswBUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T19:50:51.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IGenerateTokens.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\IRepositories\\IGenerateTokens.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Repositories\\IRepositories\\IGenerateTokens.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Repositories\\IRepositories\\IGenerateTokens.cs",
+              "RelativeToolTip": "CasinoApi\\Repositories\\IRepositories\\IGenerateTokens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T13:08:24.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Models\\Response.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\Response.cs",
+              "RelativeToolTip": "CasinoApi\\Models\\Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T13:31:18.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "WinRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\WinRequest.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Models\\WinRequest.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Models\\WinRequest.cs",
+              "RelativeToolTip": "CasinoApi\\Models\\WinRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T17:54:52.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TransactionHistoryPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Transactions\\TransactionHistoryPage.cshtml",
+              "RelativeDocumentMoniker": "MvcProject\\Views\\Transactions\\TransactionHistoryPage.cshtml",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Transactions\\TransactionHistoryPage.cshtml",
+              "RelativeToolTip": "MvcProject\\Views\\Transactions\\TransactionHistoryPage.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwFEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-23T21:00:16.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\TransactionRepository.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\TransactionRepository.cs",
+              "RelativeToolTip": "MvcProject\\Models\\Repository\\TransactionRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwBwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T09:02:21.822Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 35,
+              "Title": "DepositRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\DepositRepository.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\DepositRepository.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\DepositRepository.cs",
+              "RelativeToolTip": "MvcProject\\Models\\Repository\\DepositRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T09:05:16.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\WeatherForecast.cs",
+              "RelativeToolTip": "CasinoApi\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T07:00:31.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\UserRepository.cs",
@@ -1009,12 +1007,11 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\UserRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAmwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T16:20:50.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T16:20:50.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "WalletRepository.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\WalletRepository.cs",
               "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\WalletRepository.cs",
@@ -1022,12 +1019,11 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\WalletRepository.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAIwCkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T22:41:51.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T22:41:51.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\appsettings.json",
               "RelativeDocumentMoniker": "CasinoApi\\appsettings.json",
@@ -1035,25 +1031,11 @@
               "RelativeToolTip": "CasinoApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-27T15:26:40.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T15:26:40.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "TransactionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\BankingApi\\Controllers\\TransactionsController.cs",
-              "RelativeDocumentMoniker": "BankingApi\\Controllers\\TransactionsController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\BankingApi\\Controllers\\TransactionsController.cs",
-              "RelativeToolTip": "BankingApi\\Controllers\\TransactionsController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAlwD0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T06:16:26.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "ITransactionRepository.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
               "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
@@ -1061,12 +1043,11 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T11:59:11.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T11:59:11.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "WithdrawExceptions.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Exceptions\\WithdrawExceptions.cs",
               "RelativeDocumentMoniker": "MvcProject\\Models\\Exceptions\\WithdrawExceptions.cs",
@@ -1074,12 +1055,11 @@
               "RelativeToolTip": "MvcProject\\Models\\Exceptions\\WithdrawExceptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T09:00:46.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T09:00:46.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "WithdrawRepository.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\WithdrawRepository.cs",
               "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\WithdrawRepository.cs",
@@ -1087,12 +1067,11 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\WithdrawRepository.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAgwB8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T09:43:49.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T09:43:49.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "SendBackResponse.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\BankingApi\\Service\\SendBackResponse.cs",
               "RelativeDocumentMoniker": "BankingApi\\Service\\SendBackResponse.cs",
@@ -1100,8 +1079,7 @@
               "RelativeToolTip": "BankingApi\\Service\\SendBackResponse.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwCgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T14:47:18.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T14:47:18.832Z"
             },
             {
               "$type": "Document",
@@ -1113,21 +1091,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Transactions\\Withdraw.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAcwCUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T11:47:37.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Deposit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Transactions\\Deposit.cshtml",
-              "RelativeDocumentMoniker": "MvcProject\\Views\\Transactions\\Deposit.cshtml",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Transactions\\Deposit.cshtml",
-              "RelativeToolTip": "MvcProject\\Views\\Transactions\\Deposit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T11:47:20.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T11:47:37.552Z"
             },
             {
               "$type": "Document",
@@ -1139,8 +1103,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\IDepositRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:42:34.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T05:42:34.466Z"
             },
             {
               "$type": "Document",
@@ -1152,8 +1115,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Exceptions\\DepositException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T09:19:22.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T09:19:22.052Z"
             },
             {
               "$type": "Document",
@@ -1165,8 +1127,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\IWithdrawRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T09:48:43.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T09:48:43.004Z"
             },
             {
               "$type": "Document",
@@ -1178,8 +1139,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Service\\BankingRequestService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAIwBgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T11:29:28.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T11:29:28.257Z"
             },
             {
               "$type": "Document",
@@ -1191,8 +1151,7 @@
               "RelativeToolTip": "BankingApi\\Models\\Deposit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T07:42:17.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T07:42:17.296Z"
             },
             {
               "$type": "Document",
@@ -1204,8 +1163,7 @@
               "RelativeToolTip": "BankingApi\\Service\\ISendBackResponse.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAADwvwYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T14:23:29.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T14:23:29.011Z"
             },
             {
               "$type": "Document",
@@ -1217,8 +1175,7 @@
               "RelativeToolTip": "BankingApi\\Models\\Withdraw.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T21:57:15.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T21:57:15.762Z"
             },
             {
               "$type": "Document",
@@ -1230,8 +1187,7 @@
               "RelativeToolTip": "BankingApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-16T19:56:09.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T19:56:09.44Z"
             },
             {
               "$type": "Document",
@@ -1243,8 +1199,7 @@
               "RelativeToolTip": "MvcProject\\Properties\\launchSettings.json",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-21T21:52:30.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T21:52:30.899Z"
             },
             {
               "$type": "Document",
@@ -1256,8 +1211,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Payment\\Payment.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-20T10:16:10.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T10:16:10.334Z"
             },
             {
               "$type": "Document",
@@ -1269,8 +1223,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Admin\\AdminDashboard.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwCEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T01:33:58.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T01:33:58.213Z"
             },
             {
               "$type": "Document",
@@ -1282,8 +1235,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Admin\\AcceptWithdraw.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-26T09:38:25.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T09:38:25.641Z"
             },
             {
               "$type": "Document",
@@ -1295,8 +1247,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Payment\\SendingDeposit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-02T23:06:19.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T23:06:19.449Z"
             },
             {
               "$type": "Document",
@@ -1308,8 +1259,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Callback\\SuccessDeposit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-20T10:31:03.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T10:31:03.831Z"
             },
             {
               "$type": "Document",
@@ -1321,8 +1271,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Model\\Response.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T17:25:29.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T17:25:29.958Z"
             },
             {
               "$type": "Document",
@@ -1334,8 +1283,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Transactions\\RejectWithdraw.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-22T20:27:51.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T20:27:51.95Z"
             },
             {
               "$type": "Document",
@@ -1347,8 +1295,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Withdraw\\PendingWithdraw.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T06:52:32.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T06:52:32.61Z"
             },
             {
               "$type": "Document",
@@ -1360,8 +1307,7 @@
               "RelativeToolTip": "MvcProject\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-23T12:53:02.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T12:53:02.6Z"
             },
             {
               "$type": "Document",
@@ -1373,8 +1319,7 @@
               "RelativeToolTip": "BankingApi\\Models\\AppSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:21:02.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T05:21:02.855Z"
             },
             {
               "$type": "Document",
@@ -1386,8 +1331,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Callback\\SuccessWithdraw.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-23T07:16:54.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T07:16:54.042Z"
             },
             {
               "$type": "Document",
@@ -1399,8 +1343,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Payment\\Index.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T23:58:36.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T23:58:36.576Z"
             },
             {
               "$type": "Document",
@@ -1412,8 +1355,7 @@
               "RelativeToolTip": "MvcProject\\Models\\DbContext\\CasinoDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAUwAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T13:52:49.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T13:52:49.671Z"
             },
             {
               "$type": "Document",
@@ -1425,8 +1367,7 @@
               "RelativeToolTip": "MvcProject\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T08:55:29.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T08:55:29.14Z"
             },
             {
               "$type": "Document",
@@ -1438,8 +1379,7 @@
               "RelativeToolTip": "BankingApi\\Models\\Hash\\Hash256.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T13:06:08.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T13:06:08.183Z"
             },
             {
               "$type": "Document",
@@ -1451,8 +1391,7 @@
               "RelativeToolTip": "BankingApi\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T19:47:27.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T19:47:27.334Z"
             },
             {
               "$type": "Document",
@@ -1464,8 +1403,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Hash\\Hash256.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAYwBoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:11:02.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T05:11:02.683Z"
             },
             {
               "$type": "Document",
@@ -1477,8 +1415,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Exceptions\\CustomExceptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T09:03:07.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T09:03:07.48Z"
             },
             {
               "$type": "Document",
@@ -1490,8 +1427,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Exceptions\\ICustomExceptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T09:02:58.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T09:02:58.606Z"
             },
             {
               "$type": "Document",
@@ -1503,8 +1439,7 @@
               "RelativeToolTip": "BankingApi\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T13:50:23.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T13:50:23.292Z"
             },
             {
               "$type": "Document",
@@ -1516,8 +1451,7 @@
               "RelativeToolTip": "MvcProject\\log4net.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-01-30T08:25:51.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T08:25:51.274Z"
             },
             {
               "$type": "Document",
@@ -1529,8 +1463,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T16:21:06.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T16:21:06.463Z"
             },
             {
               "$type": "Document",
@@ -1542,8 +1475,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Home\\GenerateToken.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-27T22:35:14.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T22:35:14.337Z"
             },
             {
               "$type": "Document",
@@ -1555,8 +1487,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\IWalletRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T23:49:26.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T23:49:26.565Z"
             },
             {
               "$type": "Document",
@@ -1568,8 +1499,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAIBZwC8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T14:52:32.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:52:32.566Z"
             },
             {
               "$type": "Document",
@@ -1581,8 +1511,7 @@
               "RelativeToolTip": "MvcProject\\wwwroot\\js\\site.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-10T11:29:46.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T11:29:46.206Z"
             },
             {
               "$type": "Document",
@@ -1594,8 +1523,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T14:52:34.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:52:34.572Z"
             },
             {
               "$type": "Document",
@@ -1607,8 +1535,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Shared\\_Layout.cshtml.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-27T14:12:09.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T14:12:09.607Z"
             },
             {
               "$type": "Document",
@@ -1620,8 +1547,7 @@
               "RelativeToolTip": "MvcProject\\wwwroot\\js\\WalletBalance.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-30T03:16:11.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T03:16:11.812Z"
             },
             {
               "$type": "Document",
@@ -1633,8 +1559,7 @@
               "RelativeToolTip": "MvcProject\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAIBZwBkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T14:25:41.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:25:41.357Z"
             },
             {
               "$type": "Document",
@@ -1646,8 +1571,7 @@
               "RelativeToolTip": "BankingApi\\BankingApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-27T19:47:36.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T19:47:36.391Z"
             },
             {
               "$type": "Document",
@@ -1659,8 +1583,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Model\\TransactionInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T02:29:17.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T02:29:17.826Z"
             },
             {
               "$type": "Document",
@@ -1672,8 +1595,7 @@
               "RelativeToolTip": "BankingApi\\Helper\\IHash.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T14:54:37.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T14:54:37.968Z"
             },
             {
               "$type": "Document",
@@ -1685,8 +1607,7 @@
               "RelativeToolTip": "BankingApi\\Helper\\Hash.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T14:54:09.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T14:54:09.294Z"
             },
             {
               "$type": "Document",
@@ -1698,8 +1619,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Service\\IBankingRequestService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T11:29:49.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T11:29:49.465Z"
             },
             {
               "$type": "Document",
@@ -1711,8 +1631,7 @@
               "RelativeToolTip": "MvcProject\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T16:59:17.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T16:59:17.366Z"
             },
             {
               "$type": "Document",
@@ -1724,8 +1643,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Model\\DepositWithdrawRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:38:46.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T12:38:46.435Z"
             },
             {
               "$type": "Document",
@@ -1737,8 +1655,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T17:54:01.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T17:54:01.797Z"
             },
             {
               "$type": "Document",
@@ -1750,8 +1667,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Model\\Token.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T16:23:40.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T16:23:40.192Z"
             },
             {
               "$type": "Document",
@@ -1763,8 +1679,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Model\\AppSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:05:10.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T05:05:10.98Z"
             },
             {
               "$type": "Document",
@@ -1776,8 +1691,7 @@
               "RelativeToolTip": "CasinoApi\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAcAAAAAAAAAAABhwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-27T18:56:06.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T18:56:06.86Z"
             },
             {
               "$type": "Document",
@@ -1788,8 +1702,7 @@
               "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\CasinoApi.csproj",
               "RelativeToolTip": "CasinoApi\\CasinoApi.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-27T18:56:03.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T18:56:03.429Z"
             },
             {
               "$type": "Document",
@@ -1801,8 +1714,7 @@
               "RelativeToolTip": "CasinoApi\\CasinoApi.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-01-27T15:26:16.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T15:26:16.13Z"
             },
             {
               "$type": "Document",
@@ -1814,8 +1726,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Model\\DTO\\DepositRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T03:35:00.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T03:35:00.066Z"
             },
             {
               "$type": "Document",
@@ -1827,8 +1738,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\Enum\\Status.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:41:09.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T12:41:09.55Z"
             },
             {
               "$type": "Document",
@@ -1840,8 +1750,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T22:25:39.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T22:25:39.277Z"
             },
             {
               "$type": "Document",
@@ -1853,8 +1762,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Model\\Deposit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T22:54:30.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T22:54:30.906Z"
             },
             {
               "$type": "Document",
@@ -1866,8 +1774,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Model\\Wallet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAABRwAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T21:52:32.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T21:52:32.634Z"
             },
             {
               "$type": "Document",
@@ -1879,8 +1786,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Model\\Withdraw.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAuwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:06:59.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T01:06:59.97Z"
             },
             {
               "$type": "Document",
@@ -1892,8 +1798,7 @@
               "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\Enum\\Currency.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:39:37.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T12:39:37.554Z"
             },
             {
               "$type": "Document",
@@ -1905,8 +1810,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Shared\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-23T12:52:46.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T12:52:46.827Z"
             },
             {
               "$type": "Document",
@@ -1918,8 +1822,7 @@
               "RelativeToolTip": "MvcProject\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "ViewState": "AgIAAGgAAAAAAAAAAAAIwHcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T07:28:40.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T07:28:40.148Z"
             },
             {
               "$type": "Document",
@@ -1931,8 +1834,7 @@
               "RelativeToolTip": "MvcProject\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAACBjwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T14:30:47.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:30:47.858Z"
             },
             {
               "$type": "Document",
@@ -1944,8 +1846,7 @@
               "RelativeToolTip": "MvcProject\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ViewState": "AgIAAHwAAAAAAAAAAAAIwIkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:30:50.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:30:50.593Z"
             },
             {
               "$type": "Document",
@@ -1957,8 +1858,7 @@
               "RelativeToolTip": "MvcProject\\Seed\\Seed.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAuwEAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T11:11:33.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T11:11:33.082Z"
             },
             {
               "$type": "Document",
@@ -1969,8 +1869,7 @@
               "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\MvcProject.csproj",
               "RelativeToolTip": "MvcProject\\MvcProject.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-13T19:51:20.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T19:51:20.126Z"
             },
             {
               "$type": "Document",
@@ -1982,8 +1881,7 @@
               "RelativeToolTip": "BankingApi\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-20T13:35:18.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T13:35:18.861Z"
             },
             {
               "$type": "Document",
@@ -1995,8 +1893,7 @@
               "RelativeToolTip": "BankingApi\\BankingApi.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-01-13T19:48:08.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T19:48:08.104Z"
             },
             {
               "$type": "Document",
@@ -2008,8 +1905,7 @@
               "RelativeToolTip": "BankingApi\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T10:56:34.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T10:56:34.479Z"
             },
             {
               "$type": "Document",
@@ -2021,8 +1917,7 @@
               "RelativeToolTip": "MvcProject\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAIBZwAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T14:59:53.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:59:53.282Z"
             },
             {
               "$type": "Document",
@@ -2034,8 +1929,7 @@
               "RelativeToolTip": "MvcProject\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T14:24:11.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:24:11.91Z"
             },
             {
               "$type": "Document",
@@ -2047,8 +1941,7 @@
               "RelativeToolTip": "MvcProject\\ScaffoldingReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-01-09T14:23:52.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:23:52.484Z"
             },
             {
               "$type": "Document",
@@ -2060,8 +1953,7 @@
               "RelativeToolTip": "MvcProject\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T17:54:04.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T17:54:04.444Z"
             },
             {
               "$type": "Document",
@@ -2073,8 +1965,7 @@
               "RelativeToolTip": "MvcProject\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T14:24:14.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:24:14.678Z"
             },
             {
               "$type": "Document",
@@ -2086,8 +1977,7 @@
               "RelativeToolTip": "MvcProject\\Migrations\\20250109142027_CasinoDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:20:28.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:20:28.508Z"
             },
             {
               "$type": "Document",
@@ -2099,8 +1989,7 @@
               "RelativeToolTip": "MvcProject\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAABRwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T14:24:16.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T14:24:16.785Z"
             }
           ]
         }
