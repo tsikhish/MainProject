@@ -154,3 +154,15 @@
 2025-02-06 15:20:49 [45] INFO  Program - Request to /Games/ChangeWin received.
 2025-02-06 15:20:49 [45] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1013
 2025-02-06 15:20:49 [45] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully changed for TransactionId ID: 1013
+2025-02-07 12:25:20 [16] INFO  Program - Request to /Games/CreateBet received.
+2025-02-07 12:25:21 [16] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1011
+2025-02-07 12:25:21 [18] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1011
+2025-02-07 12:25:48 [8] INFO  Program - Request to /Games/CreateWin received.
+2025-02-07 12:25:48 [8] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 1012
+2025-02-07 12:25:49 [19] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully got for Transaction ID: 1012
+2025-02-07 12:25:56 [19] INFO  Program - Request to /Games/CreateWin received.
+2025-02-07 12:25:56 [19] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 1012
+2025-02-07 12:25:57 [3] WARN  CasinoApi.Repositories.CreatingGames - Win was not got for Transaction ID: 1012
+2025-02-07 12:27:45 [6] INFO  Program - Request to /Games/CreateWin received.
+2025-02-07 12:27:46 [6] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 1012
+2025-02-07 12:27:46 [6] WARN  CasinoApi.Repositories.CreatingGames - Win was not got for Transaction ID: 1012

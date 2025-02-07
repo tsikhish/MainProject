@@ -21,7 +21,7 @@ namespace CasinoApi.Controllers
             try
             {
                 var response = await _creatingGames.CreateBet(betrequest);
-                if (response.StatusCode == 200) return Ok(new
+                if (response.StatusCode == 200 || response.StatusCode == 201) return Ok(new
                 {
                     StatusCode = response.StatusCode,
                     Data = new
@@ -43,7 +43,7 @@ namespace CasinoApi.Controllers
             try
             {
                 var response = await _creatingGames.CreateWin(winRequest);
-                if (response.StatusCode == 200) return Ok(new
+                if (response.StatusCode == 200 || response.StatusCode == 201) return Ok(new
                 {
                     StatusCode = response.StatusCode,
                     Data = new
@@ -66,7 +66,7 @@ namespace CasinoApi.Controllers
             try
             {
                 var response = await _creatingGames.CancelBet(cancelBet);
-                if (response.StatusCode == 200) return Ok(new
+                if (response.StatusCode == 200 || response.StatusCode == 201) return Ok(new
                 {
                     StatusCode = response.StatusCode,
                     Data = new
@@ -89,7 +89,7 @@ namespace CasinoApi.Controllers
             try
             {
                 var response = await _creatingGames.ChangeWin(changeWin);
-                if (response.StatusCode == 200) return Ok(new
+                if (response.StatusCode == 200 || response.StatusCode == 201) return Ok(new
                 {
                     StatusCode = response.StatusCode,
                     Data = new
@@ -111,11 +111,12 @@ namespace CasinoApi.Controllers
             try
             {
                 var response = await _creatingGames.GetBalance(getBalance);
-                if (response.StatusCode == 200) return Ok(new
+                if (response.StatusCode == 200 || response.StatusCode == 201) return Ok(new
                 {
                     StatusCode = response.StatusCode,
                     Data = new
                     {
+                        TransactionId = response.TransactionId,
                         CurrentBalance = response.CurrentBalance,
                     }
                 });
