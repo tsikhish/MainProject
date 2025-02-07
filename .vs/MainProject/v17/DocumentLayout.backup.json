@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Mari\\source\\repos\\MainProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\bankingapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|solutionrelative:bankingapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\callbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\callbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\casinoapi\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B0314B-FE12-44F0-972E-BC5AA8B10BDA}|CasinoApi\\CasinoApi.csproj|solutionrelative:casinoapi\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,24 +39,12 @@
       "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\models\\repository\\irepository\\enum\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\views\\payment\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\views\\payment\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\controllers\\callbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|solutionrelative:mvcproject\\controllers\\callbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|c:\\users\\mari\\source\\repos\\mainproject\\bankingapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{286ECE97-C5A3-4EA5-BDD6-5D7EBB7BBB11}|BankingApi\\BankingApi.csproj|solutionrelative:bankingapi\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC14422A-22DA-466A-9F5A-E126E4DB98D7}|MvcProject\\MvcProject.csproj|c:\\users\\mari\\source\\repos\\mainproject\\mvcproject\\views\\transactions\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -482,7 +482,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -538,41 +538,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "GamesController.cs",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\GamesController.cs",
               "RelativeDocumentMoniker": "CasinoApi\\Controllers\\GamesController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\GamesController.cs*",
-              "RelativeToolTip": "CasinoApi\\Controllers\\GamesController.cs*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwC0AAABMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "CasinoApi\\Controllers\\GamesController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwFYAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T18:35:28.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TransactionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\TransactionsController.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Controllers\\TransactionsController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\TransactionsController.cs",
-              "RelativeToolTip": "MvcProject\\Controllers\\TransactionsController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwE8AAABXAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ITransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
+              "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T19:58:21.022Z",
+              "WhenOpened": "2025-01-13T11:59:11.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthenticateController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\AuthenticateController.cs",
+              "RelativeDocumentMoniker": "CasinoApi\\Controllers\\AuthenticateController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\AuthenticateController.cs",
+              "RelativeToolTip": "CasinoApi\\Controllers\\AuthenticateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T19:50:51.938Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\Status.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\IRepository\\Enum\\Status.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\Status.cs",
-              "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\Enum\\Status.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CallbackController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\CallbackController.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Controllers\\CallbackController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\CallbackController.cs",
+              "RelativeToolTip": "MvcProject\\Controllers\\CallbackController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:41:09.55Z"
+              "WhenOpened": "2025-01-20T00:23:32.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\BankingApi\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "BankingApi\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\BankingApi\\Controllers\\TransactionsController.cs*",
+              "RelativeToolTip": "BankingApi\\Controllers\\TransactionsController.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA1wAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T06:16:26.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "MvcProject\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA1wCsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T13:55:43.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
+              "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T12:40:08.948Z"
             },
             {
               "$type": "Document",
@@ -588,58 +639,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TransactionType.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
-              "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\Enum\\TransactionType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\Status.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\IRepository\\Enum\\Status.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\Enum\\Status.cs",
+              "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\Enum\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:40:08.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T12:41:09.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ITransactionRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
-              "RelativeToolTip": "MvcProject\\Models\\Repository\\IRepository\\ITransactionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T11:59:11.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthenticateController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\AuthenticateController.cs",
-              "RelativeDocumentMoniker": "CasinoApi\\Controllers\\AuthenticateController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\CasinoApi\\Controllers\\AuthenticateController.cs*",
-              "RelativeToolTip": "CasinoApi\\Controllers\\AuthenticateController.cs*",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T19:50:51.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "TransactionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\BankingApi\\Controllers\\TransactionsController.cs",
-              "RelativeDocumentMoniker": "BankingApi\\Controllers\\TransactionsController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\BankingApi\\Controllers\\TransactionsController.cs",
-              "RelativeToolTip": "BankingApi\\Controllers\\TransactionsController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAlwDcAAAAuAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "MvcProject\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "MvcProject\\Controllers\\TransactionsController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAkwE8AAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T06:16:26.501Z"
+              "WhenOpened": "2025-01-16T19:58:21.022Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Payment.cshtml",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Payment\\Payment.cshtml",
               "RelativeDocumentMoniker": "MvcProject\\Views\\Payment\\Payment.cshtml",
@@ -651,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Views\\Payment\\Index.cshtml",
               "RelativeDocumentMoniker": "MvcProject\\Views\\Payment\\Index.cshtml",
@@ -660,18 +684,6 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-21T23:58:36.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Controllers\\PaymentController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "MvcProject\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T13:55:43.25Z"
             },
             {
               "$type": "Document",
@@ -684,18 +696,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T08:03:35.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CallbackController.cs",
-              "DocumentMoniker": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\CallbackController.cs",
-              "RelativeDocumentMoniker": "MvcProject\\Controllers\\CallbackController.cs",
-              "ToolTip": "C:\\Users\\Mari\\source\\repos\\MainProject\\MvcProject\\Controllers\\CallbackController.cs",
-              "RelativeToolTip": "MvcProject\\Controllers\\CallbackController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwDwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T00:23:32.086Z"
             },
             {
               "$type": "Document",
