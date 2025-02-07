@@ -1,8 +1,4 @@
-﻿using Azure.Core;
-using CasinoApi.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Data;
-using Dapper;
+﻿using Microsoft.AspNetCore.Mvc;
 using CasinoApi.Repositories.IRepositories;
 namespace CasinoApi.Controllers
 {

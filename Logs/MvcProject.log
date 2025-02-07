@@ -5606,3 +5606,147 @@ System.Exception: This user has already sent a pending request. Please wait for 
 2025-02-06 15:21:03 [136] INFO  Program - Request to /Wallet/GetWalletBalance received.
 2025-02-06 15:21:03 [136] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
 2025-02-06 15:21:03 [136] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 560,4700 €
+2025-02-07 12:14:10 [7] INFO  Program - Request to / received.
+2025-02-07 12:14:13 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:14:13 [10] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:14:25 [5] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-07 12:14:25 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:14:25 [5] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:14:27 [5] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-07 12:14:28 [17] INFO  Program - Request to / received.
+2025-02-07 12:14:28 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:14:28 [19] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-07 12:14:28 [7] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 560,4700 €
+2025-02-07 12:14:31 [19] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-07 12:14:31 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:14:31 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-07 12:14:31 [7] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 560,4700 €
+2025-02-07 12:14:47 [7] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-07 12:14:47 [7] INFO  MvcProject.Controllers.WalletController - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10
+2025-02-07 12:14:47 [7] INFO  MvcProject.Models.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10, Status: Pending, TransactionType: Deposit
+2025-02-07 12:14:48 [7] WARN  MvcProject.Models.Exceptions.CustomExceptions - User 2189418a-271a-4496-aa02-d07760408b68 already has a pending request.
+2025-02-07 12:14:48 [7] ERROR MvcProject.Models.Repository.DepositRepository - Error occurred while registering deposit for user 2189418a-271a-4496-aa02-d07760408b68. Exception: This user has already sent a pending request. Please wait for results.
+2025-02-07 12:14:48 [7] ERROR MvcProject.Controllers.WalletController - An error occurred while processing deposit for User ID: 2189418a-271a-4496-aa02-d07760408b68
+System.Exception: This user has already sent a pending request. Please wait for results.
+   at MvcProject.Models.Repository.DepositRepository.RegisterDeposit(String userId, Status status, TransactionType transactionType, Decimal amount) in C:\Users\Mari\source\repos\MainProject\MvcProject\Models\Repository\DepositRepository.cs:line 52
+   at MvcProject.Controllers.TransactionsController.DepositResult(DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Controllers\TransactionsController.cs:line 80
+2025-02-07 12:14:52 [10] INFO  Program - Request to /Identity/Account/Logout received.
+2025-02-07 12:14:52 [7] INFO  Program - Request to / received.
+2025-02-07 12:14:52 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:14:52 [10] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:14:53 [17] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-07 12:14:53 [14] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:14:53 [14] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:21:21 [6] INFO  Program - Request to / received.
+2025-02-07 12:21:22 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:21:22 [19] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:21:27 [6] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-07 12:21:28 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:21:28 [8] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:21:58 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:21:58 [6] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:22:28 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:22:28 [6] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:22:58 [23] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:22:58 [23] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:23:28 [28] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:23:28 [28] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:23:58 [26] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:23:58 [26] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:24:28 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:24:28 [10] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:24:58 [29] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:24:58 [29] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:25:28 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:25:28 [10] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:25:58 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:25:58 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:26:28 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:26:28 [10] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:26:58 [33] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:26:58 [33] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:27:22 [11] INFO  Program - Request to / received.
+2025-02-07 12:27:23 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:27:23 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:27:53 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:27:53 [5] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:28:23 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:28:23 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:28:53 [22] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:28:53 [22] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:29:23 [24] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:29:23 [24] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:29:53 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:29:53 [20] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:30:23 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:30:23 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:30:53 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:30:53 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:31:23 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:31:23 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:31:53 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:31:53 [20] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:32:23 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:32:23 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:32:53 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:32:53 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:33:23 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:33:23 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:33:53 [34] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:33:53 [34] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:34:23 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:34:23 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:34:53 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:34:53 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:35:22 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:35:23 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:35:53 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:35:53 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:36:23 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:36:23 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:36:53 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:36:53 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:37:23 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:37:23 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:37:53 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:37:53 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:38:23 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:38:23 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:38:53 [48] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:38:53 [48] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:39:23 [50] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:39:23 [50] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:39:53 [50] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:39:53 [50] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:40:23 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:40:23 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:40:53 [56] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:40:53 [56] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:41:23 [56] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:41:23 [56] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:41:53 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:41:53 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:42:23 [59] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:42:23 [59] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:42:53 [60] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:42:53 [60] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:43:23 [63] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:43:23 [63] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:43:53 [62] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:43:53 [62] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:44:23 [65] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:44:23 [65] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:44:53 [65] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:44:53 [65] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:45:23 [65] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:45:23 [65] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:45:53 [38] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:45:53 [38] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:46:23 [69] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:46:23 [69] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:46:53 [65] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:46:53 [65] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:47:23 [65] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:47:23 [65] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-07 12:47:53 [65] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-07 12:47:53 [65] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
