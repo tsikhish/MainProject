@@ -166,3 +166,127 @@
 2025-02-07 12:27:45 [6] INFO  Program - Request to /Games/CreateWin received.
 2025-02-07 12:27:46 [6] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 1012
 2025-02-07 12:27:46 [6] WARN  CasinoApi.Repositories.CreatingGames - Win was not got for Transaction ID: 1012
+2025-02-07 14:58:59 [12] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 14:58:59 [12] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1014
+2025-02-07 14:59:00 [12] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1014
+2025-02-07 15:02:03 [9] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:02:03 [9] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1014
+2025-02-07 15:02:03 [16] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1014
+2025-02-07 15:04:45 [9] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:04:45 [9] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1014
+2025-02-07 15:04:45 [15] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1014
+2025-02-07 15:11:13 [18] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:11:13 [18] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1014
+2025-02-07 15:11:13 [9] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1014
+2025-02-07 15:12:06 [15] INFO  Program - Request to /Games/CreateBet received.
+2025-02-07 15:12:06 [15] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1015
+2025-02-07 15:12:06 [23] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1015
+2025-02-07 15:12:35 [18] INFO  Program - Request to /Games/CreateWin received.
+2025-02-07 15:12:35 [18] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 1016
+2025-02-07 15:12:35 [15] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully got for Transaction ID: 1016
+2025-02-07 15:13:30 [15] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:13:30 [15] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1017
+2025-02-07 15:13:30 [9] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1017
+2025-02-07 15:25:13 [15] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:25:13 [15] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1017
+2025-02-07 15:25:13 [9] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully changed for TransactionId ID: 1017
+2025-02-07 15:26:47 [15] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:26:47 [15] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1017
+2025-02-07 15:26:47 [15] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1017
+2025-02-07 15:27:08 [9] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:27:08 [9] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1018
+2025-02-07 15:27:08 [27] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1018
+2025-02-07 15:27:54 [15] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:27:54 [15] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1018
+2025-02-07 15:27:54 [9] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1018
+2025-02-07 15:28:34 [15] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:28:34 [15] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1018
+2025-02-07 15:28:34 [15] ERROR CasinoApi.Repositories.CreatingGames - Error while processing changing win
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'tr'.
+Transaction count after EXECUTE indicates a mismatching number of BEGIN and COMMIT statements. Previous count = 0, current count = 1.
+A transaction that was started in a MARS batch is still active at the end of the batch. The transaction is rolled back.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at CasinoApi.Repositories.CreatingGames.ChangeWin(ChangeWin changeWin) in C:\Users\Mari\source\repos\MainProject\CasinoApi\Repositories\CreatingGames.cs:line 160
+ClientConnectionId:191545c8-c10b-4ba0-add6-fbf6193bb67e
+Error Number:208,State:1,Class:16
+2025-02-07 15:31:18 [36] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:31:18 [36] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1018
+2025-02-07 15:31:18 [36] ERROR CasinoApi.Repositories.CreatingGames - Error while processing changing win
+Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction count after EXECUTE indicates a mismatching number of BEGIN and COMMIT statements. Previous count = 0, current count = 1.
+A transaction that was started in a MARS batch is still active at the end of the batch. The transaction is rolled back.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at CasinoApi.Repositories.CreatingGames.ChangeWin(ChangeWin changeWin) in C:\Users\Mari\source\repos\MainProject\CasinoApi\Repositories\CreatingGames.cs:line 160
+ClientConnectionId:191545c8-c10b-4ba0-add6-fbf6193bb67e
+Error Number:266,State:2,Class:16
+2025-02-07 15:37:34 [31] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:37:34 [31] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1018
+2025-02-07 15:37:34 [31] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1018
+2025-02-07 15:39:10 [31] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:39:10 [31] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1018
+2025-02-07 15:39:10 [31] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1018
+2025-02-07 15:52:16 [31] INFO  Program - Request to /Games/CreateBet received.
+2025-02-07 15:52:16 [31] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1020
+2025-02-07 15:52:16 [33] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1020
+2025-02-07 15:52:37 [33] INFO  Program - Request to /Games/CreateWin received.
+2025-02-07 15:52:37 [33] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 1021
+2025-02-07 15:52:37 [33] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully got for Transaction ID: 1021
+2025-02-07 15:53:06 [33] INFO  Program - Request to /Games/CancelBet received.
+2025-02-07 15:53:06 [33] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: string
+2025-02-07 15:53:06 [33] WARN  CasinoApi.Repositories.CreatingGames - Bet was not got for TransactionId ID: string
+2025-02-07 15:53:12 [33] INFO  Program - Request to /Games/CreateWin received.
+2025-02-07 15:53:12 [33] INFO  CasinoApi.Repositories.CreatingGames - Creating win for transaction ID: 1021
+2025-02-07 15:53:12 [33] WARN  CasinoApi.Repositories.CreatingGames - Win was not got for Transaction ID: 1021
+2025-02-07 15:53:25 [45] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:53:25 [45] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1022
+2025-02-07 15:53:25 [33] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully changed for TransactionId ID: 1022
+2025-02-07 15:54:30 [33] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:54:30 [33] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1023
+2025-02-07 15:54:30 [31] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1023
+2025-02-07 15:54:37 [31] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:54:37 [31] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1023
+2025-02-07 15:54:37 [31] WARN  CasinoApi.Repositories.CreatingGames - Win was not changed for TransactionId ID: 1023
+2025-02-07 15:54:52 [31] INFO  Program - Request to /Games/ChangeWin received.
+2025-02-07 15:54:52 [31] INFO  CasinoApi.Repositories.CreatingGames - Changing Win for transaction ID: 1023
+2025-02-07 15:54:52 [46] INFO  CasinoApi.Repositories.CreatingGames - Win was successfully changed for TransactionId ID: 1023
+2025-02-07 15:55:55 [33] INFO  Program - Request to /Games/CreateBet received.
+2025-02-07 15:55:55 [33] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1024
+2025-02-07 15:55:55 [31] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1024
+2025-02-07 15:56:26 [33] INFO  Program - Request to /Games/CancelBet received.
+2025-02-07 15:56:26 [33] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1025
+2025-02-07 15:56:26 [50] INFO  CasinoApi.Repositories.CreatingGames - Bet was successfully got for TransactionId ID: 1025
+2025-02-07 16:06:04 [52] INFO  Program - Request to /Games/CancelBet received.
+2025-02-07 16:06:04 [52] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1025
+2025-02-07 16:06:04 [52] WARN  CasinoApi.Repositories.CreatingGames - Bet was not got for TransactionId ID: 1025
+2025-02-07 16:06:59 [52] INFO  Program - Request to /Games/CreateBet received.
+2025-02-07 16:06:59 [52] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1026
+2025-02-07 16:06:59 [52] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1026
+2025-02-07 16:07:55 [58] INFO  Program - Request to /Games/CancelBet received.
+2025-02-07 16:07:55 [58] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1027
+2025-02-07 16:07:55 [58] INFO  CasinoApi.Repositories.CreatingGames - Bet was successfully got for TransactionId ID: 1027
+2025-02-07 16:08:02 [58] INFO  Program - Request to /Games/CancelBet received.
+2025-02-07 16:08:02 [58] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1028
+2025-02-07 16:08:02 [58] WARN  CasinoApi.Repositories.CreatingGames - Bet was not got for TransactionId ID: 1028
