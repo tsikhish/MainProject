@@ -3,16 +3,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 using System.Data;
 using MvcProject.Seed;
-using MvcProject.Models.Repository;
 using MvcProject.Models.DbContext;
-using MvcProject.Models.Hash;
-using MvcProject.Models.Repository.IRepository;
-using MvcProject.Models.Model;
-using MvcProject.Models.Service;
 using log4net.Config;
 using log4net;
-using MvcProject.Models.Exceptions;
 using MvcProject.Controllers;
+using MvcProject.Repository;
+using MvcProject.Repository.IRepository;
+using MvcProject.Service;
+using MvcProject.Models;
+using MvcProject.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 XmlConfigurator.Configure(new FileInfo("log4net.config"));
@@ -25,9 +24,10 @@ builder.Services.AddDbContext<CasinoDbContext>(options =>
 builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<CasinoDbContext>();
+
 builder.Services.AddScoped<IDbConnection>(sp => new SqlConnection(connectionString));
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
-// Add services to the container.
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IBankingRequestService, BankingRequestService>();
 builder.Services.AddScoped<IUserRepository,UserRepository>();
@@ -35,15 +35,15 @@ builder.Services.AddScoped<IDepositRepository,DepositRepository>();
 builder.Services.AddScoped<IWalletRepository, WalletRepository>();
 builder.Services.AddScoped<ITransactionRepository,TransactionRepository>();
 builder.Services.AddScoped<IWithdrawRepository,WithdrawRepository>();
-builder.Services.AddScoped<ICustomExceptions, CustomExceptions>();
+
 var logRepository = LogManager.GetRepository(System.Reflection.Assembly.GetEntryAssembly());
 XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+
 builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(AdminController)));
 builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(CallbackController)));
 builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(HomeController)));
 builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(TransactionsController)));
 builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(WalletController)));
-
 
 builder.Services.AddHttpClient();
 var app = builder.Build();
@@ -57,6 +57,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

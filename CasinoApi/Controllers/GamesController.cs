@@ -1,7 +1,6 @@
 ﻿using CasinoApi.Models;
 using CasinoApi.Repositories.IRepositories;
 using Microsoft.AspNetCore.Mvc;
-using System.Net;
 
 namespace CasinoApi.Controllers
 {
@@ -30,7 +29,7 @@ namespace CasinoApi.Controllers
                         CurrentBalance = response.CurrentBalance,
                     }
                 });
-                return BadRequest(new { StatusCode = response.StatusCode });
+                return Ok(new { StatusCode = response.StatusCode });
             }
             catch (Exception ex)
             {
@@ -52,7 +51,7 @@ namespace CasinoApi.Controllers
                         CurrentBalance = response.CurrentBalance,
                     }
                 });
-                return BadRequest(new { StatusCode = response.StatusCode });
+                return Ok(new { StatusCode = response.StatusCode });
             }
             catch (Exception ex)
             {
@@ -75,7 +74,7 @@ namespace CasinoApi.Controllers
                         CurrentBalance = response.CurrentBalance,
                     }
                 });
-                return BadRequest(new { StatusCode = response.StatusCode });
+                return Ok(new { StatusCode = response.StatusCode });
             }
             catch (Exception ex)
             {
@@ -98,7 +97,7 @@ namespace CasinoApi.Controllers
                         CurrentBalance = response.CurrentBalance,
                     }
                 });
-                return BadRequest(new { StatusCode = response.StatusCode });
+                return Ok(new { StatusCode = response.StatusCode });
             }
             catch (Exception ex)
             {
@@ -120,7 +119,7 @@ namespace CasinoApi.Controllers
                         CurrentBalance = response.CurrentBalance,
                     }
                 });
-                return BadRequest(new { StatusCode = response.StatusCode });
+                return Ok(new { StatusCode = response.StatusCode });
             }
             catch (Exception ex)
             {

@@ -1,7 +1,7 @@
 ﻿using log4net;
 using Microsoft.AspNetCore.Mvc;
-using MvcProject.Models.Repository.IRepository;
-using MvcProject.Models.Repository.IRepository.Enum;
+using MvcProject.Models.Enum;
+using MvcProject.Repository.IRepository;
 using System.Security.Claims;
 namespace MvcProject.Controllers
 {
@@ -22,33 +22,24 @@ namespace MvcProject.Controllers
         [Route("Wallet/GetWalletBalance")]
         public async Task<IActionResult> GetWalletBalance()
         {
-            try
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userId))
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                if (string.IsNullOrEmpty(userId))
-                {
-                    _logger.Warn("User ID not found in claims.");
-                    return Unauthorized(new { success = false, message = "User not authenticated." });
-                }
-                _logger.Info("Fetching wallet balance for user: " + userId);  
-                var balance = await _walletRepository.GetWalletBalanceByUserIdAsync(userId);
-                var currency = await _walletRepository.GetWalletCurrencyByUserIdAsync(userId);
+                _logger.Warn("User ID not found in claims.");
+                return Unauthorized(new { success = false, message = "User not authenticated." });
+            }
+            _logger.Info("Fetching wallet balance for user: " + userId);
+            var balance = await _walletRepository.GetWalletBalanceByUserIdAsync(userId);
+            var currency = await _walletRepository.GetWalletCurrencyByUserIdAsync(userId);
 
-                if (balance == null || currency == null)
-                {
-                    _logger.Warn("Wallet data not found for user: " + userId);  
-                    return NotFound(new { success = false, message = "Wallet balance or currency not found." });
-                }
-                var currencySymbol = GetCurrencySymbol(currency);
-                _logger.Info("Wallet balance retrieved for user " + userId + ": " + balance + " " + currencySymbol); 
-                return Ok(new { success = true, balance, currency = currencySymbol });
-            }
-            catch (Exception ex)
+            if (balance == null || currency == null)
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                _logger.Error("Error fetching wallet balance for user " + userId, ex);  
-                return StatusCode(500, new { success = false, message = "Internal server error. Please try again later." });
+                _logger.Warn("Wallet data not found for user: " + userId);
+                return NotFound(new { success = false, message = "Wallet balance or currency not found." });
             }
+            var currencySymbol = GetCurrencySymbol(currency);
+            _logger.Info("Wallet balance retrieved for user " + userId + ": " + balance + " " + currencySymbol);
+            return Ok(new { success = true, balance, currency = currencySymbol });
         }
         private string GetCurrencySymbol(int currencyId)
         {
