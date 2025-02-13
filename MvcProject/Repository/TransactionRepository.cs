@@ -1,24 +1,27 @@
 ﻿using Dapper;
+using log4net;
+using MvcProject.Controllers;
 using MvcProject.Exceptions;
 using MvcProject.Models;
 using MvcProject.Models.Enum;
 using MvcProject.Repository.IRepository;
+using MvcProject.Service;
 using System.Data;
 namespace MvcProject.Repository
 {
     public class TransactionRepository : ITransactionRepository
     {
-        private readonly ILogger<TransactionRepository> _logger;
+        private readonly ILog _logger;
         private readonly IDbConnection _connection;
 
-        public TransactionRepository(ILogger<TransactionRepository> logger, IDbConnection connection)
+        public TransactionRepository(ILoggerFactoryService loggerFactory,IDbConnection connection)
         {
-            _logger = logger;
+            _logger = loggerFactory.GetLogger<TransactionsController>();
             _connection = connection;
         }
         public async Task UpdateRejectedStatus(int id)
         {
-            _logger.LogInformation("Starting UpdateRejectedStatus for Id: {Id}", id);
+            _logger.Info("Starting UpdateRejectedStatus");
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@id", id);
             parameters.Add("@Status", Status.Rejected);
@@ -34,11 +37,11 @@ namespace MvcProject.Repository
 
                 throw new CustomException(status, $"Something's Wrong. StatusCode: {statusCode} ({status})");
             }
-            _logger.LogInformation("Successfully updated status to Rejected for Id: {Id}", id);
+            _logger.Info("Successfully rejected status");
         }
         public async Task<TransactionInfo> GetUsersFullNameAsync(int id)
         {
-            _logger.LogInformation("Fetching user's full name for Id: {Id}", id);
+            _logger.Info("Fetching user's full name");
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Id", id);
             parameters.Add("@Amount", dbType: DbType.Decimal, direction: ParameterDirection.Output);
@@ -61,13 +64,13 @@ namespace MvcProject.Repository
         }
         public async Task<IEnumerable<Transactions>> GetTransactionByUserId(string userId)
         {
-            _logger.LogInformation("Fetching transaction history for user: {UserId}", userId);
+            _logger.Info("Fetching transaction history");
             var query = "select * from Transactions where UserId=@userId";
             return await _connection.QueryAsync<Transactions>(query, new { UserId = userId });
         }
         public async Task<IEnumerable<DepositWithdrawRequest>> GetWithdrawTransactionsForAdmins()
         {
-            _logger.LogInformation("Fetching pending withdraw transactions for admins.");
+            _logger.Info("Fetching pending withdraw transactions for admins.");
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@TransactionType", TransactionType.Withdraw);
             parameters.Add("@Status", Status.Pending);
@@ -76,12 +79,12 @@ namespace MvcProject.Repository
                 parameters,
                 commandType: CommandType.StoredProcedure
             );
-            _logger.LogInformation("Successfully fetched {Count} pending withdraw transactions for admins.", depositWithdraw?.Count() ?? 0);
+            _logger.Info("Successfully fetched pending withdraw transactions for admins.");
             return depositWithdraw;
         }
         public async Task<DepositWithdrawRequest> GetDepositWithdrawById(int id)
         {
-            _logger.LogInformation("Fetching deposit/withdraw request with ID: {Id}", id);
+            _logger.Info("Fetching deposit/withdraw request");
 
             var parameters = new DynamicParameters();
             parameters.Add("@id", id);

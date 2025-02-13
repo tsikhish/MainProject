@@ -1,9 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
 using MvcProject.Hash;
 using MvcProject.Models;
+using MvcProject.Service.IService;
 using Newtonsoft.Json;
-using System.Data;
-using System.Security.Policy;
 using System.Text;
 
 namespace MvcProject.Service

@@ -8021,3 +8021,790 @@ MvcProject.Exceptions.CustomException: Something's Wrong. StatusCode: 400 (Pendi
 2025-02-13 04:12:09 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
 2025-02-13 04:12:09 [11] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
 2025-02-13 04:12:09 [21] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 12:51:44 [11] INFO  Program - Request to / received.
+2025-02-13 12:51:45 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 12:51:45 [5] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 12:52:00 [5] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 12:52:01 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 12:52:01 [19] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 12:52:02 [19] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 12:52:03 [5] INFO  Program - Request to / received.
+2025-02-13 12:52:03 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 12:52:03 [11] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 12:52:03 [17] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 12:52:04 [11] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 12:52:04 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 12:52:04 [20] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 12:52:04 [11] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 12:52:21 [8] INFO  Program - Request to /Transactions/Withdraw received.
+2025-02-13 12:52:21 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 12:52:21 [5] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 12:52:21 [17] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 12:52:23 [17] INFO  Program - Request to /Transactions/Withdraw received.
+2025-02-13 12:52:23 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 12:52:23 [17] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 12:52:23 [11] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 13:40:28 [6] INFO  Program - Request to / received.
+2025-02-13 13:40:29 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 13:40:29 [8] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 13:40:37 [6] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 13:40:38 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 13:40:38 [17] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 13:40:39 [6] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 13:40:40 [19] INFO  Program - Request to / received.
+2025-02-13 13:40:40 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 13:40:40 [18] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 13:40:40 [8] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 13:40:42 [10] INFO  Program - Request to /Transactions/Withdraw received.
+2025-02-13 13:40:42 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 13:40:42 [6] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 13:40:42 [6] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 13:41:10 [18] INFO  Program - Request to /Transactions/WithdrawRequest received.
+2025-02-13 13:41:10 [18] INFO  MvcProject.Controllers.TransactionsController - Withdraw request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 15
+2025-02-13 13:41:10 [18] INFO  MvcProject.Repository.DepositRepository - Registering withdraw for user 2189418a-271a-4496-aa02-d07760408b68, Amount: 15, Status: Pending, TransactionType: Withdraw
+2025-02-13 13:41:10 [18] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+MvcProject.Exceptions.CustomException: Something's Wrong. StatusCode: 400 (PendingRequestExists)
+   at MvcProject.Repository.WithdrawRepository.RegisterWithdraw(String userId, Status status, TransactionType transactionType, Decimal amount) in C:\Users\Mari\source\repos\MainProject\MvcProject\Repository\WithdrawRepository.cs:line 42
+   at MvcProject.Controllers.TransactionsController.WithdrawRequest(DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Controllers\TransactionsController.cs:line 90
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 75
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 13:41:12 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 13:41:12 [18] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 13:41:12 [18] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 13:41:32 [22] INFO  Program - Request to /Transactions/WithdrawRequest received.
+2025-02-13 13:41:32 [22] INFO  MvcProject.Controllers.TransactionsController - Withdraw request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 15
+2025-02-13 13:41:32 [22] INFO  MvcProject.Repository.DepositRepository - Registering withdraw for user 2189418a-271a-4496-aa02-d07760408b68, Amount: 15, Status: Pending, TransactionType: Withdraw
+2025-02-13 13:41:33 [22] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+MvcProject.Exceptions.CustomException: Something's Wrong. StatusCode: 400 (PendingRequestExists)
+   at MvcProject.Repository.WithdrawRepository.RegisterWithdraw(String userId, Status status, TransactionType transactionType, Decimal amount) in C:\Users\Mari\source\repos\MainProject\MvcProject\Repository\WithdrawRepository.cs:line 42
+   at MvcProject.Controllers.TransactionsController.WithdrawRequest(DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Controllers\TransactionsController.cs:line 90
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 75
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 13:41:42 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 13:41:42 [6] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 13:41:42 [6] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:30:18 [16] INFO  Program - Request to / received.
+2025-02-13 15:30:20 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:30:20 [17] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:30:37 [16] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:30:37 [16] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:30:37 [16] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:30:40 [7] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:30:40 [5] INFO  Program - Request to / received.
+2025-02-13 15:30:40 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:30:40 [5] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:30:41 [5] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:30:42 [5] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:30:42 [5] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MvcProject.Service.IService.IDepositService' while attempting to activate 'MvcProject.Controllers.TransactionsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method208(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 79
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:30:50 [5] INFO  Program - Request to / received.
+2025-02-13 15:31:42 [9] INFO  Program - Request to / received.
+2025-02-13 15:31:43 [7] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:31:43 [7] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:31:44 [10] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:31:44 [7] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:31:44 [7] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:31:46 [14] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:31:46 [14] INFO  Program - Request to / received.
+2025-02-13 15:31:46 [9] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:31:46 [9] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:31:46 [7] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:31:47 [14] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:31:48 [14] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MvcProject.Service.IService.IDepositService' while attempting to activate 'MvcProject.Controllers.TransactionsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method208(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 79
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:35:12 [6] INFO  Program - Request to / received.
+2025-02-13 15:35:13 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:35:13 [17] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:35:14 [6] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:35:15 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:35:15 [6] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:35:16 [6] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:35:16 [22] INFO  Program - Request to / received.
+2025-02-13 15:35:16 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:35:16 [19] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:35:16 [11] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:35:17 [10] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:35:17 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:35:17 [17] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:35:17 [6] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:35:20 [6] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-13 15:35:24 [6] INFO  MvcProject.Service.TransactionService - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12
+2025-02-13 15:35:24 [6] INFO  MvcProject.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12, Status: Pending, TransactionType: Deposit
+2025-02-13 15:35:24 [6] INFO  MvcProject.Repository.DepositRepository - Successfully registered deposit for user 2189418a-271a-4496-aa02-d07760408b68, DepositWithdrawId: 294
+2025-02-13 15:35:24 [6] INFO  MvcProject.Service.TransactionService - Deposit registered with ID: 294 for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:35:24 [19] INFO  MvcProject.Service.TransactionService - Deposit successfully processed. Redirecting User ID: 2189418a-271a-4496-aa02-d07760408b68 to Payment URL: https://localhost:7116/Payment/294/1200
+2025-02-13 15:35:24 [22] INFO  Program - Request to /Payment/294/1200 received.
+2025-02-13 15:35:24 [22] INFO  MvcProject.Service.TransactionService - Received request for transaction details. DepositWithdrawID: 294, Amount: 1200
+2025-02-13 15:35:24 [22] INFO  MvcProject.Controllers.TransactionsController - Fetching deposit/withdraw request
+2025-02-13 15:35:25 [22] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[MvcProject.Models.DepositWithdrawRequest,MvcProject.Service.TransactionService+<GetDepositWithdraw>d__6]', but this ViewDataDictionary instance requires a model item of type 'MvcProject.Models.DepositWithdrawRequest'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method240(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:35:25 [10] INFO  MvcProject.Service.TransactionService - Transaction retrieved successfully. Transaction ID: 294
+2025-02-13 15:35:31 [22] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:36:01 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:36:01 [6] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:36:01 [11] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:36:31 [3] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:36:31 [3] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:36:31 [11] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:36:49 [8] INFO  Program - Request to / received.
+2025-02-13 15:36:50 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:36:51 [19] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:37:20 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:37:20 [6] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:37:38 [8] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:37:38 [21] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:37:45 [21] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:37:47 [21] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:37:47 [10] INFO  Program - Request to / received.
+2025-02-13 15:37:48 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:37:51 [6] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:37:51 [8] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:37:53 [6] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:37:53 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:37:56 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:37:56 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:38:00 [10] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-13 15:38:03 [10] INFO  MvcProject.Service.TransactionService - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12
+2025-02-13 15:38:04 [10] INFO  MvcProject.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12, Status: Pending, TransactionType: Deposit
+2025-02-13 15:38:04 [10] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+MvcProject.Exceptions.CustomException: Something's Wrong. StatusCode: 400 (PendingRequestExists)
+   at MvcProject.Repository.DepositRepository.RegisterDeposit(String userId, Status status, TransactionType transactionType, Decimal amount) in C:\Users\Mari\source\repos\MainProject\MvcProject\Repository\DepositRepository.cs:line 43
+   at MvcProject.Service.DepositService.Deposit(String userId, DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Service\DepositService.cs:line 28
+   at MvcProject.Controllers.TransactionsController.DepositResult(DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Controllers\TransactionsController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:38:12 [6] INFO  Program - Request to /Transactions/Withdraw received.
+2025-02-13 15:38:12 [21] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:40:15 [18] INFO  Program - Request to / received.
+2025-02-13 15:40:16 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:40:24 [19] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:40:26 [10] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:40:26 [21] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:40:28 [21] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:40:30 [11] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:40:30 [12] INFO  Program - Request to / received.
+2025-02-13 15:40:31 [12] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:40:51 [12] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:40:51 [19] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:46:00 [7] INFO  Program - Request to / received.
+2025-02-13 15:46:05 [9] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:46:05 [9] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:46:07 [9] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:46:07 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:46:07 [17] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:46:08 [10] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:46:09 [17] INFO  Program - Request to / received.
+2025-02-13 15:46:09 [9] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:46:09 [9] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:46:09 [19] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:46:10 [9] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:46:10 [19] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:46:10 [19] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:46:10 [19] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:46:12 [9] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-13 15:46:12 [9] INFO  MvcProject.Service.TransactionService - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10
+2025-02-13 15:46:12 [9] INFO  MvcProject.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10, Status: Pending, TransactionType: Deposit
+2025-02-13 15:46:12 [9] INFO  MvcProject.Repository.DepositRepository - Successfully registered deposit for user 2189418a-271a-4496-aa02-d07760408b68, DepositWithdrawId: 295
+2025-02-13 15:46:12 [9] INFO  MvcProject.Service.TransactionService - Deposit registered with ID: 295 for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:46:12 [7] INFO  MvcProject.Service.TransactionService - Deposit successfully processed. Redirecting User ID: 2189418a-271a-4496-aa02-d07760408b68 to Payment URL: https://localhost:7116/Payment/295/1000
+2025-02-13 15:46:12 [10] INFO  Program - Request to /Payment/295/1000 received.
+2025-02-13 15:46:12 [10] INFO  MvcProject.Service.TransactionService - Received request for transaction details. DepositWithdrawID: 295, Amount: 1000
+2025-02-13 15:46:12 [10] INFO  MvcProject.Controllers.TransactionsController - Fetching deposit/withdraw request
+2025-02-13 15:46:13 [10] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[MvcProject.Models.DepositWithdrawRequest,MvcProject.Service.TransactionService+<GetDepositWithdraw>d__6]', but this ViewDataDictionary instance requires a model item of type 'MvcProject.Models.DepositWithdrawRequest'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method240(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:46:13 [7] INFO  MvcProject.Service.TransactionService - Transaction retrieved successfully. Transaction ID: 295
+2025-02-13 15:47:14 [10] INFO  Program - Request to / received.
+2025-02-13 15:47:14 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:47:14 [17] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:47:15 [8] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:47:16 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:47:16 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:47:17 [6] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:47:17 [6] INFO  Program - Request to / received.
+2025-02-13 15:47:17 [21] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:47:17 [21] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:47:17 [6] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:47:18 [10] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:47:18 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:47:18 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:47:18 [6] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:47:21 [10] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-13 15:47:21 [10] INFO  MvcProject.Service.TransactionService - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10
+2025-02-13 15:47:21 [10] INFO  MvcProject.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10, Status: Pending, TransactionType: Deposit
+2025-02-13 15:47:21 [10] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.Exception: Something's Wrong. StatusCode: 400 (PendingRequestExists)
+   at MvcProject.Service.DepositService.Deposit(String userId, DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Service\DepositService.cs:line 44
+   at MvcProject.Controllers.TransactionsController.DepositResult(DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Controllers\TransactionsController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:47:48 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:47:48 [6] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:47:48 [6] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:48:18 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:48:18 [8] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:48:18 [17] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:48:18 [17] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-13 15:48:18 [17] INFO  MvcProject.Service.TransactionService - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10
+2025-02-13 15:48:21 [17] INFO  MvcProject.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10, Status: Pending, TransactionType: Deposit
+2025-02-13 15:49:09 [25] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:49:09 [25] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:49:14 [24] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:49:14 [8] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.Exception: Something's Wrong. StatusCode: 400 (PendingRequestExists)
+   at MvcProject.Service.DepositService.Deposit(String userId, DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Service\DepositService.cs:line 44
+   at MvcProject.Controllers.TransactionsController.DepositResult(DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Controllers\TransactionsController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:49:18 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:49:18 [17] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:49:18 [17] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:49:48 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:49:48 [8] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:49:48 [17] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:50:18 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:50:18 [17] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:50:18 [8] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:50:36 [17] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-13 15:50:36 [17] INFO  MvcProject.Service.TransactionService - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 15
+2025-02-13 15:50:41 [17] INFO  MvcProject.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 15, Status: Pending, TransactionType: Deposit
+2025-02-13 15:50:48 [3] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:50:48 [3] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:50:52 [17] INFO  MvcProject.Repository.DepositRepository - Successfully registered deposit for user 2189418a-271a-4496-aa02-d07760408b68, DepositWithdrawId: 296
+2025-02-13 15:50:52 [17] INFO  MvcProject.Service.TransactionService - Deposit registered with ID: 296 for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:50:55 [8] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:51:00 [17] INFO  MvcProject.Service.TransactionService - Deposit successfully processed. Redirecting User ID: 2189418a-271a-4496-aa02-d07760408b68 to Payment URL: https://localhost:7116/Payment/296/1500
+2025-02-13 15:51:09 [3] INFO  Program - Request to /Payment/296/1500 received.
+2025-02-13 15:51:09 [3] INFO  MvcProject.Service.TransactionService - Received request for transaction details. DepositWithdrawID: 296, Amount: 1500
+2025-02-13 15:51:09 [3] INFO  MvcProject.Controllers.TransactionsController - Fetching deposit/withdraw request
+2025-02-13 15:51:09 [3] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[MvcProject.Models.DepositWithdrawRequest,MvcProject.Service.TransactionService+<GetDepositWithdraw>d__6]', but this ViewDataDictionary instance requires a model item of type 'MvcProject.Models.DepositWithdrawRequest'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method240(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:56:28 [6] INFO  Program - Request to / received.
+2025-02-13 15:56:29 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:56:29 [17] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:56:30 [19] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:56:30 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:56:30 [8] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:56:31 [8] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:56:32 [8] INFO  Program - Request to / received.
+2025-02-13 15:56:32 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:56:32 [17] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:56:32 [6] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:56:33 [10] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:56:33 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:56:33 [18] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:56:33 [6] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:56:35 [10] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-13 15:56:35 [10] INFO  MvcProject.Service.TransactionService - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10
+2025-02-13 15:56:38 [10] INFO  MvcProject.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10, Status: Pending, TransactionType: Deposit
+2025-02-13 15:56:38 [10] INFO  MvcProject.Repository.DepositRepository - Successfully registered deposit for user 2189418a-271a-4496-aa02-d07760408b68, DepositWithdrawId: 297
+2025-02-13 15:56:38 [10] INFO  MvcProject.Service.TransactionService - Deposit registered with ID: 297 for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:56:38 [6] INFO  MvcProject.Service.TransactionService - Deposit successfully processed. Redirecting User ID: 2189418a-271a-4496-aa02-d07760408b68 to Payment URL: https://localhost:7116/Payment/297/1000
+2025-02-13 15:56:38 [19] INFO  Program - Request to /Payment/297/1000 received.
+2025-02-13 15:56:38 [19] INFO  MvcProject.Service.TransactionService - Received request for transaction details. DepositWithdrawID: 297, Amount: 1000
+2025-02-13 15:56:38 [19] INFO  MvcProject.Controllers.TransactionsController - Fetching deposit/withdraw request
+2025-02-13 15:56:38 [6] INFO  MvcProject.Service.TransactionService - Transaction retrieved successfully. Transaction ID: 297
+2025-02-13 15:56:38 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:56:38 [17] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:56:38 [8] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 878,4700 €
+2025-02-13 15:56:41 [10] INFO  Program - Request to /Payment/SendingDeposit received.
+2025-02-13 15:56:41 [10] INFO  MvcProject.Service.TransactionService - Initiating deposit transaction for UserId: 2189418a-271a-4496-aa02-d07760408b68, Amount: 10.0000
+2025-02-13 15:56:41 [10] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[MvcProject.Models.Response,MvcProject.Service.TransactionService+<SendingDepositToBankingApi>d__5]', but this ViewDataDictionary instance requires a model item of type 'MvcProject.Models.Response'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method255(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:56:41 [17] INFO  Program - Request to /Callback/SuccessDeposit received.
+2025-02-13 15:56:41 [17] INFO  MvcProject.Service.TransactionService - Banking API response received. Adjusted Amount: 10.0000, TransactionId: 297
+2025-02-13 15:56:41 [17] INFO  MvcProject.Repository.DepositRepository - Registering transaction for DepositWithdrawId: 297, Amount: 10,0000, Status: Success
+2025-02-13 15:56:41 [18] INFO  MvcProject.Service.TransactionService - <log4net.Error>Exception during StringFormat: Index (zero based) must be greater than or equal to zero and less than the size of the argument list. <format>Transaction successfully registered for TransactionId: {1}</format><args>{297}</args></log4net.Error>
+2025-02-13 15:57:22 [8] INFO  Program - Request to /Payment/297/1000 received.
+2025-02-13 15:57:22 [8] INFO  MvcProject.Service.TransactionService - Received request for transaction details. DepositWithdrawID: 297, Amount: 1000
+2025-02-13 15:57:22 [8] INFO  MvcProject.Controllers.TransactionsController - Fetching deposit/withdraw request
+2025-02-13 15:57:22 [22] INFO  MvcProject.Service.TransactionService - Transaction retrieved successfully. Transaction ID: 297
+2025-02-13 15:57:24 [8] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:57:24 [6] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:57:24 [6] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:57:24 [6] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 888,4700 €
+2025-02-13 15:57:26 [23] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-13 15:57:26 [23] INFO  MvcProject.Service.TransactionService - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12
+2025-02-13 15:57:26 [23] INFO  MvcProject.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12, Status: Pending, TransactionType: Deposit
+2025-02-13 15:57:26 [8] INFO  MvcProject.Repository.DepositRepository - Successfully registered deposit for user 2189418a-271a-4496-aa02-d07760408b68, DepositWithdrawId: 298
+2025-02-13 15:57:26 [8] INFO  MvcProject.Service.TransactionService - Deposit registered with ID: 298 for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:57:26 [6] INFO  MvcProject.Service.TransactionService - Deposit successfully processed. Redirecting User ID: 2189418a-271a-4496-aa02-d07760408b68 to Payment URL: https://localhost:7116/Payment/298/1200
+2025-02-13 15:57:26 [8] INFO  Program - Request to /Payment/298/1200 received.
+2025-02-13 15:57:26 [8] INFO  MvcProject.Service.TransactionService - Received request for transaction details. DepositWithdrawID: 298, Amount: 1200
+2025-02-13 15:57:26 [8] INFO  MvcProject.Controllers.TransactionsController - Fetching deposit/withdraw request
+2025-02-13 15:57:26 [6] INFO  MvcProject.Service.TransactionService - Transaction retrieved successfully. Transaction ID: 298
+2025-02-13 15:57:26 [23] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:57:26 [23] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:57:26 [22] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 888,4700 €
+2025-02-13 15:57:27 [6] INFO  Program - Request to /Payment/SendingDeposit received.
+2025-02-13 15:57:27 [6] INFO  MvcProject.Service.TransactionService - Initiating deposit transaction for UserId: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12.0000
+2025-02-13 15:57:27 [6] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[MvcProject.Models.Response,MvcProject.Service.TransactionService+<SendingDepositToBankingApi>d__5]', but this ViewDataDictionary instance requires a model item of type 'MvcProject.Models.Response'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method255(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:57:27 [8] INFO  Program - Request to /Callback/SuccessDeposit received.
+2025-02-13 15:57:27 [8] INFO  MvcProject.Service.TransactionService - Banking API response received. Adjusted Amount: 12.0000, TransactionId: 298
+2025-02-13 15:57:27 [8] INFO  MvcProject.Repository.DepositRepository - Registering transaction for DepositWithdrawId: 298, Amount: 12,0000, Status: Success
+2025-02-13 15:57:27 [6] INFO  MvcProject.Service.TransactionService - <log4net.Error>Exception during StringFormat: Index (zero based) must be greater than or equal to zero and less than the size of the argument list. <format>Transaction successfully registered for TransactionId: {1}</format><args>{298}</args></log4net.Error>
+2025-02-13 15:57:54 [15] INFO  Program - Request to / received.
+2025-02-13 15:57:55 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:57:55 [11] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:58:00 [19] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:58:00 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:00 [17] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:58:02 [20] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:58:02 [10] INFO  Program - Request to / received.
+2025-02-13 15:58:02 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:02 [8] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:58:02 [19] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 900,4700 €
+2025-02-13 15:58:03 [8] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:58:03 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:03 [11] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:58:03 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 900,4700 €
+2025-02-13 15:58:05 [8] INFO  Program - Request to /Transactions/DepositResult received.
+2025-02-13 15:58:05 [8] INFO  MvcProject.Service.TransactionService - Deposit request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12
+2025-02-13 15:58:05 [8] INFO  MvcProject.Repository.DepositRepository - Registering deposit for user: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12, Status: Pending, TransactionType: Deposit
+2025-02-13 15:58:05 [10] INFO  MvcProject.Repository.DepositRepository - Successfully registered deposit for user 2189418a-271a-4496-aa02-d07760408b68, DepositWithdrawId: 299
+2025-02-13 15:58:05 [10] INFO  MvcProject.Service.TransactionService - Deposit registered with ID: 299 for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:58:06 [11] INFO  MvcProject.Service.TransactionService - Deposit successfully processed. Redirecting User ID: 2189418a-271a-4496-aa02-d07760408b68 to Payment URL: https://localhost:7116/Payment/299/1200
+2025-02-13 15:58:06 [8] INFO  Program - Request to /Payment/299/1200 received.
+2025-02-13 15:58:06 [8] INFO  MvcProject.Service.TransactionService - Received request for transaction details. DepositWithdrawID: 299, Amount: 1200
+2025-02-13 15:58:06 [8] INFO  MvcProject.Controllers.TransactionsController - Fetching deposit/withdraw request
+2025-02-13 15:58:06 [10] INFO  MvcProject.Service.TransactionService - Transaction retrieved successfully. Transaction ID: 299
+2025-02-13 15:58:06 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:06 [11] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:58:06 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 900,4700 €
+2025-02-13 15:58:07 [10] INFO  Program - Request to /Payment/SendingDeposit received.
+2025-02-13 15:58:07 [10] INFO  MvcProject.Service.TransactionService - Initiating deposit transaction for UserId: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12.0000
+2025-02-13 15:58:07 [8] INFO  Program - Request to /Callback/SuccessDeposit received.
+2025-02-13 15:58:07 [8] INFO  MvcProject.Service.TransactionService - Banking API response received. Adjusted Amount: 12.0000, TransactionId: 299
+2025-02-13 15:58:07 [8] INFO  MvcProject.Repository.DepositRepository - Registering transaction for DepositWithdrawId: 299, Amount: 12,0000, Status: Success
+2025-02-13 15:58:07 [10] INFO  MvcProject.Service.TransactionService - <log4net.Error>Exception during StringFormat: Index (zero based) must be greater than or equal to zero and less than the size of the argument list. <format>Transaction successfully registered for TransactionId: {1}</format><args>{299}</args></log4net.Error>
+2025-02-13 15:58:07 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:07 [8] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:58:07 [19] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 912,4700 €
+2025-02-13 15:58:09 [19] INFO  Program - Request to /Transactions/Withdraw received.
+2025-02-13 15:58:09 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:09 [10] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:58:09 [8] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 912,4700 €
+2025-02-13 15:58:11 [8] INFO  Program - Request to /Transactions/WithdrawRequest received.
+2025-02-13 15:58:11 [8] INFO  MvcProject.Service.WithdrawService - Withdraw request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 15
+2025-02-13 15:58:11 [8] INFO  MvcProject.Repository.DepositRepository - Registering withdraw for user 2189418a-271a-4496-aa02-d07760408b68, Amount: 15, Status: Pending, TransactionType: Withdraw
+2025-02-13 15:58:11 [8] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+MvcProject.Exceptions.CustomException: Something's Wrong. StatusCode: 400 (PendingRequestExists)
+   at MvcProject.Repository.WithdrawRepository.RegisterWithdraw(String userId, Status status, TransactionType transactionType, Decimal amount) in C:\Users\Mari\source\repos\MainProject\MvcProject\Repository\WithdrawRepository.cs:line 42
+   at MvcProject.Service.WithdrawService.RegisterWithdraw(String userId, DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Service\WithdrawService.cs:line 29
+   at MvcProject.Controllers.TransactionsController.WithdrawRequest(DepositRequestDTO request) in C:\Users\Mari\source\repos\MainProject\MvcProject\Controllers\TransactionsController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 15:58:15 [17] INFO  Program - Request to /Transactions/Deposit received.
+2025-02-13 15:58:15 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:15 [11] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:58:15 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 912,4700 €
+2025-02-13 15:58:19 [21] INFO  Program - Request to /Transactions/TransactionHistoryPage received.
+2025-02-13 15:58:19 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:19 [17] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:58:19 [20] INFO  Program - Request to /transactions/transactionHistory received.
+2025-02-13 15:58:19 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 912,4700 €
+2025-02-13 15:58:19 [20] INFO  MvcProject.Controllers.TransactionsController - Fetching transaction history
+2025-02-13 15:58:19 [20] INFO  MvcProject.Service.TransactionService - Successfully retrieved 84 transactions for user with ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 15:58:25 [10] INFO  Program - Request to /Identity/Account/Logout received.
+2025-02-13 15:58:25 [11] INFO  Program - Request to / received.
+2025-02-13 15:58:25 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:25 [10] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:58:26 [21] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:58:26 [10] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:26 [10] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 15:58:28 [20] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 15:58:28 [8] INFO  Program - Request to / received.
+2025-02-13 15:58:29 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 15:58:29 [11] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-02-13 15:58:29 [10] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-02-13 15:58:34 [19] INFO  Program - Request to /Admin/AdminDashboard received.
+2025-02-13 15:58:34 [19] INFO  MvcProject.Service.TransactionService - Fetching withdrawal transactions for the admin dashboard.
+2025-02-13 15:58:34 [19] INFO  MvcProject.Controllers.TransactionsController - Fetching pending withdraw transactions for admins.
+2025-02-13 15:58:34 [10] INFO  MvcProject.Controllers.TransactionsController - Successfully fetched pending withdraw transactions for admins.
+2025-02-13 15:58:34 [10] INFO  MvcProject.Service.TransactionService - Successfully retrieved withdrawal transactions for the admin dashboard.
+2025-02-13 15:58:34 [19] ERROR MvcProject.Middleware.ExceptionHandlingMiddleware - An error occurred while processing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.IEnumerable`1[MvcProject.Models.DepositWithdrawRequest],MvcProject.Service.TransactionService+<AdminDashboard>d__8]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.IEnumerable`1[MvcProject.Models.DepositWithdrawRequest]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method314(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Program.<>c.<<<Main>$>b__0_3>d.MoveNext() in C:\Users\Mari\source\repos\MainProject\MvcProject\Program.cs:line 84
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at MvcProject.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Mari\source\repos\MainProject\MvcProject\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-02-13 16:01:32 [5] INFO  Program - Request to / received.
+2025-02-13 16:01:33 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:33 [11] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 16:01:35 [5] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 16:01:35 [18] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:35 [18] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 16:01:36 [22] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 16:01:37 [5] INFO  Program - Request to / received.
+2025-02-13 16:01:37 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:37 [5] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-02-13 16:01:37 [8] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-02-13 16:01:37 [18] INFO  Program - Request to /Admin/AdminDashboard received.
+2025-02-13 16:01:37 [18] INFO  MvcProject.Service.TransactionService - Fetching withdrawal transactions for the admin dashboard.
+2025-02-13 16:01:37 [18] INFO  MvcProject.Controllers.TransactionsController - Fetching pending withdraw transactions for admins.
+2025-02-13 16:01:37 [5] INFO  MvcProject.Controllers.TransactionsController - Successfully fetched pending withdraw transactions for admins.
+2025-02-13 16:01:37 [5] INFO  MvcProject.Service.TransactionService - Successfully retrieved withdrawal transactions for the admin dashboard.
+2025-02-13 16:01:37 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:37 [8] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-02-13 16:01:37 [5] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-02-13 16:01:39 [5] INFO  Program - Request to /Admin/AcceptWithdraw received.
+2025-02-13 16:01:39 [5] INFO  MvcProject.Repository.DepositRepository - Fetching withdraw transaction details for transaction ID: 291.
+2025-02-13 16:01:39 [5] INFO  MvcProject.Controllers.TransactionsController - Fetching user's full name
+2025-02-13 16:01:39 [5] INFO  MvcProject.Repository.DepositRepository - Successfully fetched withdraw transaction details for transaction ID: 291.
+2025-02-13 16:01:40 [5] INFO  Program - Request to /Callback/SuccessWithdraw received.
+2025-02-13 16:01:40 [5] INFO  MvcProject.Service.WithdrawService - Adjusted withdrawal amount: 15.0 for TransactionId: 291
+2025-02-13 16:01:40 [5] INFO  MvcProject.Repository.DepositRepository - Registering withdraw transaction for Id 291, Amount: 15.0, Status: Rejected, DepositWithdrawId: 291
+2025-02-13 16:01:40 [8] INFO  MvcProject.Repository.DepositRepository - Successfully registered withdraw transaction for Id 291.
+2025-02-13 16:01:40 [8] INFO  MvcProject.Service.WithdrawService - <log4net.Error>Exception during StringFormat: Index (zero based) must be greater than or equal to zero and less than the size of the argument list. <format>Withdrawal transaction successfully registered for TransactionId: {1}</format><args>{291}</args></log4net.Error>
+2025-02-13 16:01:40 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:40 [8] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-02-13 16:01:40 [5] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-02-13 16:01:42 [5] INFO  Program - Request to /Identity/Account/Logout received.
+2025-02-13 16:01:42 [11] INFO  Program - Request to / received.
+2025-02-13 16:01:42 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:42 [17] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 16:01:44 [20] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 16:01:44 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:44 [20] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 16:01:46 [5] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 16:01:47 [18] INFO  Program - Request to / received.
+2025-02-13 16:01:47 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:47 [8] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 16:01:47 [17] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 927,4700 €
+2025-02-13 16:01:48 [22] INFO  Program - Request to /Transactions/Withdraw received.
+2025-02-13 16:01:48 [20] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:48 [20] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 16:01:48 [8] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 2189418a-271a-4496-aa02-d07760408b68: 927,4700 €
+2025-02-13 16:01:51 [11] INFO  Program - Request to /Transactions/WithdrawRequest received.
+2025-02-13 16:01:51 [11] INFO  MvcProject.Service.WithdrawService - Withdraw request received for User ID: 2189418a-271a-4496-aa02-d07760408b68, Amount: 12
+2025-02-13 16:01:51 [11] INFO  MvcProject.Repository.DepositRepository - Registering withdraw for user 2189418a-271a-4496-aa02-d07760408b68, Amount: 12, Status: Pending, TransactionType: Withdraw
+2025-02-13 16:01:51 [11] INFO  MvcProject.Repository.DepositRepository - Successfully registered withdraw for UserId 2189418a-271a-4496-aa02-d07760408b68.
+2025-02-13 16:01:51 [11] INFO  MvcProject.Service.WithdrawService - Withdraw request successfully sent for User ID: 2189418a-271a-4496-aa02-d07760408b68
+2025-02-13 16:01:52 [20] INFO  Program - Request to /Identity/Account/Logout received.
+2025-02-13 16:01:52 [11] INFO  Program - Request to / received.
+2025-02-13 16:01:52 [22] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:52 [22] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 16:01:53 [22] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 16:01:53 [8] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:53 [8] WARN  MvcProject.Controllers.WalletController - User ID not found in claims.
+2025-02-13 16:01:55 [5] INFO  Program - Request to /Identity/Account/Login received.
+2025-02-13 16:01:55 [17] INFO  Program - Request to / received.
+2025-02-13 16:01:55 [5] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:55 [5] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-02-13 16:01:55 [17] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-02-13 16:01:56 [8] INFO  Program - Request to /Admin/AdminDashboard received.
+2025-02-13 16:01:56 [8] INFO  MvcProject.Service.TransactionService - Fetching withdrawal transactions for the admin dashboard.
+2025-02-13 16:01:56 [8] INFO  MvcProject.Controllers.TransactionsController - Fetching pending withdraw transactions for admins.
+2025-02-13 16:01:56 [11] INFO  MvcProject.Controllers.TransactionsController - Successfully fetched pending withdraw transactions for admins.
+2025-02-13 16:01:56 [11] INFO  MvcProject.Service.TransactionService - Successfully retrieved withdrawal transactions for the admin dashboard.
+2025-02-13 16:01:56 [17] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:56 [17] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-02-13 16:01:56 [5] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 
+2025-02-13 16:01:58 [8] INFO  Program - Request to /Admin/RejectWithdraw received.
+2025-02-13 16:01:58 [8] INFO  MvcProject.Controllers.TransactionsController - Starting UpdateRejectedStatus
+2025-02-13 16:01:58 [5] INFO  MvcProject.Controllers.TransactionsController - Successfully rejected status
+2025-02-13 16:01:58 [5] INFO  Program - Request to /Admin/AdminDashboard received.
+2025-02-13 16:01:58 [5] INFO  MvcProject.Service.TransactionService - Fetching withdrawal transactions for the admin dashboard.
+2025-02-13 16:01:58 [5] INFO  MvcProject.Controllers.TransactionsController - Fetching pending withdraw transactions for admins.
+2025-02-13 16:01:58 [8] INFO  MvcProject.Controllers.TransactionsController - Successfully fetched pending withdraw transactions for admins.
+2025-02-13 16:01:58 [8] WARN  MvcProject.Service.TransactionService - No withdrawal transactions found for the admin dashboard.
+2025-02-13 16:01:58 [11] INFO  Program - Request to /Wallet/GetWalletBalance received.
+2025-02-13 16:01:58 [11] INFO  MvcProject.Controllers.WalletController - Fetching wallet balance for user: 0a86ea47-3658-4488-a97d-c92c60c21bf9
+2025-02-13 16:01:58 [5] INFO  MvcProject.Controllers.WalletController - Wallet balance retrieved for user 0a86ea47-3658-4488-a97d-c92c60c21bf9: 0 

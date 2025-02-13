@@ -1,12 +1,13 @@
 ﻿using Dapper;
 using log4net;
-using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using MvcProject.Exceptions;
 using MvcProject.Hash;
 using MvcProject.Models;
 using MvcProject.Models.Enum;
 using MvcProject.Repository.IRepository;
+using MvcProject.Service;
 using System.Data;
 
 namespace MvcProject.Repository
@@ -17,10 +18,11 @@ namespace MvcProject.Repository
         private readonly IDbConnection _connection;
         private readonly string _secretKey;
         private readonly string _merchantId;
-        private static readonly ILog _logger = LogManager.GetLogger(typeof(WithdrawRepository));
-        public WithdrawRepository(IOptions<AppSettings> appSettings, ITransactionRepository transactionRepository,
+        private readonly ILog _logger;
+        public WithdrawRepository(ILoggerFactoryService loggerFactory, IOptions<AppSettings> appSettings, ITransactionRepository transactionRepository,
              IDbConnection connection)
         {
+            _logger = loggerFactory.GetLogger<DepositRepository>();
             _merchantId = appSettings.Value.MerchantID;
             _secretKey = appSettings.Value.SecretKey;
             _transactionRepository = transactionRepository;
