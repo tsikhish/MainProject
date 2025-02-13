@@ -1,20 +1,21 @@
 ﻿using Dapper;
 using log4net;
-using Microsoft.AspNetCore.Http;
 using MvcProject.Exceptions;
 using MvcProject.Models;
 using MvcProject.Models.Enum;
 using MvcProject.Repository.IRepository;
+using MvcProject.Service;
 using System.Data;
 
 namespace MvcProject.Repository
 {
     public class DepositRepository : IDepositRepository
     {
-        private static readonly ILog _logger = LogManager.GetLogger(typeof(DepositRepository));
+        private readonly ILog _logger;
         private readonly IDbConnection _connection;
-        public DepositRepository(IDbConnection connection)
+        public DepositRepository(ILoggerFactoryService loggerFactory, IDbConnection connection)
         {
+            _logger = loggerFactory.GetLogger<DepositRepository>();
             _connection = connection;
         }
 

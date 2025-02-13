@@ -1,6 +1,6 @@
 ﻿using MvcProject.Models;
 
-namespace MvcProject.Service
+namespace MvcProject.Service.IService
 {
     public interface IBankingRequestService
     {

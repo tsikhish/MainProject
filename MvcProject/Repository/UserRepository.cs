@@ -8,12 +8,10 @@ namespace MvcProject.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private readonly ILogger<UserRepository> _logger;
         private readonly IDbConnection _connection;
 
-        public UserRepository(ILogger<UserRepository> logger, IDbConnection connection)
+        public UserRepository(IDbConnection connection)
         {
-            _logger = logger;
             _connection = connection;
         }
         public async Task<string> GenerateTokens(string userId)

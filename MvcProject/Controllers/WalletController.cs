@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MvcProject.Models.Enum;
 using MvcProject.Repository.IRepository;
+using MvcProject.Service;
 using System.Security.Claims;
 namespace MvcProject.Controllers
 {
@@ -9,9 +10,9 @@ namespace MvcProject.Controllers
     {
         private readonly IWalletRepository _walletRepository;
         private readonly ILog _logger;
-        public WalletController(ILog logger,IWalletRepository walletRepository)
+        public WalletController(ILoggerFactoryService loggerFactory, IWalletRepository walletRepository)
         {
-            _logger=logger;
+            _logger = loggerFactory.GetLogger<WalletController>();
             _walletRepository = walletRepository;
         }
         public IActionResult Index()

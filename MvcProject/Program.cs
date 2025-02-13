@@ -12,9 +12,13 @@ using MvcProject.Repository.IRepository;
 using MvcProject.Service;
 using MvcProject.Models;
 using MvcProject.Middleware;
+using MvcProject.Service.IService;
 
 var builder = WebApplication.CreateBuilder(args);
-XmlConfigurator.Configure(new FileInfo("log4net.config"));
+
+var logRepository = LogManager.GetRepository(System.Reflection.Assembly.GetEntryAssembly());
+XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+
 builder.Services.AddRazorPages();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
@@ -29,24 +33,31 @@ builder.Services.AddScoped<IDbConnection>(sp => new SqlConnection(connectionStri
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddScoped<IBankingRequestService, BankingRequestService>();
+
 builder.Services.AddScoped<IUserRepository,UserRepository>();
+
 builder.Services.AddScoped<IDepositRepository,DepositRepository>();
+builder.Services.AddScoped<IDepositService,DepositService>();
+
 builder.Services.AddScoped<IWalletRepository, WalletRepository>();
+
+builder.Services.AddScoped<ITransactionService,TransactionService>();
 builder.Services.AddScoped<ITransactionRepository,TransactionRepository>();
+
 builder.Services.AddScoped<IWithdrawRepository,WithdrawRepository>();
+builder.Services.AddScoped<IWithdrawService,WithdrawService>();
 
-var logRepository = LogManager.GetRepository(System.Reflection.Assembly.GetEntryAssembly());
-XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+builder.Services.AddSingleton<ILoggerFactoryService, LoggerFactoryService>();
 
-builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(AdminController)));
-builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(CallbackController)));
-builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(HomeController)));
-builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(TransactionsController)));
-builder.Services.AddSingleton<ILog>(provider => LogManager.GetLogger(typeof(WalletController)));
+builder.Services.AddSingleton<ILog>(provider =>
+    LogManager.GetLogger("GlobalLogger"));
 
 builder.Services.AddHttpClient();
+
 var app = builder.Build();
+
 await Seed.InitializeAsync(app.Services);
 
 
