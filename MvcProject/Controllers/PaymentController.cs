@@ -1,10 +1,10 @@
 ﻿using log4net;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MvcProject.Models.Model;
-using MvcProject.Models.Repository.IRepository;
-using MvcProject.Models.Repository.IRepository.Enum;
-using MvcProject.Models.Service;
+using MvcProject.Models;
+using MvcProject.Models.Enum;
+using MvcProject.Repository.IRepository;
+using MvcProject.Service;
 using System.Security.Claims;
 
 namespace MvcProject.Controllers
@@ -44,32 +44,15 @@ namespace MvcProject.Controllers
         }
         public async Task<IActionResult> SendingDeposit(DepositWithdrawRequest depositWithdrawRequest)
         {
-            try
+            depositWithdrawRequest.TransactionType = TransactionType.Deposit;
+            _logger.InfoFormat("Initiating deposit transaction for UserId: {0}, Amount: {1}", depositWithdrawRequest.UserId, depositWithdrawRequest.Amount);
+            var response = await _bankingRequestService.SendDepositToBankingApi(depositWithdrawRequest, "ConfirmDeposit");
+            if (response == null)
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                if (string.IsNullOrEmpty(userId))
-                {
-                    _logger.ErrorFormat("User ID could not be retrieved from claims.");
-                    return Unauthorized("User authentication failed.");
-                }
-                depositWithdrawRequest.UserId = userId;
-                depositWithdrawRequest.TransactionType = TransactionType.Deposit;
-                _logger.InfoFormat("Initiating deposit transaction for UserId: {0}, Amount: {1}", userId, depositWithdrawRequest.Amount);
-                var response = await _bankingRequestService.SendDepositToBankingApi(depositWithdrawRequest, "ConfirmDeposit");
-                if (response == null)
-                {
-                    _logger.ErrorFormat("Banking API response is null for UserId: {0}.", userId);
-                    return BadRequest("Failed to process the transaction with the banking API.");
-                }
-                return View(response);
+                _logger.ErrorFormat("Banking API response is null for UserId: {0}.", depositWithdrawRequest.UserId);
+                return BadRequest("Failed to process the transaction with the banking API.");
             }
-            catch (Exception ex)
-            {
-                _logger.Error(string.Format("An error occurred while processing the deposit for UserId: {0}", depositWithdrawRequest.UserId), ex);
-                return BadRequest(ex.Message);
-            }
+            return View(response);
         }
-
-
     }
 }

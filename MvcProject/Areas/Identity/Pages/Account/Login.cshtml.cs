@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using MvcProject.Models;
-using MvcProject.Models.Repository.IRepository;
+using MvcProject.Repository.IRepository;
 
 namespace MvcProject.Areas.Identity.Pages.Account
 {

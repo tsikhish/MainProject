@@ -290,3 +290,19 @@ Error Number:266,State:2,Class:16
 2025-02-07 16:08:02 [58] INFO  Program - Request to /Games/CancelBet received.
 2025-02-07 16:08:02 [58] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1028
 2025-02-07 16:08:02 [58] WARN  CasinoApi.Repositories.CreatingGames - Bet was not got for TransactionId ID: 1028
+2025-02-12 16:53:28 [3] INFO  Program - Request to /Authenticate received.
+2025-02-12 16:55:50 [3] INFO  Program - Request to /Games/CreateBet received.
+2025-02-12 16:55:50 [3] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1027
+2025-02-12 16:55:50 [18] WARN  CasinoApi.Repositories.CreatingGames - Bet Request was not got for Transaction ID: 1027
+2025-02-12 17:08:56 [75] INFO  Program - Request to /Games/CreateBet received.
+2025-02-12 17:08:56 [75] INFO  CasinoApi.Repositories.CreatingGames - Creating bet for transaction ID: 1028
+2025-02-12 17:08:56 [72] INFO  CasinoApi.Repositories.CreatingGames - Bet Request was successfully got for Transaction ID: 1028
+2025-02-12 17:09:56 [77] INFO  Program - Request to /Games/CancelBet received.
+2025-02-12 17:09:56 [77] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1029
+2025-02-12 17:09:56 [79] INFO  CasinoApi.Repositories.CreatingGames - Bet was successfully got for TransactionId ID: 1029
+2025-02-12 17:10:34 [72] INFO  Program - Request to /Games/CancelBet received.
+2025-02-12 17:10:34 [72] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1029
+2025-02-12 17:10:34 [77] WARN  CasinoApi.Repositories.CreatingGames - Bet was not got for TransactionId ID: 1029
+2025-02-12 17:10:50 [80] INFO  Program - Request to /Games/CancelBet received.
+2025-02-12 17:10:50 [80] INFO  CasinoApi.Repositories.CreatingGames - Canceling Bet for transaction ID: 1030
+2025-02-12 17:10:50 [72] WARN  CasinoApi.Repositories.CreatingGames - Bet was not got for TransactionId ID: 1030

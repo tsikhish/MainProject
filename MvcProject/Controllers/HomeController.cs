@@ -1,22 +1,19 @@
 using System.Diagnostics;
 using System.Security.Claims;
-using log4net;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MvcProject.Models;
-using MvcProject.Models.Repository.IRepository;
+using MvcProject.Repository.IRepository;
 
 namespace MvcProject.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILog _logger;
         private readonly IUserRepository _userRepository;
 
-        public HomeController(ILog logger,IUserRepository userRepository)
+        public HomeController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
-            _logger = logger;
         }
 
         public IActionResult Index()

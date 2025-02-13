@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using MvcProject.Models.Model;
 namespace MvcProject.Models.DbContext
 {
     public class CasinoDbContext : IdentityDbContext
